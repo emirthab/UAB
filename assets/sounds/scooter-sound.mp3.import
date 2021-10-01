@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/scooter-sound.mp3-d1b28a889555a06c7e7c4478e26ba712.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/scooter-sound.mp3"
+dest_files=[ "res://.import/scooter-sound.mp3-d1b28a889555a06c7e7c4478e26ba712.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
