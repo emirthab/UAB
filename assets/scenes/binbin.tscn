@@ -4,13 +4,13 @@
 [ext_resource path="res://assets/geometry/trees/Pine_tree6.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/geometry/environment/duba2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/geometry/environment/Mudrock2.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/geometry/vehicles/binbin.fbx" type="PackedScene" id=7]
+[ext_resource path="res://assets/sprite/vehicles/binbin.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/geometry/astronaut/astronaut.fbx" type="PackedScene" id=8]
 [ext_resource path="res://assets/geometry/cars/Car_Police2.tscn" type="PackedScene" id=13]
 
-[sub_resource type="CubeMesh" id=5]
+[sub_resource type="CubeMesh" id=1]
 
-[sub_resource type="SpatialMaterial" id=6]
+[sub_resource type="SpatialMaterial" id=2]
 albedo_color = Color( 0.027451, 0.027451, 0.027451, 1 )
 
 [sub_resource type="PlaneMesh" id=3]
@@ -41,76 +41,76 @@ transform = Transform( -5.6426e-07, 0, 3, 0, 1, 0, -2, 0, -8.4639e-07, -8.98835,
 
 [node name="düz yol37" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, 8.99625, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol38" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, 2.99015, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol39" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -2.9989, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol40" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -8.97905, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol41" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -14.9575, 0.0251998, -3.85054 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol42" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -20.9742, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol43" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -26.9341, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol44" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -32.9402, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol45" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -38.9293, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol55" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, 8.99625, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="road_40" parent="roads" instance=ExtResource( 1 )]
 transform = Transform( -4.97182e-07, 0.472889, 2.64337, 2.66832e-07, 0.881122, -1.41867, -2, 0, -8.4639e-07, 10.2704, 1.38156, -0.0646903 )
 
 [node name="düz yol95" type="MeshInstance" parent="roads"]
 transform = Transform( -2.65723, 0.0127353, 3.48453e-07, 1.4261, 0.0237294, -1.87011e-07, -1.10833e-07, 0, -1.90167, 10.2636, 1.39107, -3.92348 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol96" type="MeshInstance" parent="roads"]
 transform = Transform( -2.65723, 0.0127353, 3.48453e-07, 1.4261, 0.0237294, -1.87011e-07, -1.10833e-07, 0, -1.90167, 10.2636, 1.39107, 3.38281 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol56" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, 2.99015, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol57" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -2.9989, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="road_41" parent="roads" instance=ExtResource( 1 )]
 transform = Transform( -5.6426e-07, 0, 3, 0, 1, 0, -2, 0, -8.4639e-07, 4.74793, 2.73529, -0.0708449 )
@@ -123,63 +123,63 @@ transform = Transform( -5.6426e-07, 0, 3, 0, 1, 0, -2, 0, -8.4639e-07, -7.24876,
 
 [node name="düz yol97" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, 4.73752, 2.74049, -3.92964 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol98" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -1.26858, 2.74049, -3.92964 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol99" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -7.25763, 2.74049, -3.92964 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol100" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, 4.73752, 2.74049, 3.37666 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol101" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -1.26858, 2.74049, 3.37666 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol102" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -7.25763, 2.74049, 3.37666 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol58" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -8.97905, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol59" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -14.9851, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol60" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -20.9742, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol61" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -26.9341, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol62" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -32.9402, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol63" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -38.9293, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="road_16" parent="roads" instance=ExtResource( 1 )]
 transform = Transform( -5.6426e-07, 0, 3, 0, 1, 0, -2, 0, -8.4639e-07, -14.9161, 0.02, 0 )
@@ -189,23 +189,23 @@ transform = Transform( -5.6426e-07, 0, 3, 0, 1, 0, -2, 0, -8.4639e-07, -20.9038,
 
 [node name="düz yol103" type="MeshInstance" parent="roads"]
 transform = Transform( -2.93395, -0.0062293, 3.84741e-07, -0.697558, 0.0262006, 9.14736e-08, -1.10833e-07, 0, -1.90167, -13.1839, 2.0428, -3.85054 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol104" type="MeshInstance" parent="roads"]
 transform = Transform( -2.93395, -0.0062293, 3.84741e-07, -0.697558, 0.0262006, 9.14736e-08, -1.10833e-07, 0, -1.90167, -19.0374, 0.651104, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol105" type="MeshInstance" parent="roads"]
 transform = Transform( -2.93395, -0.0062293, 3.84741e-07, -0.697558, 0.0262006, 9.14736e-08, -1.10833e-07, 0, -1.90167, -13.2108, 2.03641, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol106" type="MeshInstance" parent="roads"]
 transform = Transform( -2.93395, -0.0062293, 3.84741e-07, -0.697558, 0.0262006, 9.14736e-08, -1.10833e-07, 0, -1.90167, -19.0374, 0.651102, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="road_44" parent="roads" instance=ExtResource( 1 )]
 transform = Transform( -5.48958e-07, -0.231307, 2.91864, -1.30517e-07, 0.972882, 0.69392, -2, 0, -8.4639e-07, -13.1424, 2.04732, 0 )
@@ -224,33 +224,33 @@ transform = Transform( -5.6426e-07, 0, 3, 0, 1, 0, -2, 0, -8.4639e-07, -38.8722,
 
 [node name="düz yol46" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -44.8692, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol47" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -50.8753, 0.0252011, -3.85879 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol48" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -56.8643, 0.0252011, -3.86345 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol64" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -44.8692, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol65" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -50.8753, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol66" type="MeshInstance" parent="roads"]
 transform = Transform( -3.01573, 0, 3.95465e-07, 0, 0.0269309, 0, -1.10833e-07, 0, -1.90167, -56.8643, 0.0252011, 3.4475 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="road_21" parent="roads" instance=ExtResource( 1 )]
 transform = Transform( -5.6426e-07, 0, 3, 0, 1, 0, -2, 0, -8.4639e-07, -44.8348, 0.02, 0 )
@@ -275,93 +275,93 @@ transform = Transform( 0.000301035, 0, -3, 0, 1, 0, 2, 0, 0.000451553, 32.7906, 
 
 [node name="düz yol49" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 14.8066, 0.0252011, 3.45876 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol50" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 20.8127, 0.0252011, 3.45671 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol51" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 26.8017, 0.0252011, 3.45466 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol52" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 32.7819, 0.0252011, 3.45262 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol53" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 38.788, 0.0252011, 3.45056 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol54" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 44.7771, 0.0252011, 3.44851 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol67" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 50.737, 0.0252011, 3.44648 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol68" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 56.7431, 0.0252011, 3.44442 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol69" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 62.7321, 0.0252011, 3.44238 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol70" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 14.8054, 0.0252011, -3.84753 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol71" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 20.8116, 0.0252011, -3.84959 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol72" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 26.8006, 0.0252011, -3.85164 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol73" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 32.7807, 0.0252011, -3.85368 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol74" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 38.7868, 0.0252011, -3.85573 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol75" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 44.7759, 0.0252011, -3.85778 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol76" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 50.7358, 0.0252011, -3.85982 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol77" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 56.7419, 0.0252011, -3.86187 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol78" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 62.731, 0.0252011, -3.86392 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="road_28" parent="roads" instance=ExtResource( 1 )]
 transform = Transform( 0.000301104, 0, -3, 0, 1, 0, 2, 0, 0.00102639, 38.7184, 0.02, -0.0566165 )
@@ -374,23 +374,23 @@ transform = Transform( 0.000301104, 0, -3, 0, 1, 0, 2, 0, 0.00102639, 50.702, 0.
 
 [node name="düz yol85" type="MeshInstance" parent="roads"]
 transform = Transform( 2.92804, 0.0064472, 0.00027707, -0.721959, 0.0261478, -6.83166e-05, -0.00103081, 0, 1.90167, 44.8633, 2.0432, 3.44851 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol88" type="MeshInstance" parent="roads"]
 transform = Transform( 2.92804, 0.0064472, 0.00027707, -0.721959, 0.0261478, -6.83166e-05, -0.00103081, 0, 1.90167, 50.6499, 0.616411, 3.44648 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol89" type="MeshInstance" parent="roads"]
 transform = Transform( 2.92804, 0.0064472, 0.00027707, -0.721959, 0.0261478, -6.83166e-05, -0.00103081, 0, 1.90167, 44.8622, 2.04348, -3.85778 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol90" type="MeshInstance" parent="roads"]
 transform = Transform( 2.92804, 0.0064472, 0.00027707, -0.721959, 0.0261478, -6.83166e-05, -0.00103081, 0, 1.90167, 50.6488, 0.616682, -3.85982 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="road_36" parent="roads" instance=ExtResource( 1 )]
 transform = Transform( 0.000292348, 0.239398, -2.91277, -7.20836e-05, 0.970922, 0.718194, 2, 0, 0.00102639, 44.7932, 2.05513, -0.0586634 )
@@ -400,23 +400,23 @@ transform = Transform( 0.000292348, 0.239398, -2.91277, -7.20836e-05, 0.970922, 
 
 [node name="düz yol91" type="MeshInstance" parent="roads"]
 transform = Transform( 2.93121, -0.00633123, 0.000277371, 0.708972, 0.0261762, 6.70876e-05, -0.00103081, 0, 1.90167, 33.2477, 0.662721, 3.44851 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol92" type="MeshInstance" parent="roads"]
 transform = Transform( 2.93121, -0.00633123, 0.000277371, 0.708972, 0.0261762, 6.70876e-05, -0.00103081, 0, 1.90167, 39.0406, 2.06385, 3.44648 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol93" type="MeshInstance" parent="roads"]
 transform = Transform( 2.93121, -0.00633123, 0.000277371, 0.708972, 0.0261762, 6.70876e-05, -0.00103081, 0, 1.90167, 33.2466, 0.66245, -3.85778 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol94" type="MeshInstance" parent="roads"]
 transform = Transform( 2.93121, -0.00633123, 0.000277371, 0.708972, 0.0261762, 6.70876e-05, -0.00103081, 0, 1.90167, 39.0394, 2.06358, -3.85982 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="road_38" parent="roads" instance=ExtResource( 1 )]
 transform = Transform( 0.000292665, -0.235091, -2.91592, 7.0787e-05, 0.971975, -0.705274, 2, 0, 0.00102639, 33.1799, 0.640982, -0.0586634 )
@@ -432,43 +432,43 @@ transform = Transform( 0.000301104, 0, -3, 0, 1, 0, 2, 0, 0.00102639, 62.6745, 0
 
 [node name="düz yol79" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 68.672, 0.0252011, 3.44035 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol80" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 74.6782, 0.0252011, 3.43829 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol81" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 80.6672, 0.0252011, 3.43625 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol86" type="MeshInstance" parent="roads"]
 transform = Transform( 72, 0, 1.70199e-06, 0, 0.158, 0, -0.0002897, 0, 0.423, 11.8273, 0.169212, 5.44687 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol87" type="MeshInstance" parent="roads"]
 transform = Transform( 72, 0, 1.70199e-06, 0, 0.158, 0, -0.0002897, 0, 0.423, 11.8273, 0.169212, -5.95147 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol82" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 68.6709, 0.0252011, -3.86595 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol83" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 74.677, 0.0252011, -3.868 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="düz yol84" type="MeshInstance" parent="roads"]
 transform = Transform( 3.01573, 0, 0.000285368, 0, 0.0269309, 0, -0.00103081, 0, 1.90167, 80.6661, 0.0252011, -3.87005 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="road_33" parent="roads" instance=ExtResource( 1 )]
 transform = Transform( 0.000301104, 0, -3, 0, 1, 0, 2, 0, 0.00102639, 68.637, 0.02, -0.0668442 )
@@ -786,7 +786,6 @@ transform = Transform( -16.224, 6.31786e-06, 2.21284e-12, 0, -7.09174e-07, 130, 
 transform = Transform( -16.224, 6.31786e-06, 2.70649e-12, 0, -8.13053e-07, 182.292, 6.31786e-06, 16.224, 6.95017e-06, 44.3384, 0.0313113, 3.21947 )
 
 [node name="environment" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 
 [node name="Mudrock2" parent="environment" instance=ExtResource( 6 )]
 transform = Transform( 93.4004, -35.9967, -2.34707e-06, -5.96625e-06, -1.19325e-05, 153.05, -35.9967, -93.4004, -2.0263e-05, 95.7045, 0, 7.5768 )
@@ -870,7 +869,6 @@ transform = Transform( 23.1721, 0, 0, 0, -2.76233e-06, 50.8319, 0, -23.1721, -6.
 transform = Transform( 23.1721, 0, 0, 0, -2.76233e-06, 50.8319, 0, -23.1721, -6.05965e-06, -29.6841, 0.682585, 2.60318 )
 
 [node name="vehicles" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 
 [node name="binbin" parent="vehicles" instance=ExtResource( 7 )]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 89.5097, 0.660976, -3.21637 )
