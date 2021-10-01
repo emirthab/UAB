@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/binbin.fbx-d235b5b58cadb53ad903cd059de7e357.scn"
+path="res://.import/kopru.fbx-37bc5643cf87685a988ed80bb0ebe829.scn"
 
 [deps]
 
-source_file="res://assets/geometry/vehicles/binbin.fbx"
-dest_files=[ "res://.import/binbin.fbx-d235b5b58cadb53ad903cd059de7e357.scn" ]
+source_file="res://assets/geometry/buildings/kopru.fbx"
+dest_files=[ "res://.import/kopru.fbx-37bc5643cf87685a988ed80bb0ebe829.scn" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/binbin.fbx-d235b5b58cadb53ad903cd059de7e357.scn"
+path="res://.import/10MinuteCars.fbx-e4327697647f49230700391f31785ac6.scn"
 
 [deps]
 
-source_file="res://assets/geometry/vehicles/binbin.fbx"
-dest_files=[ "res://.import/binbin.fbx-d235b5b58cadb53ad903cd059de7e357.scn" ]
+source_file="res://assets/geometry/cars/10MinuteCars.fbx"
+dest_files=[ "res://.import/10MinuteCars.fbx-e4327697647f49230700391f31785ac6.scn" ]
 
 [params]
 

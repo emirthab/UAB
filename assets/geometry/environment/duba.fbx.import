@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/binbin.fbx-d235b5b58cadb53ad903cd059de7e357.scn"
+path="res://.import/duba.fbx-847870a6a22103ac854f447745bef0a4.scn"
 
 [deps]
 
-source_file="res://assets/geometry/vehicles/binbin.fbx"
-dest_files=[ "res://.import/binbin.fbx-d235b5b58cadb53ad903cd059de7e357.scn" ]
+source_file="res://assets/geometry/environment/duba.fbx"
+dest_files=[ "res://.import/duba.fbx-847870a6a22103ac854f447745bef0a4.scn" ]
 
 [params]
 

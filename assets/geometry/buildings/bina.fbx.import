@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/binbin.fbx-d235b5b58cadb53ad903cd059de7e357.scn"
+path="res://.import/bina.fbx-de429781b44a62fcda1b201c5beb09b6.scn"
 
 [deps]
 
-source_file="res://assets/geometry/vehicles/binbin.fbx"
-dest_files=[ "res://.import/binbin.fbx-d235b5b58cadb53ad903cd059de7e357.scn" ]
+source_file="res://assets/geometry/buildings/bina.fbx"
+dest_files=[ "res://.import/bina.fbx-de429781b44a62fcda1b201c5beb09b6.scn" ]
 
 [params]
 
