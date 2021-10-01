@@ -871,7 +871,7 @@ transform = Transform( 23.1721, 0, 0, 0, -2.76233e-06, 50.8319, 0, -23.1721, -6.
 [node name="vehicles" type="Spatial" parent="."]
 
 [node name="binbin" parent="vehicles" instance=ExtResource( 7 )]
-transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 99.7428, 0.660976, -0.48754 )
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 89.5097, 0.660976, -3.21637 )
 
 [node name="Car_Police2" parent="vehicles" instance=ExtResource( 13 )]
 transform = Transform( 41.7104, -160.415, 5.06282e-06, 0, 8.87445e-06, 78.8366, -72.1573, -92.7274, 2.92656e-06, -33.3323, 0, -1.64421 )
