@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/materials/binbin.material" type="Material" id=1]
 
@@ -82,6 +82,15 @@ surfaces/0 = {
 "vertex_count": 414
 }
 
+[sub_resource type="BoxShape" id=6]
+extents = Vector3( 0.388636, 0.261075, 1.94676 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 0.169392, 1.33688, 0.146143 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 0.769441, 0.101625, 0.0646119 )
+
 [node name="binbin" type="VehicleBody"]
 
 [node name="Cylinder" type="MeshInstance" parent="."]
@@ -108,3 +117,15 @@ material/0 = null
 transform = Transform( 0, -7.90563e-06, 46.3096, -33.1586, 0, 0, 0, -33.1586, -1.10411e-05, -3.07232, -0.260332, 3.35225 )
 mesh = SubResource( 5 )
 material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.074, -0.224967, 1.60333 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.939991, -0.3412, 0, 0.3412, 0.939991, -3.074, 1.30743, 0.423296 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.939991, -0.3412, 0, 0.3412, 0.939991, -3.074, 2.63335, 0.703176 )
+shape = SubResource( 8 )
