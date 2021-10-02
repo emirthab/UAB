@@ -164,7 +164,6 @@ update_scale = false
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.0395941, 0.654404, 0.51568 )
 
 [node name="Pivot" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 
 [node name="Camera" type="Camera" parent="Pivot"]
 transform = Transform( -0.393564, 0.134387, -0.909422, 0.000597916, 0.989295, 0.145931, 0.919297, 0.0568894, -0.389431, -10.6343, 8.27648, -2.20387 )
