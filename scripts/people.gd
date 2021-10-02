@@ -5,6 +5,8 @@ func _ready():
 	$model/AnimationPlayer.get_animation("courier|mixamocom|Layer0").loop = true
 	$model/AnimationPlayer.playback_speed = 2
 	$model/AnimationPlayer.play("courier|mixamocom|Layer0")
+	$model/AnimationPlayer.play("courier|mixamocom|Layer0")
+#	$model/AnimationPlayer.get_animation("courier|mixamocom|Layer0").loop = true
 
 
 func _on_Body_entered(body):

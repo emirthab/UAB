@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/woman.glb-1004b628d9f7e0e65dad28441cbc5a4e.scn"
+path="res://.import/durakyazs.fbx-e91ecc87400fe9bc46fc507c67e55491.scn"
 
 [deps]
 
-source_file="res://assets/geometry/people/woman.glb"
-dest_files=[ "res://.import/woman.glb-1004b628d9f7e0e65dad28441cbc5a4e.scn" ]
+source_file="res://assets/geometry/environment/durakyazs.fbx"
+dest_files=[ "res://.import/durakyazs.fbx-e91ecc87400fe9bc46fc507c67e55491.scn" ]
 
 [params]
 
