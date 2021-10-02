@@ -13,7 +13,7 @@ func _physics_process(delta):
 		if status == 1:
 			status = 0
 			$astronaut/AnimationPlayer.play_backwards("metarigAction")
-		brake = lerp(engine_force,0,accelSpeed * delta * 2)
+		brake = lerp(brake,power,accelSpeed * delta * 2)
 	else:
 		if status == 0:
 			status = 1
