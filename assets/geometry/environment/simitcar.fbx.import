@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/astronaut.fbx-16e22f4e8fadb893a45bae762f930ba2.scn"
+path="res://.import/simitcar.fbx-1aadc9f251df929032ffadab1f432fda.scn"
 
 [deps]
 
-source_file="res://assets/geometry/astronaut/astronaut.fbx"
-dest_files=[ "res://.import/astronaut.fbx-16e22f4e8fadb893a45bae762f930ba2.scn" ]
+source_file="res://assets/geometry/environment/simitcar.fbx"
+dest_files=[ "res://.import/simitcar.fbx-1aadc9f251df929032ffadab1f432fda.scn" ]
 
 [params]
 

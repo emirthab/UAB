@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/astronaut.fbx-16e22f4e8fadb893a45bae762f930ba2.scn"
+path="res://.import/tree_bonus.fbx-98d9c3606fd12360c23fe8f37fcc9e49.scn"
 
 [deps]
 
-source_file="res://assets/geometry/astronaut/astronaut.fbx"
-dest_files=[ "res://.import/astronaut.fbx-16e22f4e8fadb893a45bae762f930ba2.scn" ]
+source_file="res://assets/geometry/trees/tree_bonus.fbx"
+dest_files=[ "res://.import/tree_bonus.fbx-98d9c3606fd12360c23fe8f37fcc9e49.scn" ]
 
 [params]
 

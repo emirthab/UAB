@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/trees.fbx-213cbb20aaf1f23c0957e00fdaeee36e.scn"
+path="res://.import/bank.fbx-d17f0b5c9a7e60483e7ceec207726f00.scn"
 
 [deps]
 
-source_file="res://assets/geometry/trees/trees.fbx"
-dest_files=[ "res://.import/trees.fbx-213cbb20aaf1f23c0957e00fdaeee36e.scn" ]
+source_file="res://assets/geometry/environment/bank.fbx"
+dest_files=[ "res://.import/bank.fbx-d17f0b5c9a7e60483e7ceec207726f00.scn" ]
 
 [params]
 
@@ -16,7 +16,6 @@ nodes/root_name="Scene Root"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
-nodes/use_legacy_names=true
 materials/location=1
 materials/storage=1
 materials/keep_on_reimport=true
