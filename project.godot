@@ -30,7 +30,7 @@ window/size/height=820
 
 [editor_plugins]
 
-enabled=PoolStringArray( "waterways" )
+enabled=PoolStringArray(  )
 
 [input]
 
