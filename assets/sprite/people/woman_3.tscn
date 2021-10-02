@@ -7,23 +7,22 @@
 radius = 0.412078
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 1.17431, 1.70745, 1.11462 )
+extents = Vector3( 0.874806, 1.75751, 0.902481 )
 
 [node name="woman_3" type="RigidBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.871683, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.183907, 0 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1.8, 0, 0, 0, -7.86805e-08, -1.8, 0, 1.8, -7.86805e-08, 0, 0.782191, 0 )
+transform = Transform( 2.86645, 0, 0, 0, -1.25297e-07, -2.86645, 0, 2.86645, -1.25297e-07, 0, 1.81532, 0 )
 shape = SubResource( 1 )
 
 [node name="model" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, -0.885, 0 )
+transform = Transform( 2.86645, 0, 0, 0, 2.86645, 0, 0, 0, 2.86645, 0, -0.839639, 0 )
 
 [node name="Area" type="Area" parent="."]
+transform = Transform( 1.59247, 0, 0, 0, 1.59247, 0, 0, 0, 1.59247, 0, 0.569701, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.864401, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.892723, 0 )
 shape = SubResource( 2 )
-
-[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]

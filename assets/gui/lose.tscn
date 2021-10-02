@@ -50,6 +50,9 @@ margin_top = -28.02
 margin_right = 86.5
 margin_bottom = 27.98
 flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="TextureRect" type="TextureRect" parent="container"]
 anchor_left = 0.497
@@ -62,3 +65,5 @@ margin_right = 43.3681
 margin_bottom = 50.0212
 texture = ExtResource( 3 )
 expand = true
+
+[connection signal="pressed" from="container/Button" to="." method="_on_Replay_pressed"]
