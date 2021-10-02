@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/trafiklamb.fbx" type="PackedScene" id=2]
@@ -10,7 +10,11 @@
 [ext_resource path="res://assets/geometry/cars/polis2.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/geometry/environment/lamba.fbx" type="PackedScene" id=9]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=10]
-[ext_resource path="res://assets/sprite/vehicles/bus.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/geometry/environment/cal.fbx" type="PackedScene" id=11]
+[ext_resource path="res://assets/geometry/environment/cal2.fbx" type="PackedScene" id=12]
+[ext_resource path="res://assets/geometry/environment/cal3.fbx" type="PackedScene" id=13]
+[ext_resource path="res://assets/geometry/environment/cop.fbx" type="PackedScene" id=14]
+[ext_resource path="res://assets/geometry/buildings/mosque.fbx" type="PackedScene" id=15]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -41,9 +45,6 @@ albedo_color = Color( 0.462745, 0.682353, 0.145098, 1 )
 
 [sub_resource type="SpatialMaterial" id=12]
 albedo_color = Color( 0.345098, 0.615686, 0.482353, 1 )
-
-[sub_resource type="BoxShape" id=13]
-extents = Vector3( 495.737, 1, 38.8243 )
 
 [node name="Spatial" type="Spatial"]
 
@@ -214,6 +215,9 @@ material/0 = SubResource( 8 )
 
 [node name="buildings" type="Spatial" parent="."]
 transform = Transform( 2.07901, 0, 0, 0, 1, 0, 0, 0, 1, 481.241, 0, 0 )
+
+[node name="mosque" parent="buildings" instance=ExtResource( 15 )]
+transform = Transform( 17.134, 0, -0.214225, 0, 26.6717, 0, 0.925944, 0, 17.134, -34.5546, 19.628, -186.994 )
 
 [node name="environment" type="Spatial" parent="."]
 transform = Transform( 2.07901, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
@@ -514,18 +518,19 @@ transform = Transform( 2, 0, 0, 0, 3, 0, 0, 0, 2, 88.2494, 12.3792, 4.56358 )
 transform = Transform( 2, 0, 0, 0, 3, 0, 0, 0, 2, 88.2494, 12.3792, -50.3414 )
 
 [node name="duraklar" type="Spatial" parent="environment"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.5, 0, 0, -29.404 )
 
 [node name="durak" parent="environment/duraklar" instance=ExtResource( 3 )]
 transform = Transform( -15, 0, -2.26494e-06, 0, 20, 0, 2.26494e-06, 0, -15, 31.229, 1.00095, 67.6563 )
 
 [node name="durak2" parent="environment/duraklar" instance=ExtResource( 3 )]
-transform = Transform( 15, 0, 2.89569e-06, 0, 20, 0, -4.99123e-06, 0, 15, 104.351, 1.00095, -61.794 )
+transform = Transform( 15, 0, 2.89569e-06, 0, 20, 0, -4.99123e-06, 0, 15, 104.351, 1.00095, -21.0278 )
 
 [node name="durak3" parent="environment/duraklar" instance=ExtResource( 3 )]
 transform = Transform( -15, 0, -2.26494e-06, 0, 20, 0, 2.26494e-06, 0, -15, 195.889, 1.00095, 67.6563 )
 
 [node name="durak4" parent="environment/duraklar" instance=ExtResource( 3 )]
-transform = Transform( 15, 0, 2.89569e-06, 0, 20, 0, -4.99123e-06, 0, 15, 265.558, 1.00095, -61.794 )
+transform = Transform( 15, 0, 2.89569e-06, 0, 20, 0, -4.99123e-06, 0, 15, 265.558, 1.00095, -21.0278 )
 
 [node name="lamp" type="Spatial" parent="environment"]
 
@@ -566,7 +571,7 @@ transform = Transform( -1, 0, -4.20502e-08, 0, 1.83506, 0, 1.81753e-07, 0, -1, 1
 transform = Transform( -1, 0, -4.20502e-08, 0, 1.83506, 0, 1.81753e-07, 0, -1, 13.1428, 3.05554, 68.6351 )
 
 [node name="bank" type="Spatial" parent="environment"]
-transform = Transform( 1, 0, 0, 0, 2, 0, 0, 0, 1, 0, -4.30544, 0 )
+transform = Transform( 1, 0, 0, 0, 2, 0, 0, 0, 2, 0, -4.30544, 60.1814 )
 
 [node name="bank" parent="environment/bank" instance=ExtResource( 10 )]
 transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 34.1436, 3.70956, -60.3521 )
@@ -581,13 +586,13 @@ transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 308.908, 3.70956, -60.3521 )
 transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 413.591, 3.70956, -59.9681 )
 
 [node name="bank5" parent="environment/bank" instance=ExtResource( 10 )]
-transform = Transform( -3, 0, -1.26151e-07, 0, 3, 0, 5.45259e-07, 0, -3, 363.631, 3.70956, 73.2109 )
+transform = Transform( -3, 0, -1.26151e-07, 0, 3, 0, 5.45259e-07, 0, -3, 363.631, 3.70956, 6.37031 )
 
 [node name="bank6" parent="environment/bank" instance=ExtResource( 10 )]
-transform = Transform( -3, 0, -1.26151e-07, 0, 3, 0, 5.45259e-07, 0, -3, 264.265, 3.70956, 73.2109 )
+transform = Transform( -3, 0, -1.26151e-07, 0, 3, 0, 5.45259e-07, 0, -3, 264.265, 3.70956, 6.37031 )
 
 [node name="bank7" parent="environment/bank" instance=ExtResource( 10 )]
-transform = Transform( -3, 0, -1.26151e-07, 0, 3, 0, 5.45259e-07, 0, -3, 95.9958, 3.70956, 73.211 )
+transform = Transform( -3, 0, -1.26151e-07, 0, 3, 0, 5.45259e-07, 0, -3, 98.6386, 3.70956, 6.37041 )
 
 [node name="duba" type="Spatial" parent="environment"]
 
@@ -609,10 +614,56 @@ transform = Transform( 93.7237, 0, 0, 0, -5.89127e-05, 361.366, 0, -164.732, -0.
 [node name="duba7" parent="environment/duba" instance=ExtResource( 7 )]
 transform = Transform( 93.7237, 0, 0, 0, -5.89127e-05, 361.366, 0, -164.732, -0.000129235, 433.544, 5.87581, -42.9104 )
 
-[node name="trees" type="Spatial" parent="."]
+[node name="çalılar" type="Spatial" parent="environment"]
 
-[node name="Cube002" parent="trees" instance=ExtResource( 1 )]
-transform = Transform( 106.844, 0, 0, 0, -1.27368e-05, 279.747, 0, -106.844, -3.33484e-05, 17.3561, 1.65038, 4.99067 )
+[node name="cal" parent="environment/çalılar" instance=ExtResource( 11 )]
+transform = Transform( -3.08951e-08, 0, 0.706797, 0, 1.46944, 0, -1.46944, 0, -6.42312e-08, 26.5249, 2.4429, -57.5024 )
+
+[node name="cal6" parent="environment/çalılar" instance=ExtResource( 11 )]
+transform = Transform( -3.08951e-08, 0, 0.706797, 0, 1.46944, 0, -1.46944, 0, -6.42312e-08, 222.556, 2.4429, -57.5024 )
+
+[node name="cal2" parent="environment/çalılar" instance=ExtResource( 12 )]
+transform = Transform( -3.08951e-08, 0, 0.706797, 0, 1.46944, 0, -1.46944, 0, -6.42312e-08, 51.9409, 1.39468, -57.8109 )
+
+[node name="cal7" parent="environment/çalılar" instance=ExtResource( 12 )]
+transform = Transform( -3.08951e-08, 0, 0.706797, 0, 1.46944, 0, -1.46944, 0, -6.42312e-08, 300.259, 1.39468, -59.2488 )
+
+[node name="cal8" parent="environment/çalılar" instance=ExtResource( 12 )]
+transform = Transform( -0.621539, 0, 0.336528, 0, 1.46944, 0, -0.699645, 0, -1.29219, 365.135, 2.66179, -57.4305 )
+
+[node name="cal3" parent="environment/çalılar" instance=ExtResource( 13 )]
+transform = Transform( -3.08951e-08, 0, 0.706797, 0, 1.46944, 0, -1.46944, 0, -6.42312e-08, 78.883, 1.97573, -57.0046 )
+
+[node name="cal4" parent="environment/çalılar" instance=ExtResource( 13 )]
+transform = Transform( -3.08951e-08, 0, 0.706797, 0, 1.46944, 0, -1.46944, 0, -6.42312e-08, 117.196, 1.97573, -57.0046 )
+
+[node name="cal5" parent="environment/çalılar" instance=ExtResource( 13 )]
+transform = Transform( -0.622126, 0, 0.335443, 0, 1.46944, 0, -0.697388, 0, -1.29341, 150.053, 1.97573, -54.5083 )
+
+[node name="çöpler" type="Spatial" parent="environment"]
+
+[node name="cop" parent="environment/çöpler" instance=ExtResource( 14 )]
+transform = Transform( -3.13458e-07, 0, -1.92399, 0, 4, 0, 4, 0, -6.51683e-07, 85.5145, 4.25292, 192.434 )
+
+[node name="cop2" parent="environment/çöpler" instance=ExtResource( 14 )]
+transform = Transform( -3.13458e-07, 0, -1.92399, 0, 4, 0, 4, 0, -6.51683e-07, 178.2, 4.25292, 192.434 )
+
+[node name="cop3" parent="environment/çöpler" instance=ExtResource( 14 )]
+transform = Transform( -3.13458e-07, 0, -1.92399, 0, 4, 0, 4, 0, -6.51683e-07, 340.546, 4.25292, 192.434 )
+
+[node name="cop4" parent="environment/çöpler" instance=ExtResource( 14 )]
+transform = Transform( -3.13458e-07, 0, 1.92399, 0, 4, 0, -4, 0, -6.51683e-07, 108.12, 4.25292, -178.226 )
+
+[node name="cop7" parent="environment/çöpler" instance=ExtResource( 14 )]
+transform = Transform( -3.13458e-07, 0, 1.92399, 0, 4, 0, -4, 0, -6.51683e-07, -3.10677, 4.25292, -178.226 )
+
+[node name="cop5" parent="environment/çöpler" instance=ExtResource( 14 )]
+transform = Transform( -3.13458e-07, 0, 1.92399, 0, 4, 0, -4, 0, -6.51683e-07, 229.65, 4.25292, -178.226 )
+
+[node name="cop6" parent="environment/çöpler" instance=ExtResource( 14 )]
+transform = Transform( -3.13458e-07, 0, 1.92399, 0, 4, 0, -4, 0, -6.51683e-07, 373.039, 4.25292, -178.226 )
+
+[node name="trees" type="Spatial" parent="."]
 
 [node name="Cube004" parent="trees" instance=ExtResource( 1 )]
 transform = Transform( 106.844, 0, 0, 0, -1.27368e-05, 279.747, 0, -106.844, -3.33484e-05, 11.5836, 1.65038, 66.4669 )
@@ -770,9 +821,6 @@ transform = Transform( -98.5499, 68.4684, 8.72915e-06, 0, -5.24537e-06, 350, 68.
 [node name="Cube058" parent="trees" instance=ExtResource( 1 )]
 transform = Transform( -98.5499, 68.4684, 8.72915e-06, 0, -5.24537e-06, 350, 68.4684, 98.5499, 1.25643e-05, 99.9106, 1.65038, -72.7317 )
 
-[node name="Cube003" parent="trees" instance=ExtResource( 1 )]
-transform = Transform( 70.3685, -80.3983, -2.50941e-05, 0, -1.27368e-05, 279.747, -80.3983, -70.3685, -2.19636e-05, 69.1223, 1.65038, 4.99067 )
-
 [node name="Cube005" parent="trees" instance=ExtResource( 1 )]
 transform = Transform( 7.71256, -88.7797, -2.77102e-05, 0, -1.06232e-05, 233.325, -88.7797, -7.71256, -2.40727e-06, 119.049, 1.65512, 4.98822 )
 
@@ -815,16 +863,7 @@ material/0 = SubResource( 10 )
 
 [node name="DirectionalLight" parent="." instance=ExtResource( 5 )]
 
-[node name="bus" parent="." instance=ExtResource( 11 )]
-transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 20.5962, 1.73811, 41.2247 )
-
-[node name="StaticBody" type="StaticBody" parent="."]
-
-[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+[node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 482.973, 0, 0, 0, 1, 0, 0, 0, 55.1968, 479.093, 0.982277, 5.96842 )
 mesh = SubResource( 11 )
 material/0 = SubResource( 12 )
-
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 469.493, 0, 32.2013 )
-shape = SubResource( 13 )
