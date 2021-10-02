@@ -1,8 +1,7 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/materials/binbin.material" type="Material" id=1]
 [ext_resource path="res://scripts/playerMovement.gd" type="Script" id=2]
-[ext_resource path="res://assets/sprite/astronaut.tscn" type="PackedScene" id=3]
 
 [sub_resource type="ArrayMesh" id=1]
 blend_shape_mode = 0
@@ -93,79 +92,56 @@ surfaces/0 = {
 "vertex_count": 414
 }
 
-[node name="Spatial" type="Spatial"]
-
-[node name="binbin" type="VehicleBody" parent="."]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
-axis_lock_linear_x = true
-axis_lock_angular_y = true
-axis_lock_angular_z = true
+[node name="binbin" type="VehicleBody"]
 script = ExtResource( 2 )
 
-[node name="Cylinder" type="MeshInstance" parent="binbin"]
+[node name="Cylinder" type="MeshInstance" parent="."]
 transform = Transform( 100, 0, 0, 0, 29.2824, 95.6166, 0, -95.6166, 29.2824, 0.00994492, 1.22575, -1.31325 )
 mesh = SubResource( 1 )
 material/0 = null
 
-[node name="Cylinder001" type="MeshInstance" parent="binbin"]
+[node name="Cylinder001" type="MeshInstance" parent="."]
 transform = Transform( 9.67706, 0, 0, 0, -6.82042, 47.9853, 0, -6.86494, -47.6741, 0.00994492, 0.777919, -1.19386 )
 mesh = SubResource( 2 )
 material/0 = null
 
-[node name="Cube" type="MeshInstance" parent="binbin"]
-transform = Transform( 28.0977, 0, 0, 0, -4.37114e-06, 16.7016, 0, -100, -7.3005e-07, 0.00994492, 0.374259, -0.165409 )
+[node name="Cube" type="MeshInstance" parent="."]
+transform = Transform( 28.0977, 0, 0, 0, -3.57628e-05, 16.7016, 0, -100, -5.97295e-06, 0.00994492, 0.374259, -0.165409 )
 mesh = SubResource( 3 )
 material/0 = null
 
-[node name="CollisionShape" type="CollisionShape" parent="binbin"]
+[node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00336504, 0.385522, 0.0335214 )
 shape = SubResource( 4 )
 
-[node name="CollisionShape2" type="CollisionShape" parent="binbin"]
+[node name="CollisionShape2" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.939991, -0.3412, 0, 0.3412, 0.939991, 0.00336504, 1.91792, -1.14651 )
 shape = SubResource( 5 )
 
-[node name="CollisionShape3" type="CollisionShape" parent="binbin"]
+[node name="CollisionShape3" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.939991, -0.3412, 0, 0.3412, 0.939991, 0.00336504, 3.24384, -0.866633 )
 shape = SubResource( 6 )
 
-[node name="front" type="VehicleWheel" parent="binbin"]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.352513, -1.68388 )
+[node name="front" type="VehicleWheel" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.352513, -1.68388 )
 use_as_traction = true
-wheel_radius = 0.35
+wheel_radius = 0.33
 wheel_friction_slip = 1.0
 suspension_stiffness = 100.0
-damping_compression = 0.88
 
-[node name="wheelFront" type="MeshInstance" parent="binbin/front"]
+[node name="wheelFront" type="MeshInstance" parent="front"]
 transform = Transform( 0, -7.90563e-06, 46.3096, -33.1586, 0, 0, 0, -33.1586, -1.10411e-05, 0.00504494, -0.0023554, 0.00333869 )
 mesh = SubResource( 7 )
 material/0 = null
 
-[node name="back" type="VehicleWheel" parent="binbin"]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.353, 1.782 )
+[node name="back" type="VehicleWheel" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.353, 1.782 )
 use_as_steering = true
-wheel_radius = 0.35
+wheel_radius = 0.33
 wheel_friction_slip = 1.0
 suspension_stiffness = 100.0
-damping_compression = 0.88
 
-[node name="wheelBack" type="MeshInstance" parent="binbin/back"]
+[node name="wheelBack" type="MeshInstance" parent="back"]
 transform = Transform( 0, -7.90563e-06, 46.3096, -33.1586, 0, 0, 0, -33.1586, -1.10411e-05, 0.00504494, -0.00284284, 0.000446081 )
 mesh = SubResource( 8 )
 material/0 = null
-
-[node name="RemoteTransform" type="RemoteTransform" parent="binbin"]
-remote_path = NodePath("../../Pivot")
-update_rotation = false
-update_scale = false
-
-[node name="astronaut" parent="binbin" instance=ExtResource( 3 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.0395941, 0.654404, 0.51568 )
-
-[node name="Pivot" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-
-[node name="Camera" type="Camera" parent="Pivot"]
-transform = Transform( -0.393564, 0.134387, -0.909422, 0.000597916, 0.989295, 0.145931, 0.919297, 0.0568894, -0.389431, -10.6343, 8.27648, -2.20387 )
-fov = 79.7344
