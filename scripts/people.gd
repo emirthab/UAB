@@ -2,10 +2,9 @@ extends RigidBody
 
 func _ready():
 	$Area.connect("body_entered",self,"_on_Body_entered")
-	#$model/AnimationPlayer.get_animation("courier|mixamocom|Layer0").loop = true
-	$model/AnimationPlayer.playback_speed = 2
-	$model/AnimationPlayer.play("courier|mixamocom|Layer0")
-
+	var animName = $model/AnimationPlayer.get_animation_list()[0]
+	$model/AnimationPlayer.get_animation(animName).loop = true
+	$model/AnimationPlayer.play(animName)
 
 func _on_Body_entered(body):
 	if body.name == "player":

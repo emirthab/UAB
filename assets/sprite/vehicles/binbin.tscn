@@ -97,9 +97,11 @@ surfaces/0 = {
 
 [node name="player" type="VehicleBody" parent="."]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
+mass = 14.05
 axis_lock_linear_x = true
 axis_lock_angular_y = true
 axis_lock_angular_z = true
+linear_damp = -0.5
 script = ExtResource( 2 )
 
 [node name="Cylinder" type="MeshInstance" parent="player"]
@@ -132,8 +134,9 @@ shape = SubResource( 6 )
 [node name="front" type="VehicleWheel" parent="player"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.352513, -1.68388 )
 use_as_traction = true
+wheel_roll_influence = 0.5
 wheel_radius = 0.4
-wheel_friction_slip = 1.0
+wheel_friction_slip = 4.0
 suspension_travel = 2.0
 suspension_stiffness = 50.0
 damping_compression = 0.88
@@ -146,8 +149,9 @@ material/0 = null
 [node name="back" type="VehicleWheel" parent="player"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.353, 1.782 )
 use_as_steering = true
+wheel_roll_influence = 0.5
 wheel_radius = 0.4
-wheel_friction_slip = 1.0
+wheel_friction_slip = 4.0
 suspension_travel = 2.0
 suspension_stiffness = 50.0
 damping_compression = 0.88

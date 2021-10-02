@@ -20,9 +20,23 @@ shape = SubResource( 1 )
 [node name="model" parent="." instance=ExtResource( 1 )]
 transform = Transform( 2.86645, 0, 0, 0, 2.86645, 0, 0, 0, 2.86645, 0, -0.839639, 0 )
 
+[node name="courier" parent="model" index="0"]
+transform = Transform( 0.981734, 0.0901481, 0.167543, -0.087789, 0.995908, -0.02145, -0.168791, 0.00634978, 0.985631, -0.0527399, 0.0212127, 0.00332868 )
+
+[node name="BoneAttachment" parent="model/courier/Skeleton" index="0"]
+transform = Transform( -0.997961, -0.0560519, 0.0305345, -0.0543808, 0.997109, 0.0530544, -0.0334201, 0.0512857, -0.998125, -0.0123517, 0.952247, 0.00913612 )
+
+[node name="BoneAttachment2" parent="model/courier/Skeleton" index="1"]
+transform = Transform( -0.997961, -0.0560519, 0.0305345, -0.0543808, 0.997109, 0.0530544, -0.0334201, 0.0512857, -0.998125, -0.0123517, 0.952247, 0.00913612 )
+
+[node name="AnimationPlayer" parent="model" index="1"]
+autoplay = "courier|mixamocom|Layer0"
+
 [node name="Area" type="Area" parent="."]
 transform = Transform( 1.59247, 0, 0, 0, 1.59247, 0, 0, 0, 1.59247, 0, 0.569701, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.892723, 0 )
 shape = SubResource( 2 )
+
+[editable path="model"]

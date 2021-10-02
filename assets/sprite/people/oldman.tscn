@@ -17,3 +17,17 @@ shape = SubResource( 1 )
 
 [node name="model" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, -0.885, 0 )
+
+[node name="base" parent="model" index="0"]
+transform = Transform( 0.998621, 0.0235543, 0.0469098, -0.0227428, 0.999584, -0.0177584, -0.0473085, 0.0166671, 0.998741, -0.011895, -0.00532673, -0.00605178 )
+
+[node name="BoneAttachment" parent="model/base/Skeleton" index="0"]
+transform = Transform( -0.999701, -0.00172311, -0.0243876, -0.00311024, 0.998372, 0.0569555, 0.0242497, 0.0570143, -0.998078, -0.00411059, 0.952572, 0.00567313 )
+
+[node name="BoneAttachment2" parent="model/base/Skeleton" index="1"]
+transform = Transform( -0.999701, -0.00172311, -0.0243876, -0.00311024, 0.998372, 0.0569555, 0.0242497, 0.0570143, -0.998078, -0.00411059, 0.952572, 0.00567313 )
+
+[node name="AnimationPlayer" parent="model" index="1"]
+autoplay = "base|mixamocom|Layer0"
+
+[editable path="model"]

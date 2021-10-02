@@ -1,18 +1,25 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://assets/geometry/people/police.glb" type="PackedScene" id=1]
-[ext_resource path="res://scripts/people.gd" type="Script" id=2]
+[ext_resource path="res://scripts/inactivePeople.gd" type="Script" id=2]
 
-[sub_resource type="CapsuleShape" id=1]
-radius = 0.412078
-
-[node name="police" type="RigidBody"]
+[node name="police" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.871683, 0 )
 script = ExtResource( 2 )
 
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1.8, 0, 0, 0, -7.86805e-08, -1.8, 0, 1.8, -7.86805e-08, 0, 0.752098, 0 )
-shape = SubResource( 1 )
-
 [node name="model" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, -0.885, 0 )
+
+[node name="security" parent="model" index="0"]
+transform = Transform( 0.998623, 0.0235079, 0.0469039, -0.0226965, 0.999585, -0.0177582, -0.0473019, 0.0166692, 0.998742, -0.0118913, -0.00535069, -0.00610713 )
+
+[node name="BoneAttachment" parent="model/security/Skeleton" index="0"]
+transform = Transform( -0.999701, -0.00167682, -0.0243909, -0.00306424, 0.998372, 0.0569567, 0.0242557, 0.0570145, -0.998078, -0.00409349, 0.952572, 0.00567319 )
+
+[node name="BoneAttachment2" parent="model/security/Skeleton" index="1"]
+transform = Transform( -0.999701, -0.00167682, -0.0243909, -0.00306424, 0.998372, 0.0569567, 0.0242557, 0.0570145, -0.998078, -0.00409349, 0.952572, 0.00567319 )
+
+[node name="AnimationPlayer" parent="model" index="1"]
+autoplay = "security|mixamocom|Layer0"
+
+[editable path="model"]
