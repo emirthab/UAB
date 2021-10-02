@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/debug_pattern.png-8815a93bad40913da3c6be157d20d7c4.s3tc.stex"
-path.etc2="res://.import/debug_pattern.png-8815a93bad40913da3c6be157d20d7c4.etc2.stex"
+path.s3tc="res://.import/demo.jpg-f5b958075907cb95a3e796e1c3574dbc.s3tc.stex"
+path.etc2="res://.import/demo.jpg-f5b958075907cb95a3e796e1c3574dbc.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://addons/waterways/textures/debug_pattern.png"
-dest_files=[ "res://.import/debug_pattern.png-8815a93bad40913da3c6be157d20d7c4.s3tc.stex", "res://.import/debug_pattern.png-8815a93bad40913da3c6be157d20d7c4.etc2.stex" ]
+source_file="res://assets/textures/demo.jpg"
+dest_files=[ "res://.import/demo.jpg-f5b958075907cb95a3e796e1c3574dbc.s3tc.stex", "res://.import/demo.jpg-f5b958075907cb95a3e796e1c3574dbc.etc2.stex" ]
 
 [params]
 
@@ -25,7 +25,7 @@ flags/repeat=true
 flags/filter=true
 flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false

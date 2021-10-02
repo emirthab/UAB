@@ -27,10 +27,6 @@ Globals="*res://scripts/globals.gd"
 window/size/width=500
 window/size/height=820
 
-[editor_plugins]
-
-enabled=PoolStringArray( "res://addons/waterways/plugin.cfg" )
-
 [input]
 
 move={
