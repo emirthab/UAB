@@ -1,9 +1,49 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/coin.gd" type="Script" id=1]
 [ext_resource path="res://assets/geometry/coin.fbx" type="PackedScene" id=2]
 
 [sub_resource type="BoxShape" id=1]
+
+[sub_resource type="Animation" id=3]
+resource_name = "collect"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("coin:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 90, -102.359, 0 ), Vector3( -84.608, 180, -77.6409 ), Vector3( 90, -102.359, 0 ), Vector3( -84.608, 180, -77.6409 ), Vector3( -84.608, 180, -77.6409 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("coin:translation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 37.2616, -1.62876e-06, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("coin:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.999998, 0.999999, 2.89223 ), Vector3( 0.1, 0.1, 0.2 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "idle"
@@ -16,10 +56,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.6, 0.9, 1.2, 1.7 ),
+"times": PoolRealArray( 0, 0.6, 0.9, 1.2, 1.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( 0, 0, 0 ), Vector3( -0.209052, 9.13795e-09, 0 ), Vector3( -0.309835, 1.35433e-08, 0 ), Vector3( -0.209052, 9.13795e-09, 0 ), Vector3( 0, 0, 0 ) ]
+"values": [ Vector3( -0.228339, 9.98102e-09, 0 ), Vector3( -1.52982, 6.68707e-08, 0 ), Vector3( -1.71987, 7.5178e-08, 0 ), Vector3( -1.52982, 6.68707e-08, 0 ), Vector3( -0.228339, 9.98102e-09, 0 ) ]
 }
 
 [node name="coin" type="Area"]
@@ -31,7 +71,7 @@ transform = Transform( 1, -2.4869e-14, 0, 2.4869e-14, 1, 0, 0, 0, 1, 0, 0.23329,
 shape = SubResource( 1 )
 
 [node name="coin" parent="." instance=ExtResource( 2 )]
-transform = Transform( -0.214036, -0.976825, -9.30807e-08, 1.35779e-07, -8.37249e-08, -2.89223, 0.976825, -0.214036, 5.20542e-08, -0.228339, 9.98102e-09, 0 )
+transform = Transform( -0.214036, -0.976825, 1.23494e-07, 0, -4.37113e-08, -2.89223, 0.976824, -0.214036, 2.70591e-08, 0, 0, 0 )
 
 [node name="RootNode" parent="coin" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, -6.21725e-15, 7.10543e-15, 7.10543e-15, 1, 4.58733e-09, -4.58739e-09, -0.104946 )
@@ -41,6 +81,7 @@ transform = Transform( 100, 0, -9.09495e-13, 0, 100, 2.27374e-13, 0, 0, 227.891,
 cast_shadow = 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/collect = SubResource( 3 )
 anims/idle = SubResource( 2 )
 
 [connection signal="body_entered" from="." to="." method="_on_coin_body_entered"]

@@ -132,9 +132,10 @@ shape = SubResource( 6 )
 [node name="front" type="VehicleWheel" parent="binbin"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.352513, -1.68388 )
 use_as_traction = true
-wheel_radius = 0.35
+wheel_radius = 0.4
 wheel_friction_slip = 1.0
-suspension_stiffness = 100.0
+suspension_travel = 2.0
+suspension_stiffness = 50.0
 damping_compression = 0.88
 
 [node name="wheelFront" type="MeshInstance" parent="binbin/front"]
@@ -145,9 +146,10 @@ material/0 = null
 [node name="back" type="VehicleWheel" parent="binbin"]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.353, 1.782 )
 use_as_steering = true
-wheel_radius = 0.35
+wheel_radius = 0.4
 wheel_friction_slip = 1.0
-suspension_stiffness = 100.0
+suspension_travel = 2.0
+suspension_stiffness = 50.0
 damping_compression = 0.88
 
 [node name="wheelBack" type="MeshInstance" parent="binbin/back"]
@@ -166,7 +168,7 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.03959
 [node name="Pivot" type="Spatial" parent="."]
 
 [node name="Camera" type="Camera" parent="Pivot"]
-transform = Transform( -0.393564, 0.134387, -0.909422, 0.000597916, 0.989295, 0.145931, 0.919297, 0.0568894, -0.389431, -10.6343, 8.27648, -2.20387 )
+transform = Transform( -0.861603, 0.0760437, -0.501854, 0.00182178, 0.989171, 0.146757, 0.507579, 0.125532, -0.852412, -7.2535, 9.42653, -8.09433 )
 current = true
 fov = 79.7344
 far = 1251.0

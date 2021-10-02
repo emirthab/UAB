@@ -1,22 +1,20 @@
 extends VehicleBody
 
-var velocityMax = 20
-var power = 250
-var accelSpeed = 100
+var velocityMax = 30
+var accelSpeed = 60
 
 var status = 0
-#func _ready():
-#	firstRot = rotation.y
 
 func _physics_process(delta):
 	if Input.is_action_pressed("move"):
+		linear_velocity.z -= accelSpeed * delta
 		if status == 1:
 			status = 0
 			$astronaut/AnimationPlayer.play_backwards("metarigAction")
-		brake = lerp(brake,power,accelSpeed * delta * 2)
+
 	else:
+		linear_velocity.z += accelSpeed * delta
 		if status == 0:
 			status = 1
 			$astronaut/AnimationPlayer.play("metarigAction")
-		engine_force = lerp(engine_force,power,accelSpeed * delta)
-		brake = 0
+	linear_velocity.z = clamp(linear_velocity.z,0,velocityMax)
