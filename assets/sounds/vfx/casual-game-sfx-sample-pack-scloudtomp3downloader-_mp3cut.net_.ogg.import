@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/casual-game-sfx-sample-pack-scloudtomp3downloader-_mp3cut.net_.ogg-e85c3743a0b95a84112cc4c7eb216b46.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/vfx/casual-game-sfx-sample-pack-scloudtomp3downloader-_mp3cut.net_.ogg"
+dest_files=[ "res://.import/casual-game-sfx-sample-pack-scloudtomp3downloader-_mp3cut.net_.ogg-e85c3743a0b95a84112cc4c7eb216b46.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/cami.fbx-4cb2dfedff978c9a961c999b412972b3.scn"
+path="res://.import/bulut4.fbx-a89a360d036db5060e79b244a10e50f1.scn"
 
 [deps]
 
-source_file="res://assets/geometry/buildings/cami.fbx"
-dest_files=[ "res://.import/cami.fbx-4cb2dfedff978c9a961c999b412972b3.scn" ]
+source_file="res://assets/geometry/clouds/bulut4.fbx"
+dest_files=[ "res://.import/bulut4.fbx-a89a360d036db5060e79b244a10e50f1.scn" ]
 
 [params]
 
@@ -16,7 +16,6 @@ nodes/root_name="Scene Root"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
-nodes/use_legacy_names=true
 materials/location=1
 materials/storage=1
 materials/keep_on_reimport=true
