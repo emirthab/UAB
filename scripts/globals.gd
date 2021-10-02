@@ -3,4 +3,4 @@ extends Node
 var coin = 0
 
 func _ready():
-	pass
+	get_tree().current_scene.get_node("AnimationPlayer").play("people")

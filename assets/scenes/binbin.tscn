@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=2]
@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/geometry/environment/duba.fbx" type="PackedScene" id=6]
 [ext_resource path="res://assets/geometry/environment/lamba.fbx" type="PackedScene" id=7]
 [ext_resource path="res://assets/sprite/coin.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scripts/sceneBinbin.gd" type="Script" id=9]
+[ext_resource path="res://assets/sprite/people/woman_3.tscn" type="PackedScene" id=9]
 [ext_resource path="res://assets/textures/demo.jpg" type="Texture" id=12]
 
 [sub_resource type="PlaneMesh" id=1]
@@ -53,9 +53,37 @@ normal_bias = 0.0
 propagation = 0.77
 interior = true
 
+[sub_resource type="Animation" id=11]
+resource_name = "people"
+length = 11.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PEOPLE/woman_3:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PEOPLE/woman_3:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+
 [node name="binbin" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.129248, 0 )
-script = ExtResource( 9 )
 
 [node name="player" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.21433, -223.722 )
@@ -131,6 +159,66 @@ material/0 = null
 
 [node name="yol13" type="MeshInstance" parent="road"]
 transform = Transform( -3, 4.83187e-08, 0, -4.52987e-07, -0.32, 0, 0, 0, 0.281, 108.054, 0.35682, -7.6259 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol24" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, 7.41579 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol25" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, 5.75532 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol26" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, 4.08841 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol27" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, 2.42794 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol28" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, 0.598303 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol29" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, -1.06217 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol30" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, -2.72908 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol31" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, -4.38955 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol32" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, -5.96543 )
+use_in_baked_light = true
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="yol33" type="MeshInstance" parent="road"]
+transform = Transform( -3, 4.83187e-08, -1.77636e-15, -4.52987e-07, -0.32, 0, 0, -2.11758e-22, 0.281, 170.168, 0.35682, -7.6259 )
 use_in_baked_light = true
 mesh = SubResource( 3 )
 material/0 = null
@@ -451,7 +539,7 @@ directional_shadow_blend_splits = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 8 )
 
-[node name="CSGBox" type="CSGBox" parent="."]
+[node name="sea" type="CSGBox" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 190.826, -6.39073, 0 )
 width = 391.309
 depth = 492.824
@@ -466,16 +554,24 @@ bias = 1.042
 interior = true
 data = SubResource( 10 )
 
-[node name="coins" type="Spatial" parent="."]
+[node name="PEOPLE" type="Spatial" parent="."]
 
-[node name="coin" parent="coins" instance=ExtResource( 8 )]
+[node name="woman_3" parent="PEOPLE" instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.46466, 1.19426, -168.303 )
+
+[node name="COINS" type="Spatial" parent="."]
+
+[node name="coin" parent="COINS" instance=ExtResource( 8 )]
 transform = Transform( -2.25542e-08, -0.515979, 0, 0.515979, -2.25542e-08, 0, 0, 0, 0.515979, 0.00687218, 2.73123, -197.217 )
 
-[node name="coin2" parent="coins" instance=ExtResource( 8 )]
+[node name="coin2" parent="COINS" instance=ExtResource( 8 )]
 transform = Transform( -2.25542e-08, -0.515979, 0, 0.515979, -2.25542e-08, 0, 0, 0, 0.515979, 0.00687218, 2.73123, -194.843 )
 
-[node name="coin3" parent="coins" instance=ExtResource( 8 )]
+[node name="coin3" parent="COINS" instance=ExtResource( 8 )]
 transform = Transform( -2.25542e-08, -0.515979, 0, 0.515979, -2.25542e-08, 0, 0, 0, 0.515979, 0.00687218, 2.73123, -192.503 )
 
-[node name="coin4" parent="coins" instance=ExtResource( 8 )]
+[node name="coin4" parent="COINS" instance=ExtResource( 8 )]
 transform = Transform( -2.25542e-08, -0.515979, 0, 0.515979, -2.25542e-08, 0, 0, 0, 0.515979, 0.00687218, 2.73123, -190.01 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/people = SubResource( 11 )
