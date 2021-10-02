@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/scooter-sound.ogg-a9f44628647a03314b01a90346a61bd1.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/scooter-sound.ogg"
+dest_files=[ "res://.import/scooter-sound.ogg-a9f44628647a03314b01a90346a61bd1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
