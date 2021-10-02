@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="PanoramaSky" id=7]
+radiance_size = 3
+
+[sub_resource type="Environment" id=8]
+background_mode = 1
+background_sky = SubResource( 7 )
+background_sky_custom_fov = 136.0
+background_color = Color( 0.764706, 0.937255, 0.905882, 1 )
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource( 8 )

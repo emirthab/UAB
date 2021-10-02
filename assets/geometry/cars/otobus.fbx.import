@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/woman.glb-1004b628d9f7e0e65dad28441cbc5a4e.scn"
+path="res://.import/otobus.fbx-399b65b6ba8e7d570a6cce524bbeb151.scn"
 
 [deps]
 
-source_file="res://assets/geometry/people/woman.glb"
-dest_files=[ "res://.import/woman.glb-1004b628d9f7e0e65dad28441cbc5a4e.scn" ]
+source_file="res://assets/geometry/cars/otobus.fbx"
+dest_files=[ "res://.import/otobus.fbx-399b65b6ba8e7d570a6cce524bbeb151.scn" ]
 
 [params]
 

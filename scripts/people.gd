@@ -2,7 +2,7 @@ extends Node
 
 func _ready():
 	$model/AnimationPlayer.play("courier|mixamocom|Layer0")
-	$model/AnimationPlayer.get_animation("courier|mixamocom|Layer0").loop = true
+#	$model/AnimationPlayer.get_animation("courier|mixamocom|Layer0").loop = true
 
 
 
