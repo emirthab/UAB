@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sademoji.png-4a60306c3b28cf2e7b8f86a35c6fbe9f.stex"
+path="res://.import/emoji_lose.png-ec828d881df556838e72e6d1073b15aa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/gui/textures/sademoji.png"
-dest_files=[ "res://.import/sademoji.png-4a60306c3b28cf2e7b8f86a35c6fbe9f.stex" ]
+source_file="res://assets/gui/textures/emoji_lose.png"
+dest_files=[ "res://.import/emoji_lose.png-ec828d881df556838e72e6d1073b15aa.stex" ]
 
 [params]
 
