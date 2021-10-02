@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/trafiklamb.fbx" type="PackedScene" id=2]
@@ -10,11 +10,12 @@
 [ext_resource path="res://assets/geometry/cars/polis2.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/geometry/environment/lamba.fbx" type="PackedScene" id=9]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=10]
-[ext_resource path="res://assets/geometry/environment/cal.fbx" type="PackedScene" id=11]
+[ext_resource path="res://assets/sprite/vehicles/bus.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/geometry/environment/cal2.fbx" type="PackedScene" id=12]
 [ext_resource path="res://assets/geometry/environment/cal3.fbx" type="PackedScene" id=13]
 [ext_resource path="res://assets/geometry/environment/cop.fbx" type="PackedScene" id=14]
 [ext_resource path="res://assets/geometry/buildings/mosque.fbx" type="PackedScene" id=15]
+[ext_resource path="res://assets/geometry/environment/cal.fbx" type="PackedScene" id=16]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -616,10 +617,10 @@ transform = Transform( 93.7237, 0, 0, 0, -5.89127e-05, 361.366, 0, -164.732, -0.
 
 [node name="çalılar" type="Spatial" parent="environment"]
 
-[node name="cal" parent="environment/çalılar" instance=ExtResource( 11 )]
+[node name="cal" parent="environment/çalılar" instance=ExtResource( 16 )]
 transform = Transform( -3.08951e-08, 0, 0.706797, 0, 1.46944, 0, -1.46944, 0, -6.42312e-08, 26.5249, 2.4429, -57.5024 )
 
-[node name="cal6" parent="environment/çalılar" instance=ExtResource( 11 )]
+[node name="cal6" parent="environment/çalılar" instance=ExtResource( 16 )]
 transform = Transform( -3.08951e-08, 0, 0.706797, 0, 1.46944, 0, -1.46944, 0, -6.42312e-08, 222.556, 2.4429, -57.5024 )
 
 [node name="cal2" parent="environment/çalılar" instance=ExtResource( 12 )]
@@ -867,3 +868,6 @@ material/0 = SubResource( 10 )
 transform = Transform( 482.973, 0, 0, 0, 1, 0, 0, 0, 55.1968, 479.093, 0.982277, 5.96842 )
 mesh = SubResource( 11 )
 material/0 = SubResource( 12 )
+
+[node name="bus" parent="." instance=ExtResource( 11 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 21.1178, 0.972795, 47.1764 )
