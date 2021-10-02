@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=2]
 [ext_resource path="res://assets/geometry/environment/simitcar.fbx" type="PackedScene" id=3]
-[ext_resource path="res://assets/sprite/vehicles/binbin.tscn" type="PackedScene" id=4]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -206,12 +205,6 @@ transform = Transform( -1.46474, 0, 0.323304, 0, 1.5, 0, -0.323304, 0, -1.46474,
 [node name="simitcar6" parent="environment" instance=ExtResource( 3 )]
 transform = Transform( 1.01325, 0, -1.10604, 0, 1.5, 0, 1.10604, 0, 1.01325, -194.34, 3.0882, 13.8311 )
 
-[node name="vehicles" type="Spatial" parent="."]
-transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, 0, 0 )
-
-[node name="binbin" parent="vehicles" instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.259455, 0.783301, 225.858 )
-
 [node name="plane2" type="Spatial" parent="."]
 
 [node name="plane" type="MeshInstance" parent="plane2"]
@@ -222,3 +215,4 @@ material/0 = SubResource( 5 )
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 0.457998, 0.493522, 0.109911, 0.259984, -0.357061, 0.519926, 0.433651, -0.307165, -0.427789, 0, 16.2704, 0 )
 shadow_enabled = true
+directional_shadow_max_distance = 197.0

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/astronaut.fbx-16e22f4e8fadb893a45bae762f930ba2.scn"
+path="res://.import/polis.fbx-995528ac63d5906e70f73467c83587f2.scn"
 
 [deps]
 
-source_file="res://assets/geometry/astronaut/astronaut.fbx"
-dest_files=[ "res://.import/astronaut.fbx-16e22f4e8fadb893a45bae762f930ba2.scn" ]
+source_file="res://assets/geometry/cars/polis.fbx"
+dest_files=[ "res://.import/polis.fbx-995528ac63d5906e70f73467c83587f2.scn" ]
 
 [params]
 
@@ -16,6 +16,7 @@ nodes/root_name="Scene Root"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
+nodes/use_legacy_names=false
 materials/location=1
 materials/storage=1
 materials/keep_on_reimport=true
