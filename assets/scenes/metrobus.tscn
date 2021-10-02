@@ -296,9 +296,6 @@ transform = Transform( 2.74248, 0, 0, 0, 2.74248, 0, 0, 0, 2.74248, 74.8117, 40.
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -53.0129, 9.7648, 33.9568 )
 visible = false
 
-[node name="Pivot" parent="binbin" index="1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-
 [node name="Camera" parent="binbin/Pivot" index="0"]
 transform = Transform( -0.861603, 0.0760437, -0.501853, 0.00182178, 0.989171, 0.146757, 0.507579, 0.125532, -0.852411, -8.57061, 11.78, -9.89549 )
 
