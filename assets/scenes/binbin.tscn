@@ -17,7 +17,7 @@
 [ext_resource path="res://assets/geometry/environment/Mudrock2.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/geometry/clouds/cloud-1.tscn" type="PackedScene" id=16]
 [ext_resource path="res://assets/geometry/clouds/cloud-2.tscn" type="PackedScene" id=17]
-[ext_resource path="res://assets/textures/sky-1.png" type="Texture" id=18]
+[ext_resource path="res://assets/textures/sky-3.png" type="Texture" id=18]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -43,7 +43,6 @@ panorama = ExtResource( 18 )
 [sub_resource type="Environment" id=9]
 background_mode = 2
 background_sky = SubResource( 15 )
-background_sky_custom_fov = 25.4
 background_color = Color( 0.764706, 0.937255, 0.905882, 1 )
 
 [sub_resource type="SpatialMaterial" id=10]
