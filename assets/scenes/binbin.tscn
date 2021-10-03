@@ -2351,7 +2351,7 @@ playback_speed = 2.0
 anims/anim = SubResource( 21 )
 
 [node name="Area" type="Area" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -190.854 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 685.276 )
 script = ExtResource( 26 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Area"]
