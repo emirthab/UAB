@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/trafiklamb.fbx" type="PackedScene" id=2]
@@ -360,25 +360,44 @@ albedo_color = Color( 0.878431, 0.866667, 0.0313726, 1 )
 
 [sub_resource type="PlaneMesh" id=9]
 
-[sub_resource type="SpatialMaterial" id=10]
-albedo_color = Color( 0.462745, 0.682353, 0.145098, 1 )
+[sub_resource type="SpatialMaterial" id=29]
+albedo_color = Color( 0.572549, 0.941176, 0.486275, 1 )
 
 [sub_resource type="PlaneMesh" id=12]
+
+[sub_resource type="SpatialMaterial" id=30]
+albedo_color = Color( 0.905882, 0.341176, 0.341176, 1 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0.462745, 0.682353, 0.145098, 1 )
 
 [sub_resource type="SpatialMaterial" id=13]
 albedo_color = Color( 0.345098, 0.615686, 0.482353, 1 )
 
-[sub_resource type="BoxShape" id=26]
-extents = Vector3( 2846.86, 6.33954, 92.9407 )
-
 [sub_resource type="BoxShape" id=27]
-extents = Vector3( 32.3733, 3.40907, 30.7518 )
+extents = Vector3( 659.671, 3.40907, 30.7518 )
+
+[sub_resource type="GIProbeData" id=28]
+bounds = AABB( -1976.88, -156.445, -208.03, 3953.76, 312.889, 416.059 )
+cell_size = 30.8887
+to_cell_xform = Transform( 0.0323742, 0, 0, 0, 0.0323742, 0, 0, 0, 0.0323742, 64, 5.06477, 6.7348 )
+dynamic_data = PoolIntArray( 0, 8, 128, 16, 16, 14, 4, 14592, 2095497056, 32722, 3, 0, -1997774480, 32722, 0, 0, 1, -1, -1, -1, -1, -1, -1, -1, 0, 0, 8355711, 0, 2, -1, -1, -1, -1, -1, -1, -1, 0, 0, 8355711, 65536, 3, -1, -1, -1, -1, -1, -1, -1, 0, 0, 8355711, 131079, -1, -1, -1, -1, 4, -1, -1, -1, 0, 0, 8355711, 196671, -1, 5, -1, -1, -1, -1, -1, -1, 0, 0, 8355711, 262655, 10, 6, -1, -1, 12, 8, -1, -1, 0, 0, 8355711, 331775, -1, -1, -1, -1, -1, -1, 7, -1, 0, 0, 8355711, 401407, -1, -1, -1, -1, -1, -1, -1, -1, 16777215, 0, 12127621, 524287, -1, -1, 9, -1, -1, -1, -1, -1, 0, 0, 8355711, 401407, -1, -1, -1, -1, -1, -1, -1, -1, 16777215, 0, 15841145, 524287, -1, -1, -1, -1, -1, -1, -1, 11, 0, 0, 8355711, 401407, -1, -1, -1, -1, -1, -1, -1, -1, 16777215, 0, 2434422, 524287, -1, -1, -1, 13, -1, -1, -1, -1, 0, 0, 8355711, 401407, -1, -1, -1, -1, -1, -1, -1, -1, 16777215, 0, 237189, 524287 )
+dynamic_range = 4
+energy = 0.5
+bias = 1.042
+normal_bias = 0.0
+propagation = 0.77
+interior = true
 
 [node name="Spatial" type="Spatial"]
 
 [node name="WorldEnvironment" parent="." instance=ExtResource( 4 )]
 
 [node name="DirectionalLight" parent="." instance=ExtResource( 5 )]
+transform = Transform( -0.791267, -0.600839, -0.113531, 0.314416, -0.559034, 0.767218, -0.524442, 0.571378, 0.631259, 0.00385055, 11.3893, 0.263012 )
+shadow_color = Color( 0.341176, 0.341176, 0.341176, 1 )
+shadow_contact = 0.19
+directional_shadow_max_distance = 285.1
 
 [node name="PLAYER" parent="." instance=ExtResource( 11 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 21.1178, 0.972795, 47.1764 )
@@ -418,6 +437,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.858564, 0 )
 shape = SubResource( 15 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="cars/car-active-1"]
+autoplay = "anim"
 anims/anim = SubResource( 14 )
 
 [node name="Cube029" parent="cars" instance=ExtResource( 8 )]
@@ -430,7 +450,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5507.31, -1, -29 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5788.01, 1, 29 )
 
 [node name="pembecar2" parent="cars/car-active-2/container" instance=ExtResource( 20 )]
-transform = Transform( -3.93403e-07, 0, 9, 0, 9, 0, -9, 0, -3.93403e-07, 5651.85, 1.514, 32.2982 )
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 5788.01, 1.514, -29.56 )
 
 [node name="Area" type="Area" parent="cars/car-active-2/container/pembecar2"]
 script = ExtResource( 22 )
@@ -440,6 +460,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.858564, 0 )
 shape = SubResource( 15 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="cars/car-active-2/container/pembecar2"]
+autoplay = "anim"
 anims/anim = SubResource( 16 )
 
 [node name="car-active-3" type="Spatial" parent="cars"]
@@ -449,7 +470,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2892.33, -1, -26.096 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5788.01, 1, 29 )
 
 [node name="Cube028" parent="cars/car-active-3/container" instance=ExtResource( 8 )]
-transform = Transform( -3.93402e-05, 900, 3.93403e-05, 0, -3.93403e-05, 900, 900, 3.93403e-05, 1.71962e-12, 5676.23, 1.514, -29.56 )
+transform = Transform( -3.93402e-05, 900, 3.93403e-05, 0, -3.93403e-05, 900, 900, 3.93403e-05, 1.71962e-12, 5788.01, 1.514, -29.56 )
 
 [node name="Area" type="Area" parent="cars/car-active-3/container/Cube028"]
 transform = Transform( -0.01, 1.75443e-21, -2.06632e-09, -2.06632e-09, -1.62921e-09, 0.01, -3.36648e-16, 0.01, 1.62921e-09, -0.00210873, -0.00261891, -4.65661e-10 )
@@ -460,6 +481,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.858564, 0 )
 shape = SubResource( 15 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="cars/car-active-3/container/Cube028"]
+autoplay = "anim"
 anims/anim = SubResource( 17 )
 
 [node name="engeller" type="Spatial" parent="."]
@@ -1346,12 +1368,12 @@ transform = Transform( 9.37437, -107.909, -3.36808e-05, 0, -1.29122e-05, 283.599
 [node name="plane3" type="MeshInstance" parent="SCENES/SCENE-3"]
 transform = Transform( 482.973, 0, 0, 0, 34.111, 0, 0, 0, 100, 481.241, 0.404976, 4.02343 )
 mesh = SubResource( 9 )
-material/0 = SubResource( 10 )
+material/0 = SubResource( 29 )
 
 [node name="MeshInstance3" type="MeshInstance" parent="SCENES/SCENE-3"]
 transform = Transform( 482.973, 0, 0, 0, 1, 0, 0, 0, 55.1968, 479.093, 0.982277, 5.96842 )
 mesh = SubResource( 12 )
-material/0 = SubResource( 13 )
+material/0 = SubResource( 30 )
 
 [node name="SCENE-2" type="Spatial" parent="SCENES"]
 
@@ -3711,16 +3733,33 @@ transform = Transform( 482.973, 0, 0, 0, 1, 0, 0, 0, 55.1968, 1444.19, 0.982277,
 mesh = SubResource( 12 )
 material/0 = SubResource( 13 )
 
-[node name="StaticBody" type="StaticBody" parent="."]
+[node name="Bodies" type="Spatial" parent="."]
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1097.22, -6, 3.683 )
-shape = SubResource( 26 )
+[node name="StaticBody" type="StaticBody" parent="Bodies"]
 
-[node name="Spatial" type="Spatial" parent="."]
-
-[node name="StaticBody" type="StaticBody" parent="Spatial"]
-
-[node name="CollisionShape" type="CollisionShape" parent="Spatial/StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.57655, 33.9359 )
+[node name="CollisionShape" type="CollisionShape" parent="Bodies/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 649.077, -2.57655, 33.9359 )
 shape = SubResource( 27 )
+
+[node name="StaticBody2" type="StaticBody" parent="Bodies"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1310, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Bodies/StaticBody2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 649.077, -2.57655, 33.9359 )
+shape = SubResource( 27 )
+
+[node name="StaticBody3" type="StaticBody" parent="Bodies"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2600, 0, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Bodies/StaticBody3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 649.077, -2.57655, 33.9359 )
+shape = SubResource( 27 )
+
+[node name="GIProbe" type="GIProbe" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1880.55, 110.797, -65.5828 )
+extents = Vector3( 1976.88, 156.445, 208.03 )
+energy = 0.5
+propagation = 0.77
+bias = 1.042
+interior = true
+data = SubResource( 28 )
