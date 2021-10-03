@@ -24,3 +24,15 @@ func _ready():
 		audio.stream = sfx2
 		add_child(audio)
 		audio.play()
+
+
+func _on_Button_pressed():
+	Globals.gameStatus = true
+	$astronaut.visible = false
+	$container2.visible = false
+	$TextureRect.visible = false
+	$AudioStreamPlayer.playing = true
+
+
+func _on_AudioStreamPlayer_finished():
+	queue_free()
