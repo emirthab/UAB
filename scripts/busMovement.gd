@@ -6,7 +6,10 @@ var accelSpeed = 1
 func _physics_process(delta):
 	if Globals.gameStatus:
 		if Input.is_action_pressed("move"):
-			set_engine_force(-400)
+			if linear_velocity.x > 0:
+				set_engine_force(-300)
+			else:
+				set_engine_force(0)
 
 		else:
-			set_engine_force(350)
+			set_engine_force(250)
