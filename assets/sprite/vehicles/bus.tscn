@@ -7,8 +7,8 @@
 [ext_resource path="res://assets/materials/otobus/Glass_002.material" type="Material" id=5]
 [ext_resource path="res://assets/materials/otobus/Material_003.material" type="Material" id=6]
 
-[sub_resource type="BoxShape" id=1]
-extents = Vector3( 0.827845, 0.502702, 5.79059 )
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 0.827845, 0.502702, 3.164 )
 
 [sub_resource type="ArrayMesh" id=2]
 blend_shape_mode = 0
@@ -104,7 +104,7 @@ script = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="player"]
 transform = Transform( -6.52121, 0, 5.70102e-07, 0, 6.52121, 0, -5.70102e-07, 0, -6.52121, -0.603491, 2.70684, 0.994806 )
-shape = SubResource( 1 )
+shape = SubResource( 5 )
 
 [node name="backLeft" type="VehicleWheel" parent="player"]
 transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 4.29742, -2.45365, -8.0308 )

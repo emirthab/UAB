@@ -125,6 +125,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="SpatialMaterial" id=5]
+params_diffuse_mode = 2
 albedo_color = Color( 0.756863, 1, 0, 1 )
 
 [sub_resource type="Animation" id=6]
@@ -370,6 +371,7 @@ albedo_color = Color( 0.6, 0.458824, 0.184314, 1 )
 [sub_resource type="PlaneMesh" id=20]
 
 [sub_resource type="SpatialMaterial" id=21]
+params_diffuse_mode = 2
 albedo_color = Color( 0.878431, 0.866667, 0.0313726, 1 )
 
 [sub_resource type="PlaneMesh" id=22]
