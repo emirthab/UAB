@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=2]
@@ -37,12 +37,12 @@ albedo_color = Color( 0.572549, 0.941176, 0.486275, 1 )
 [sub_resource type="BoxShape" id=7]
 extents = Vector3( 243.763, 1, 34.9834 )
 
-[sub_resource type="PanoramaSky" id=15]
+[sub_resource type="PanoramaSky" id=8]
 panorama = ExtResource( 18 )
 
 [sub_resource type="Environment" id=9]
 background_mode = 2
-background_sky = SubResource( 15 )
+background_sky = SubResource( 8 )
 background_color = Color( 0.764706, 0.937255, 0.905882, 1 )
 
 [sub_resource type="SpatialMaterial" id=10]
@@ -63,14 +63,11 @@ normal_bias = 0.0
 propagation = 0.77
 interior = true
 
-[sub_resource type="SpatialMaterial" id=12]
-albedo_color = Color( 0.756863, 1, 0, 1 )
-
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=12]
 length = 6.4
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("PEOPLE/woman_3:translation")
+tracks/0/path = NodePath("../woman_3:translation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -82,7 +79,7 @@ tracks/0/keys = {
 "values": [ Vector3( -8.46466, 1.19426, -168.303 ), Vector3( 7.47635, 1.19426, -168.303 ), Vector3( 6.74342, 1.19426, -172.305 ), Vector3( -6.63334, 1.19426, -172.305 ), Vector3( -8.46466, 1.19426, -168.303 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("PEOPLE/woman_3:rotation_degrees")
+tracks/1/path = NodePath("../woman_3:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -93,6 +90,9 @@ tracks/1/keys = {
 "update": 0,
 "values": [ Vector3( 0, 90, 0 ), Vector3( 0, 90, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 360, 0 ), Vector3( 0, 360, 0 ) ]
 }
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0.756863, 1, 0, 1 )
 
 [sub_resource type="Animation" id=14]
 length = 6.5
@@ -180,6 +180,34 @@ tracks/6/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector3( 0, -175, 0 ), Vector3( 0, -175, 0 ), Vector3( 0, 5, 0 ), Vector3( 0, 5, 0 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 6.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.3, 3.1, 5.6, 6.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -8.46466, 1.19426, -168.303 ), Vector3( 7.47635, 1.19426, -168.303 ), Vector3( 6.74342, 1.19426, -172.305 ), Vector3( -6.63334, 1.19426, -172.305 ), Vector3( -8.46466, 1.19426, -168.303 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.3, 2.5, 3.1, 3.3, 5.6, 5.8, 6.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 90, 0 ), Vector3( 0, 90, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 360, 0 ), Vector3( 0, 360, 0 ) ]
 }
 
 [node name="binbin" type="Spatial"]
@@ -1729,7 +1757,12 @@ data = SubResource( 11 )
 [node name="PEOPLE" type="Spatial" parent="."]
 
 [node name="woman_3" parent="PEOPLE" instance=ExtResource( 9 )]
-transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -4.49306, 1.19426, -172.305 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.46466, 1.19426, -168.303 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/woman_3"]
+autoplay = "anim"
+playback_speed = 2.0
+anims/anim = SubResource( 12 )
 
 [node name="man" parent="PEOPLE" instance=ExtResource( 6 )]
 transform = Transform( 1.43432, 0, 0, 0, 1.43432, 0, 0, 0, 1.43432, -5.27421, 1.69431, -225.407 )
@@ -1884,56 +1917,56 @@ transform = Transform( -4.37114e-08, -1, 0, 1.12628, -4.92312e-08, 0, 0, 0, 2.60
 use_collision = true
 height = 11.9495
 sides = 11
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGCylinder6" type="CSGCylinder" parent="engeller"]
 transform = Transform( -4.37114e-08, -1, 0, 0.792526, -3.46424e-08, 0, 0, 0, 0.80048, -0.121729, -0.24795, 231.352 )
 use_collision = true
 height = 11.9495
 sides = 11
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGCylinder7" type="CSGCylinder" parent="engeller"]
 transform = Transform( -4.37114e-08, -1, 0, 0.792526, -3.46424e-08, 0, 0, 0, 0.80048, -0.121729, -0.24795, 234.019 )
 use_collision = true
 height = 11.9495
 sides = 11
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGCylinder8" type="CSGCylinder" parent="engeller"]
 transform = Transform( -4.37114e-08, -1, 0, 0.792526, -3.46424e-08, 0, 0, 0, 0.80048, -0.121729, -0.24795, 236.553 )
 use_collision = true
 height = 11.9495
 sides = 11
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGCylinder4" type="CSGCylinder" parent="engeller"]
 transform = Transform( -4.37114e-08, -1, 0, 1.12628, -4.92312e-08, 0, 0, 0, 7.24907, -0.121729, -0.372452, 16.7114 )
 use_collision = true
 height = 11.9495
 sides = 11
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGCylinder12" type="CSGCylinder" parent="engeller"]
 transform = Transform( -4.37114e-08, -1, 0, 1.12628, -4.92312e-08, 0, 0, 0, 1.16154, -0.121729, -0.43747, 564.6 )
 use_collision = true
 height = 11.9495
 sides = 11
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGCylinder13" type="CSGCylinder" parent="engeller"]
 transform = Transform( -4.37114e-08, -1, 0, 1.12628, -4.92312e-08, 0, 0, 0, 1.16154, -0.121729, -0.43747, 573.917 )
 use_collision = true
 height = 11.9495
 sides = 11
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGCylinder14" type="CSGCylinder" parent="engeller"]
 transform = Transform( -4.37114e-08, -1, 0, 1.12628, -4.92312e-08, 0, 0, 0, 1.16154, -0.121729, -0.43747, 583.751 )
 use_collision = true
 height = 11.9495
 sides = 11
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGBox" type="CSGBox" parent="engeller"]
 transform = Transform( 1, 0, 0, 0, 0.995858, 0.0909281, 0, -0.0909281, 0.995858, 0, -5.14217, -78.4936 )
@@ -1941,7 +1974,7 @@ use_collision = true
 width = 7.2095
 height = 14.3156
 depth = 34.2318
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGBox4" type="CSGBox" parent="engeller"]
 transform = Transform( 1, 0, 0, 0, 0.995858, 0.0909281, 0, -0.0909281, 0.995858, 0, -5.14673, 416.704 )
@@ -1949,7 +1982,7 @@ use_collision = true
 width = 7.2095
 height = 14.3156
 depth = 34.2318
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGBox2" type="CSGBox" parent="engeller"]
 transform = Transform( 1, 0, 0, 0, 0.995858, 0.0909281, 0, -0.0909281, 0.995858, 0, -5.12013, 130.242 )
@@ -1957,7 +1990,7 @@ use_collision = true
 width = 7.2095
 height = 14.3156
 depth = 34.2318
-material = SubResource( 12 )
+material = SubResource( 13 )
 
 [node name="CSGBox3" type="CSGBox" parent="engeller"]
 transform = Transform( -1, 7.94919e-09, -8.70607e-08, 0, 0.995858, 0.0909281, 8.74228e-08, 0.0909281, -0.995858, 0, -5.12013, 162.943 )
@@ -1965,12 +1998,7 @@ use_collision = true
 width = 7.2095
 height = 14.3156
 depth = 34.2318
-material = SubResource( 12 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "anim"
-playback_speed = 2.0
-anims/anim = SubResource( 13 )
+material = SubResource( 13 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
 autoplay = "anim"
@@ -1998,3 +2026,14 @@ generate_lightmap = false
 transform = Transform( -520.057, 1834.49, 0.000656064, 0, -0.000675351, 1888.42, 2129.16, 448.082, 0.000160247, 298.254, 83.0904, -45.7049 )
 cast_shadow = 0
 generate_lightmap = false
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 61.1017 )
+
+[node name="woman_4" parent="Spatial" instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.46466, 1.19426, -168.303 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Spatial/woman_4"]
+autoplay = "anim"
+playback_speed = 2.0
+anims/anim = SubResource( 15 )
