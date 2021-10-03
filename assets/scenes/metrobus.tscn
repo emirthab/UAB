@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://assets/DirectionalLight.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/WorldEnvironment.tscn" type="PackedScene" id=2]
@@ -27,7 +27,6 @@
 [ext_resource path="res://assets/geometry/cars/sporcar.fbx" type="PackedScene" id=25]
 [ext_resource path="res://assets/geometry/cars/pembecar.fbx" type="PackedScene" id=26]
 [ext_resource path="res://assets/sprite/coin.tscn" type="PackedScene" id=27]
-[ext_resource path="res://scripts/coin.gd" type="Script" id=28]
 [ext_resource path="res://assets/geometry/environment/finish.fbx" type="PackedScene" id=29]
 [ext_resource path="res://assets/geometry/environment/duba.tscn" type="PackedScene" id=30]
 
@@ -809,9 +808,8 @@ transform = Transform( 3.27882, 0, 5.73288e-07, 0, 3.27882, 0, -5.73288e-07, 0, 
 
 [node name="COİNS" type="Spatial" parent="."]
 
-[node name="coin" type="Area" parent="COİNS" instance=ExtResource( 27 )]
+[node name="coin" parent="COİNS" instance=ExtResource( 27 )]
 transform = Transform( 1.33748e-15, 3.0598e-08, 0.7, 0.7, -3.0598e-08, 2.96462e-22, 3.0598e-08, 0.7, -3.0598e-08, -961.691, 11.4287, 30.7196 )
-script = ExtResource( 28 )
 
 [node name="coin2" parent="COİNS" instance=ExtResource( 27 )]
 transform = Transform( 1.33748e-15, 3.0598e-08, 0.7, 0.7, -3.0598e-08, 2.96462e-22, 3.0598e-08, 0.7, -3.0598e-08, -957.362, 11.4287, 30.7196 )
@@ -960,6 +958,78 @@ transform = Transform( 1.02174e-08, 0, -1, 0, 1, 0, 0.668987, 0, -8.31712e-08, 6
 [node name="duba" parent="finish" instance=ExtResource( 30 )]
 transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.3369e-06, -62.6716, -4.9167e-05, 7.56308, -7.33338, -6.53049 )
 
+[node name="duba5" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33691e-06, -62.6716, -4.9167e-05, 1.19262, -7.0705, 116.12 )
+
+[node name="duba6" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33692e-06, -62.6716, -4.9167e-05, 1.19262, -7.0705, 119.974 )
+
+[node name="duba7" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33692e-06, -62.6716, -4.9167e-05, 1.19262, -7.0705, 123.816 )
+
+[node name="duba8" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33692e-06, -62.6716, -4.9167e-05, 1.19262, -7.0705, 127.723 )
+
+[node name="duba9" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33692e-06, -62.6716, -4.9167e-05, 1.19262, -7.0705, 132.252 )
+
+[node name="duba10" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33692e-06, -62.6716, -4.9167e-05, 1.1926, -7.0705, 327.462 )
+
+[node name="duba11" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33693e-06, -62.6716, -4.9167e-05, 1.1926, -7.0705, 332.655 )
+
+[node name="duba12" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33693e-06, -62.6716, -4.9167e-05, 1.1926, -7.0705, 337.883 )
+
+[node name="duba13" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33693e-06, -62.6716, -4.9167e-05, 1.1926, -7.0705, 343.088 )
+
+[node name="duba14" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33693e-06, -62.6716, -4.9167e-05, 1.1926, -7.0705, 348.025 )
+
+[node name="duba15" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33694e-06, -62.6716, -4.9167e-05, 1.19257, -7.0705, 602.446 )
+
+[node name="duba16" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33694e-06, -62.6716, -4.9167e-05, 1.19257, -7.0705, 607.613 )
+
+[node name="duba17" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33694e-06, -62.6716, -4.9167e-05, 1.19257, -7.0705, 611.57 )
+
+[node name="duba18" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33694e-06, -62.6716, -4.9167e-05, 1.19257, -7.0705, 615.744 )
+
+[node name="duba19" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33695e-06, -62.6716, -4.9167e-05, 1.19254, -7.0705, 836.951 )
+
+[node name="duba20" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33695e-06, -62.6716, -4.9167e-05, 1.19254, -7.0705, 841.267 )
+
+[node name="duba21" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33695e-06, -62.6716, -4.9167e-05, 1.19254, -7.0705, 846.339 )
+
+[node name="duba22" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33695e-06, -62.6716, -4.9167e-05, 1.19254, -7.0705, 850.444 )
+
+[node name="duba23" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33696e-06, -62.6716, -4.9167e-05, 1.19254, -7.0705, 855.308 )
+
+[node name="duba24" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33696e-06, -62.6716, -4.9167e-05, 1.19251, -7.0705, 1059.52 )
+
+[node name="duba25" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33696e-06, -62.6716, -4.9167e-05, 1.19251, -7.0705, 1063.89 )
+
+[node name="duba26" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33696e-06, -62.6716, -4.9167e-05, 1.19251, -7.0705, 1067.59 )
+
+[node name="duba27" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33696e-06, -62.6716, -4.9167e-05, 1.19251, -7.0705, 1071.49 )
+
+[node name="duba28" parent="finish" instance=ExtResource( 30 )]
+transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.33697e-06, -62.6716, -4.9167e-05, 1.19251, -7.0705, 1075.1 )
+
 [node name="duba2" parent="finish" instance=ExtResource( 30 )]
 transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.3369e-06, -62.6716, -4.9167e-05, 3.58708, -7.33338, -6.53049 )
 
@@ -968,4 +1038,3 @@ transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.
 
 [node name="duba4" parent="finish" instance=ExtResource( 30 )]
 transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.3369e-06, -62.6716, -4.9167e-05, -6.1552, -7.33338, -6.53049 )
-[connection signal="body_entered" from="COİNS/coin" to="COİNS/coin" method="_on_coin_body_entered"]

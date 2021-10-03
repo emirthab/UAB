@@ -1,7 +1,12 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/geometry/environment/uydu.fbx" type="PackedScene" id=1]
 [ext_resource path="res://assets/textures/maxresdefault.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/geometry/environment/gok2.fbx" type="PackedScene" id=3]
+[ext_resource path="res://assets/geometry/environment/gok3.fbx" type="PackedScene" id=4]
+[ext_resource path="res://assets/geometry/environment/gok1.fbx" type="PackedScene" id=5]
+[ext_resource path="res://assets/geometry/environment/yldz.fbx" type="PackedScene" id=6]
+[ext_resource path="res://assets/geometry/environment/ay.fbx" type="PackedScene" id=7]
 
 [sub_resource type="PanoramaSky" id=1]
 radiance_size = 0
@@ -15,7 +20,10 @@ background_energy = 0.14
 
 [node name="Spatial" type="Spatial"]
 
-[node name="Spatial" type="Spatial" parent="."]
+[node name="gök taşları" type="Spatial" parent="."]
+
+[node name="ay" parent="gök taşları" instance=ExtResource( 7 )]
+transform = Transform( 82.9672, 0, 0, 0, 82.9672, 0, 0, 0, 82.9672, 248.554, 108.367, -277.478 )
 
 [node name="Spatial2" type="Spatial" parent="."]
 
@@ -28,7 +36,164 @@ transform = Transform( 597.329, 0, 0, 0, 48.082, 0, 0, 0, 609.926, 0, 6.15143, 0
 transform = Transform( -0.476611, -0.165708, -0.863356, 0.533765, -0.834881, -0.13442, -0.698525, -0.524895, 0.486363, 74.6899, 223.391, -443.508 )
 
 [node name="uydu" parent="." instance=ExtResource( 1 )]
-transform = Transform( 2.20462, 1.25226, -0.479804, -0.324121, -0.398306, -2.52883, -1.30127, 2.22079, -0.183003, -85, 92.7061, -236.013 )
+transform = Transform( 1.47753, -2.0997, 0.2586, 0.364353, -0.0581538, -2.55393, 2.08396, 1.49886, 0.263173, -161.154, 16.045, -124.541 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 2 )
+
+[node name="yıldızlar" type="Spatial" parent="."]
+
+[node name="yldz" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.66506, 0, 4.23759, 0, 6.30238, 0, -4.23759, 0, 4.66506, -37.8896, 173.773, -309.147 )
+
+[node name="yldz3" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 3.63379, 0, 5.14932, 0, 6.30238, 0, -5.14932, 0, 3.63379, -37.8896, 119.799, -151.21 )
+
+[node name="yldz4" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.27882, 0, 0.544358, 0, 6.30238, 0, -0.544358, 0, 6.27882, -37.8896, 119.799, -514.665 )
+
+[node name="yldz5" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 5.42433, 0, 3.20883, 0, 6.30238, 0, -3.20883, 0, 5.42433, 34.1506, -52.56, -514.665 )
+
+[node name="yldz6" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, 29.223, -52.56, -865.895 )
+
+[node name="yldz7" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -229.991, -12.0375, -383.861 )
+
+[node name="yldz8" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, 105.291, 106.451, -1026.48 )
+
+[node name="yldz2" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.30238, 0, 0, 0, 6.30238, 0, 0, 0, 6.30238, -236.755, 83.7661, -127.191 )
+
+[node name="yldz9" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.66506, 0, 4.23759, 0, 6.30238, 0, -4.23759, 0, 4.66506, -337.853, 261.32, -309.147 )
+
+[node name="yldz10" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 3.63379, 0, 5.14932, 0, 6.30238, 0, -5.14932, 0, 3.63379, -337.853, 207.346, -151.21 )
+
+[node name="yldz11" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.27882, 0, 0.544358, 0, 6.30238, 0, -0.544358, 0, 6.27882, -337.853, 207.346, -514.665 )
+
+[node name="yldz12" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 5.42433, 0, 3.20883, 0, 6.30238, 0, -3.20883, 0, 5.42433, -265.813, 34.9866, -514.665 )
+
+[node name="yldz13" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -270.741, 34.9866, -865.895 )
+
+[node name="yldz14" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -529.954, 75.5091, -383.861 )
+
+[node name="yldz15" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -194.673, 193.998, -1026.48 )
+
+[node name="yldz16" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.30238, 0, 0, 0, 6.30238, 0, 0, 0, 6.30238, -536.719, 171.313, -127.191 )
+
+[node name="yldz17" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.66506, 0, 4.23759, 0, 6.30238, 0, -4.23759, 0, 4.66506, 171.161, 261.32, 143.686 )
+
+[node name="yldz18" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 3.63379, 0, 5.14932, 0, 6.30238, 0, -5.14932, 0, 3.63379, 171.161, 207.346, 301.624 )
+
+[node name="yldz19" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.27882, 0, 0.544358, 0, 6.30238, 0, -0.544358, 0, 6.27882, 171.161, 207.346, -61.8311 )
+
+[node name="yldz20" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 5.42433, 0, 3.20883, 0, 6.30238, 0, -3.20883, 0, 5.42433, 243.202, 34.9866, -61.8311 )
+
+[node name="yldz21" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, 238.274, 34.9866, -413.062 )
+
+[node name="yldz22" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -20.9399, 75.5091, 51.9881 )
+
+[node name="yldz23" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, 314.342, 193.998, -573.643 )
+
+[node name="yldz24" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.30238, 0, 0, 0, 6.30238, 0, 0, 0, 6.30238, -27.7041, 171.313, 325.642 )
+
+[node name="yldz25" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.66506, 0, 4.23759, 0, 6.30238, 0, -4.23759, 0, 4.66506, -829.914, 173.773, -309.147 )
+
+[node name="yldz26" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 3.63379, 0, 5.14932, 0, 6.30238, 0, -5.14932, 0, 3.63379, -829.914, 119.799, -151.21 )
+
+[node name="yldz27" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.27882, 0, 0.544358, 0, 6.30238, 0, -0.544358, 0, 6.27882, -829.914, 119.799, -514.665 )
+
+[node name="yldz28" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 5.42433, 0, 3.20883, 0, 6.30238, 0, -3.20883, 0, 5.42433, -757.874, -52.56, -514.665 )
+
+[node name="yldz29" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -762.801, -52.56, -865.895 )
+
+[node name="yldz30" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -1022.02, -12.0375, -383.861 )
+
+[node name="yldz31" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -686.733, 106.451, -1026.48 )
+
+[node name="yldz32" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.30238, 0, 0, 0, 6.30238, 0, 0, 0, 6.30238, -1028.78, 83.7661, -127.191 )
+
+[node name="yldz33" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.66506, 0, 4.23759, 0, 6.30238, 0, -4.23759, 0, 4.66506, -1129.88, 261.32, -309.147 )
+
+[node name="yldz34" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 3.63379, 0, 5.14932, 0, 6.30238, 0, -5.14932, 0, 3.63379, -1129.88, 207.346, -151.21 )
+
+[node name="yldz35" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.27882, 0, 0.544358, 0, 6.30238, 0, -0.544358, 0, 6.27882, -1129.88, 207.346, -514.665 )
+
+[node name="yldz36" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 5.42433, 0, 3.20883, 0, 6.30238, 0, -3.20883, 0, 5.42433, -1057.84, 34.9866, -514.665 )
+
+[node name="yldz37" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -1062.76, 34.9866, -865.895 )
+
+[node name="yldz38" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -1321.98, 75.5091, -383.861 )
+
+[node name="yldz39" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -986.697, 193.998, -1026.48 )
+
+[node name="yldz40" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.30238, 0, 0, 0, 6.30238, 0, 0, 0, 6.30238, -1328.74, 171.313, -127.191 )
+
+[node name="yldz41" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.66506, 0, 4.23759, 0, 6.30238, 0, -4.23759, 0, 4.66506, -620.863, 261.32, 143.686 )
+
+[node name="yldz42" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 3.63379, 0, 5.14932, 0, 6.30238, 0, -5.14932, 0, 3.63379, -620.863, 207.346, 301.624 )
+
+[node name="yldz43" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.27882, 0, 0.544358, 0, 6.30238, 0, -0.544358, 0, 6.27882, -620.863, 207.346, -61.8311 )
+
+[node name="yldz44" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 5.42433, 0, 3.20883, 0, 6.30238, 0, -3.20883, 0, 5.42433, -548.823, 34.9866, -166.493 )
+
+[node name="yldz45" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -553.75, 34.9866, -413.062 )
+
+[node name="yldz46" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -812.964, 75.5091, 68.9729 )
+
+[node name="yldz47" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075, -477.682, 193.998, -573.643 )
+
+[node name="yldz48" parent="yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.30238, 0, 0, 0, 6.30238, 0, 0, 0, 6.30238, -819.728, 171.313, 325.642 )
+
+[node name="gök taşları2" type="Spatial" parent="."]
+
+[node name="gok1" parent="gök taşları2" instance=ExtResource( 5 )]
+transform = Transform( 13.0539, 0, 0, 0, 13.0539, 0, 0, 0, 13.0539, -498.294, 1.72145, -180.204 )
+
+[node name="gok2" parent="gök taşları2" instance=ExtResource( 3 )]
+transform = Transform( 13.0539, 0, 0, 0, 13.0539, 0, 0, 0, 13.0539, -367.623, 35.245, -211.264 )
+
+[node name="gok3" parent="gök taşları2" instance=ExtResource( 4 )]
+transform = Transform( 13.0539, 0, 0, 0, 13.0539, 0, 0, 0, 13.0539, -389.896, 12.0114, -191.228 )
