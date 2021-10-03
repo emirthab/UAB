@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/trafiklamb.fbx" type="PackedScene" id=2]
@@ -360,10 +360,16 @@ albedo_color = Color( 0.878431, 0.866667, 0.0313726, 1 )
 
 [sub_resource type="PlaneMesh" id=9]
 
-[sub_resource type="SpatialMaterial" id=10]
-albedo_color = Color( 0.462745, 0.682353, 0.145098, 1 )
+[sub_resource type="SpatialMaterial" id=29]
+albedo_color = Color( 0.572549, 0.941176, 0.486275, 1 )
 
 [sub_resource type="PlaneMesh" id=12]
+
+[sub_resource type="SpatialMaterial" id=30]
+albedo_color = Color( 0.905882, 0.341176, 0.341176, 1 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0.462745, 0.682353, 0.145098, 1 )
 
 [sub_resource type="SpatialMaterial" id=13]
 albedo_color = Color( 0.345098, 0.615686, 0.482353, 1 )
@@ -1362,12 +1368,12 @@ transform = Transform( 9.37437, -107.909, -3.36808e-05, 0, -1.29122e-05, 283.599
 [node name="plane3" type="MeshInstance" parent="SCENES/SCENE-3"]
 transform = Transform( 482.973, 0, 0, 0, 34.111, 0, 0, 0, 100, 481.241, 0.404976, 4.02343 )
 mesh = SubResource( 9 )
-material/0 = SubResource( 10 )
+material/0 = SubResource( 29 )
 
 [node name="MeshInstance3" type="MeshInstance" parent="SCENES/SCENE-3"]
 transform = Transform( 482.973, 0, 0, 0, 1, 0, 0, 0, 55.1968, 479.093, 0.982277, 5.96842 )
 mesh = SubResource( 12 )
-material/0 = SubResource( 13 )
+material/0 = SubResource( 30 )
 
 [node name="SCENE-2" type="Spatial" parent="SCENES"]
 
