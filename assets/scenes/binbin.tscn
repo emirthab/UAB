@@ -864,6 +864,27 @@ transform = Transform( 231.115, -100.876, -8.13681e-06, -1.57187e-05, -3.14373e-
 [node name="Mudrock36" parent="environment/rocks" instance=ExtResource( 15 )]
 transform = Transform( 231.115, -100.876, -8.13681e-06, -1.57187e-05, -3.14373e-05, 403.225, -41.4916, -282.801, -5.79158e-05, -21.6205, 1.14778, 31.3562 )
 
+[node name="Mudrock128" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 837.467, -203.368, 2.51447e-06, -5.67428e-05, -0.000113485, 1455.6, 107.852, -1108.34, -0.000213209, -38.1677, -8.26188, 237.303 )
+
+[node name="Mudrock129" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 81.2179, 724.625, 0.000147121, -5.67427e-05, -0.000113485, 1455.6, 1195.61, -491.148, -3.60341e-05, -40.1839, -8.26187, 265.474 )
+
+[node name="Mudrock134" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( -48.6704, 768.934, 0.00014925, -5.67426e-05, -0.000113485, 1455.59, 1199.22, -325.829, -3.22948e-06, -51.7136, -8.26185, 288.844 )
+
+[node name="Mudrock130" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 292.471, -802.016, -0.000143363, -5.67427e-05, -0.000113485, 1455.6, -1126.23, -10.292, -5.93781e-05, -47.6169, -8.26185, 221.636 )
+
+[node name="Mudrock131" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 300.17, 607.563, 0.00013517, -5.67425e-05, -0.000113485, 1455.59, 1122.08, -747.985, -9.04581e-05, -68.2106, -8.26183, 198.256 )
+
+[node name="Mudrock132" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 826.605, -405.914, -3.80055e-05, -5.67424e-05, -0.000113484, 1455.59, -220.243, -988.207, -0.00020621, -81.166, -8.26181, 187.752 )
+
+[node name="Mudrock133" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 142.763, -789.704, -0.000148557, -5.67424e-05, -0.000113484, 1455.59, -1183.79, 200.229, -2.07685e-05, -99.4127, -8.26181, 195.42 )
+
 [node name="Mudrock37" parent="environment/rocks" instance=ExtResource( 15 )]
 transform = Transform( -216.517, -6.97778, -1.24018e-05, -1.57187e-05, -3.14373e-05, 403.225, -122.709, 317.244, 5.63513e-05, -25.4897, 1.14778, 31.3562 )
 
