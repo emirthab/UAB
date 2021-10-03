@@ -389,6 +389,9 @@ interior = true
 
 [node name="DirectionalLight" parent="." instance=ExtResource( 5 )]
 transform = Transform( -0.791267, -0.600839, -0.113531, 0.314416, -0.559034, 0.767218, -0.524442, 0.571378, 0.631259, 0.00385055, 11.3893, 0.263012 )
+shadow_color = Color( 0.341176, 0.341176, 0.341176, 1 )
+shadow_contact = 0.19
+directional_shadow_max_distance = 285.1
 
 [node name="PLAYER" parent="." instance=ExtResource( 11 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 21.1178, 0.972795, 47.1764 )
