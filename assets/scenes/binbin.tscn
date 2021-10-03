@@ -106,6 +106,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="SpatialMaterial" id=15]
+params_diffuse_mode = 2
 albedo_color = Color( 0.756863, 1, 0, 1 )
 
 [sub_resource type="Animation" id=16]

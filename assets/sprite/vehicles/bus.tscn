@@ -1,16 +1,16 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/busMovement.gd" type="Script" id=1]
 [ext_resource path="res://assets/materials/otobus/Material_002.material" type="Material" id=2]
-[ext_resource path="res://assets/materials/otobus/otobus.material" type="Material" id=3]
+[ext_resource path="res://assets/textures/otobussari.jpg" type="Texture" id=3]
 [ext_resource path="res://assets/materials/otobus/Glass_001.material" type="Material" id=4]
 [ext_resource path="res://assets/materials/otobus/Glass_002.material" type="Material" id=5]
 [ext_resource path="res://assets/materials/otobus/Material_003.material" type="Material" id=6]
 
-[sub_resource type="BoxShape" id=10]
-extents = Vector3( 0.827845, 0.502702, 5.79059 )
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.827845, 0.502702, 3.164 )
 
-[sub_resource type="ArrayMesh" id=11]
+[sub_resource type="ArrayMesh" id=2]
 blend_shape_mode = 0
 surfaces/0 = {
 "aabb": AABB( -0.020888, -0.020888, -1.03836e-08, 0.0417761, 0.0417761, 0.0159106 ),
@@ -26,7 +26,16 @@ surfaces/0 = {
 "vertex_count": 1130
 }
 
-[sub_resource type="ArrayMesh" id=12]
+[sub_resource type="SpatialMaterial" id=4]
+resource_name = "otobus"
+params_diffuse_mode = 2
+params_cull_mode = 2
+albedo_texture = ExtResource( 3 )
+metallic = 0.27
+metallic_specular = 0.78
+roughness = 0.51
+
+[sub_resource type="ArrayMesh" id=5]
 blend_shape_mode = 0
 surfaces/0 = {
 "aabb": AABB( -0.00216702, -0.181245, -0.0683704, 0.0797035, 0.371299, 0.136741 ),
@@ -35,7 +44,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 97559,
 "index_count": 2658,
-"material": ExtResource( 3 ),
+"material": SubResource( 4 ),
 "name": "otobus",
 "primitive": 4,
 "skeleton_aabb": [  ],
@@ -95,7 +104,7 @@ script = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="player"]
 transform = Transform( -6.52121, 0, 5.70102e-07, 0, 6.52121, 0, -5.70102e-07, 0, -6.52121, -0.603491, 2.70684, 0.994806 )
-shape = SubResource( 10 )
+shape = SubResource( 3 )
 
 [node name="backLeft" type="VehicleWheel" parent="player"]
 transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 4.29742, -2.45365, -8.0308 )
@@ -108,7 +117,7 @@ suspension_stiffness = 50.0
 
 [node name="backLeft" type="MeshInstance" parent="player/backLeft"]
 transform = Transform( 0, 1.23272e-05, -81.6397, -81.6397, 0, 0, 0, 81.6397, 1.23272e-05, 0.629243, 0.00265431, 0.0209084 )
-mesh = SubResource( 11 )
+mesh = SubResource( 2 )
 material/0 = null
 
 [node name="backRight" type="VehicleWheel" parent="player"]
@@ -122,7 +131,7 @@ suspension_stiffness = 50.0
 
 [node name="backLeft" type="MeshInstance" parent="player/backRight"]
 transform = Transform( 0, 1.23272e-05, -81.6397, -81.6397, 0, 0, 0, 81.6397, 1.23272e-05, 0.629243, 0.00265431, 0.0209084 )
-mesh = SubResource( 11 )
+mesh = SubResource( 2 )
 material/0 = null
 
 [node name="frontRight" type="VehicleWheel" parent="player"]
@@ -136,7 +145,7 @@ suspension_stiffness = 50.0
 
 [node name="backLeft" type="MeshInstance" parent="player/frontRight"]
 transform = Transform( -2.69421e-13, 6.16363e-06, -81.6397, -81.6397, -3.56858e-06, 0, -3.56858e-06, 81.6397, 6.16363e-06, 0.629243, 0.00265431, 0.0209093 )
-mesh = SubResource( 11 )
+mesh = SubResource( 2 )
 material/0 = null
 
 [node name="frontLeft" type="VehicleWheel" parent="player"]
@@ -150,12 +159,12 @@ suspension_stiffness = 50.0
 
 [node name="backLeft" type="MeshInstance" parent="player/frontLeft"]
 transform = Transform( 0, 1.23272e-05, -81.6397, -81.6397, 0, 0, 0, 81.6397, 1.23272e-05, 0.629243, 0.00265431, 0.0209084 )
-mesh = SubResource( 11 )
+mesh = SubResource( 2 )
 material/0 = null
 
 [node name="Plane002" type="MeshInstance" parent="player"]
 transform = Transform( 0, 1.72798e-05, -76.9806, -114.439, 0, 0, 0, 114.439, 1.16237e-05, -0.632268, 5.86514, 0.716453 )
-mesh = SubResource( 12 )
+mesh = SubResource( 5 )
 material/0 = null
 material/1 = null
 material/2 = null

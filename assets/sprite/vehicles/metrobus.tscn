@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/materials/otobus/Material_002.material" type="Material" id=6]
 [ext_resource path="res://scripts/busMovement.gd" type="Script" id=7]
 
-[sub_resource type="ArrayMesh" id=11]
+[sub_resource type="ArrayMesh" id=1]
 blend_shape_mode = 0
 surfaces/0 = {
 "aabb": AABB( -0.020888, -0.020888, -1.03836e-08, 0.0417761, 0.0417761, 0.0159106 ),
@@ -23,10 +23,10 @@ surfaces/0 = {
 "vertex_count": 1130
 }
 
-[sub_resource type="BoxShape" id=10]
+[sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.827845, 0.502702, 5.79059 )
 
-[sub_resource type="ArrayMesh" id=1]
+[sub_resource type="ArrayMesh" id=3]
 blend_shape_mode = 0
 surfaces/0 = {
 "aabb": AABB( -0.00246241, -0.583872, -0.0686389, 0.0810048, 0.773926, 0.137877 ),
@@ -93,27 +93,27 @@ script = ExtResource( 7 )
 
 [node name="backLeft2" type="MeshInstance" parent="player"]
 transform = Transform( 0, 1.05535e-05, -69.8927, -69.8927, 0, 0, 0, 69.8927, 1.05535e-05, 4.26633, -1.56249, -7.91262 )
-mesh = SubResource( 11 )
+mesh = SubResource( 1 )
 material/0 = null
 
 [node name="backLeft3" type="MeshInstance" parent="player"]
 transform = Transform( 0, 1.05535e-05, -69.8927, -69.8927, 0, 0, 0, 69.8927, 1.05535e-05, -3.05275, -1.56249, -7.91262 )
-mesh = SubResource( 11 )
+mesh = SubResource( 1 )
 material/0 = null
 
 [node name="backLeft4" type="MeshInstance" parent="player"]
 transform = Transform( 0, 1.05535e-05, -69.8927, -69.8927, 0, 0, 0, 69.8927, 1.05535e-05, 4.26633, -1.56249, 11.4142 )
-mesh = SubResource( 11 )
+mesh = SubResource( 1 )
 material/0 = null
 
 [node name="backLeft5" type="MeshInstance" parent="player"]
 transform = Transform( 0, 1.05535e-05, -69.8927, -69.8927, 0, 0, 0, 69.8927, 1.05535e-05, -3.05275, -1.56249, 11.4142 )
-mesh = SubResource( 11 )
+mesh = SubResource( 1 )
 material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="player"]
 transform = Transform( -5.58289, 0, 4.88071e-07, 0, 5.58289, 0, -4.88071e-07, 0, -5.58289, -0.468103, 2.09809, -0.0515768 )
-shape = SubResource( 10 )
+shape = SubResource( 2 )
 
 [node name="backLeft" type="VehicleWheel" parent="player"]
 transform = Transform( 0.856112, 0, -1.42109e-14, 0, 0.856112, 0, 1.42109e-14, 0, 0.856112, 3.72763, -1.56477, -24.121 )
@@ -126,7 +126,7 @@ suspension_stiffness = 50.0
 
 [node name="backLeft" type="MeshInstance" parent="player/backLeft"]
 transform = Transform( 0, 1.23272e-05, -81.6397, -81.6397, 0, 0, 0, 81.6397, 1.23272e-05, 0.629243, 0.00265431, 0.0209084 )
-mesh = SubResource( 11 )
+mesh = SubResource( 1 )
 material/0 = null
 
 [node name="backRight" type="VehicleWheel" parent="player"]
@@ -140,7 +140,7 @@ suspension_stiffness = 50.0
 
 [node name="backLeft" type="MeshInstance" parent="player/backRight"]
 transform = Transform( 0, 1.23272e-05, -81.6397, -81.6397, 0, 0, 0, 81.6397, 1.23272e-05, 0.629243, 0.00265431, 0.0209084 )
-mesh = SubResource( 11 )
+mesh = SubResource( 1 )
 material/0 = null
 
 [node name="frontRight" type="VehicleWheel" parent="player"]
@@ -154,7 +154,7 @@ suspension_stiffness = 50.0
 
 [node name="backLeft" type="MeshInstance" parent="player/frontRight"]
 transform = Transform( -2.69421e-13, 6.16363e-06, -81.6397, -81.6397, -3.56858e-06, 0, -3.56858e-06, 81.6397, 6.16363e-06, 0.629243, 0.00265431, 0.0209093 )
-mesh = SubResource( 11 )
+mesh = SubResource( 1 )
 material/0 = null
 
 [node name="frontLeft" type="VehicleWheel" parent="player"]
@@ -168,12 +168,12 @@ suspension_stiffness = 50.0
 
 [node name="backLeft" type="MeshInstance" parent="player/frontLeft"]
 transform = Transform( 0, 1.23272e-05, -81.6397, -81.6397, 0, 0, 0, 81.6397, 1.23272e-05, 0.629243, 0.00265431, 0.0209084 )
-mesh = SubResource( 11 )
+mesh = SubResource( 1 )
 material/0 = null
 
 [node name="Plane" type="MeshInstance" parent="player"]
 transform = Transform( 0, 1.33264e-05, -59.3685, -88.2568, 0, 0, 0, 88.2568, 8.96439e-06, 0.0492119, 4.82472, 18.1757 )
-mesh = SubResource( 1 )
+mesh = SubResource( 3 )
 material/0 = null
 material/1 = null
 material/2 = null
