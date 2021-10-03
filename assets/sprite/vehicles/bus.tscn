@@ -87,6 +87,7 @@ surfaces/3 = {
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 4.32204, 0 )
 mass = 16.78
 gravity_scale = 2.0
+axis_lock_linear_z = true
 axis_lock_angular_y = true
 axis_lock_angular_z = true
 linear_damp = -0.5
@@ -98,12 +99,12 @@ shape = SubResource( 1 )
 
 [node name="backLeft" type="VehicleWheel" parent="player"]
 transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 4.29742, -2.45365, -8.0308 )
-use_as_steering = true
+use_as_traction = true
 wheel_roll_influence = 0.5
 wheel_radius = 2.4
 wheel_friction_slip = 2.0
 suspension_travel = 2.0
-suspension_stiffness = 50.0
+suspension_stiffness = 100.0
 
 [node name="backLeft" type="MeshInstance" parent="player/backLeft"]
 transform = Transform( 0, 1.23272e-05, -81.6397, -81.6397, 0, 0, 0, 81.6397, 1.23272e-05, 0.629243, 0.00265431, 0.0209084 )
@@ -112,12 +113,12 @@ material/0 = null
 
 [node name="backRight" type="VehicleWheel" parent="player"]
 transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, -5.456, -2.45365, -8.0308 )
-use_as_steering = true
+use_as_traction = true
 wheel_roll_influence = 0.5
 wheel_radius = 2.4
 wheel_friction_slip = 2.0
 suspension_travel = 2.0
-suspension_stiffness = 50.0
+suspension_stiffness = 100.0
 
 [node name="backLeft" type="MeshInstance" parent="player/backRight"]
 transform = Transform( 0, 1.23272e-05, -81.6397, -81.6397, 0, 0, 0, 81.6397, 1.23272e-05, 0.629243, 0.00265431, 0.0209084 )
@@ -126,12 +127,12 @@ material/0 = null
 
 [node name="frontRight" type="VehicleWheel" parent="player"]
 transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -5.456, -2.45365, 12.8909 )
-use_as_traction = true
+use_as_steering = true
 wheel_roll_influence = 0.5
 wheel_radius = 2.4
-wheel_friction_slip = 2.0
-suspension_travel = 2.0
-suspension_stiffness = 50.0
+wheel_friction_slip = 4.0
+suspension_travel = 4.0
+suspension_stiffness = 100.0
 
 [node name="backLeft" type="MeshInstance" parent="player/frontRight"]
 transform = Transform( -2.69421e-13, 6.16363e-06, -81.6397, -81.6397, -3.56858e-06, 0, -3.56858e-06, 81.6397, 6.16363e-06, 0.629243, 0.00265431, 0.0209093 )
@@ -140,12 +141,12 @@ material/0 = null
 
 [node name="frontLeft" type="VehicleWheel" parent="player"]
 transform = Transform( 1, 0, -2.13163e-14, 0, 1, 0, 2.13163e-14, 0, 1, 4.26748, -2.45365, 12.8909 )
-use_as_traction = true
+use_as_steering = true
 wheel_roll_influence = 0.5
 wheel_radius = 2.4
-wheel_friction_slip = 2.0
-suspension_travel = 2.0
-suspension_stiffness = 50.0
+wheel_friction_slip = 4.0
+suspension_travel = 4.0
+suspension_stiffness = 100.0
 
 [node name="backLeft" type="MeshInstance" parent="player/frontLeft"]
 transform = Transform( 0, 1.23272e-05, -81.6397, -81.6397, 0, 0, 0, 81.6397, 1.23272e-05, 0.629243, 0.00265431, 0.0209084 )

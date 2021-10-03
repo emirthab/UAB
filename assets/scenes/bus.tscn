@@ -3361,7 +3361,7 @@ transform = Transform( -0.000146629, 900, 0.000146629, 0, -0.000146629, 900, 900
 [node name="engeller" type="Spatial" parent="."]
 
 [node name="CSGCylinder" type="CSGCylinder" parent="engeller"]
-transform = Transform( 1, 0, 0, 0, -3.49598e-08, -0.799788, 0, 1, -4.37114e-08, 89.5056, -0.774616, 43.6698 )
+transform = Transform( 1, 0, 0, 0, -3.49598e-08, -0.799788, 0, 1, -4.37114e-08, 89.5056, -1.58742, 43.6698 )
 use_collision = true
 radius = 3.76385
 height = 30.8805
