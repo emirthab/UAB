@@ -2,7 +2,7 @@ extends Area
 
 func _ready():
 	connect("body_entered",self,"entered")
-	
+
 func entered(body):
 	if body.name == "player":
 		Globals.gameStatus = false
