@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/geometry/environment/uydu.fbx" type="PackedScene" id=1]
 [ext_resource path="res://assets/textures/maxresdefault.jpg" type="Texture" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://assets/geometry/environment/saturn.fbx" type="PackedScene" id=9]
 [ext_resource path="res://assets/geometry/environment/mars.fbx" type="PackedScene" id=10]
 [ext_resource path="res://assets/sprite/vehicles/rocket.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scripts/coin.gd" type="Script" id=12]
+[ext_resource path="res://assets/sprite/coin.tscn" type="PackedScene" id=13]
 
 [sub_resource type="PanoramaSky" id=1]
 radiance_size = 0
@@ -114,11 +116,20 @@ transform = Transform( 6.30238, 0, 0, 0, 6.30238, 0, 0, 0, 6.30238, -27.7041, 17
 [node name="yldz25" parent="Spatial/yıldızlar" instance=ExtResource( 6 )]
 transform = Transform( 4.66506, 0, 4.23759, 0, 6.30238, 0, -4.23759, 0, 4.66506, -829.914, 173.773, -309.147 )
 
+[node name="yldz51" parent="Spatial/yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 4.66506, 0, 4.23759, 0, 6.30238, 0, -4.23759, 0, 4.66506, -720.46, 197.393, -343.341 )
+
 [node name="yldz26" parent="Spatial/yıldızlar" instance=ExtResource( 6 )]
 transform = Transform( 3.63379, 0, 5.14932, 0, 6.30238, 0, -5.14932, 0, 3.63379, -829.914, 119.799, -151.21 )
 
 [node name="yldz27" parent="Spatial/yıldızlar" instance=ExtResource( 6 )]
 transform = Transform( 6.27882, 0, 0.544358, 0, 6.30238, 0, -0.544358, 0, 6.27882, -829.914, 119.799, -514.665 )
+
+[node name="yldz49" parent="Spatial/yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.27882, 0, 0.544358, 0, 6.30238, 0, -0.544358, 0, 6.27882, -741.723, 231.062, -476.221 )
+
+[node name="yldz50" parent="Spatial/yıldızlar" instance=ExtResource( 6 )]
+transform = Transform( 6.27882, 0, 0.544358, 0, 6.30238, 0, -0.544358, 0, 6.27882, -881.424, 180.009, -537.119 )
 
 [node name="yldz28" parent="Spatial/yıldızlar" instance=ExtResource( 6 )]
 transform = Transform( 5.42433, 0, 3.20883, 0, 6.30238, 0, -3.20883, 0, 5.42433, -757.874, -52.56, -514.665 )
@@ -183,16 +194,58 @@ transform = Transform( 4.57075, 0, 4.33915, 0, 6.30238, 0, -4.33915, 0, 4.57075,
 [node name="yldz48" parent="Spatial/yıldızlar" instance=ExtResource( 6 )]
 transform = Transform( 6.30238, 0, 0, 0, 6.30238, 0, 0, 0, 6.30238, -819.728, 171.313, 325.642 )
 
-[node name="gök taşları2" type="Spatial" parent="Spatial"]
+[node name="gök taşları" type="Spatial" parent="Spatial"]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0 )
 
-[node name="gok1" parent="Spatial/gök taşları2" instance=ExtResource( 5 )]
-transform = Transform( 13.0539, 0, 0, 0, 13.0539, 0, 0, 0, 13.0539, -498.294, 1.72145, -180.204 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Spatial/gök taşları"]
 
-[node name="gok2" parent="Spatial/gök taşları2" instance=ExtResource( 3 )]
-transform = Transform( 13.0539, 0, 0, 0, 13.0539, 0, 0, 0, 13.0539, -367.623, 35.245, -211.264 )
+[node name="gok1" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1285.5, 0, -546.036 )
 
-[node name="gok3" parent="Spatial/gök taşları2" instance=ExtResource( 4 )]
-transform = Transform( 13.0539, 0, 0, 0, 13.0539, 0, 0, 0, 13.0539, -389.896, 12.0114, -191.228 )
+[node name="gok4" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1173.42, 0, -497.178 )
+
+[node name="gok2" parent="Spatial/gök taşları" instance=ExtResource( 3 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1219.96, 0, -543.635 )
+
+[node name="gok3" parent="Spatial/gök taşları" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1339.5, 0, -598.651 )
+
+[node name="gok5" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1045.19, 0, -441.284 )
+
+[node name="gok6" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -933.11, 0, -392.426 )
+
+[node name="gok7" parent="Spatial/gök taşları" instance=ExtResource( 3 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -979.656, 0, -438.883 )
+
+[node name="gok8" parent="Spatial/gök taşları" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1099.19, 0, -493.898 )
+
+[node name="gok9" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -809.004, 0, -338.326 )
+
+[node name="gok10" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -696.922, 0, -289.468 )
+
+[node name="gok11" parent="Spatial/gök taşları" instance=ExtResource( 3 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -743.467, 0, -335.925 )
+
+[node name="gok12" parent="Spatial/gök taşları" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -863.002, 0, -390.941 )
+
+[node name="gok13" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -563.177, 0, -231.167 )
+
+[node name="gok14" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -451.095, 0, -182.309 )
+
+[node name="gok15" parent="Spatial/gök taşları" instance=ExtResource( 3 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -497.641, 0, -228.766 )
+
+[node name="gok16" parent="Spatial/gök taşları" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -617.175, 0, -283.782 )
 
 [node name="gezegenler" type="Spatial" parent="Spatial"]
 
@@ -208,5 +261,129 @@ transform = Transform( 295.914, 0, -269.138, 0, 400, 0, 269.138, 0, 295.914, 590
 [node name="ay" parent="Spatial/gezegenler" instance=ExtResource( 7 )]
 transform = Transform( 65, 0, 0, 0, 65, 0, 0, 0, 65, 248.554, 108.367, -277.478 )
 
+[node name="COINS" type="Spatial" parent="Spatial"]
+
+[node name="coin" type="Area" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1285.47, 0, -560.352 )
+script = ExtResource( 12 )
+
+[node name="coin2" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1282.45, 0, -559.036 )
+
+[node name="coin3" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1279.33, 0, -557.675 )
+
+[node name="coin4" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1276.3, 0, -556.357 )
+
+[node name="coin5" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1273.52, 0, -555.142 )
+
+[node name="coin6" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1270.5, 0, -553.827 )
+
+[node name="coin7" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1267.38, 0, -552.466 )
+
+[node name="coin8" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1264.35, 0, -551.147 )
+
+[node name="coin9" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1153.12, 0, -502.658 )
+
+[node name="coin10" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1150.1, 0, -501.342 )
+
+[node name="coin11" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1146.98, 0, -499.981 )
+
+[node name="coin12" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1143.95, 0, -498.663 )
+
+[node name="coin13" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1140.61, 0, -497.207 )
+
+[node name="coin14" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1137.59, 0, -495.891 )
+
+[node name="coin15" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1134.47, 0, -494.531 )
+
+[node name="coin16" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1131.45, 0, -493.212 )
+
+[node name="coin17" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1052.06, 0, -458.607 )
+
+[node name="coin18" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1049.04, 0, -457.291 )
+
+[node name="coin19" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1045.92, 0, -455.93 )
+
+[node name="coin20" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1042.9, 0, -454.612 )
+
+[node name="coin21" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1039.52, 0, -453.141 )
+
+[node name="coin22" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1036.51, 0, -451.826 )
+
+[node name="coin23" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1033.38, 0, -450.465 )
+
+[node name="coin24" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1030.36, 0, -449.146 )
+
+[node name="coin25" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -843.816, 0, -367.83 )
+
+[node name="coin26" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -840.798, 0, -366.514 )
+
+[node name="coin27" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -837.676, 0, -365.153 )
+
+[node name="coin28" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -834.651, 0, -363.834 )
+
+[node name="coin29" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -831.06, 0, -362.269 )
+
+[node name="coin30" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -828.042, 0, -360.953 )
+
+[node name="coin31" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -824.919, 0, -359.592 )
+
+[node name="coin32" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -821.894, 0, -358.274 )
+
+[node name="coin33" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -557.013, 0, -242.809 )
+
+[node name="coin34" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -553.995, 0, -241.493 )
+
+[node name="coin35" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -550.873, 0, -240.132 )
+
+[node name="coin36" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -547.848, 0, -238.813 )
+
+[node name="coin37" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -545.037, 0, -237.588 )
+
+[node name="coin38" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -542.019, 0, -236.273 )
+
+[node name="coin39" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -538.897, 0, -234.912 )
+
+[node name="coin40" parent="Spatial/COINS" instance=ExtResource( 13 )]
+transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -535.872, 0, -233.593 )
+
 [node name="rocket" parent="." instance=ExtResource( 11 )]
 transform = Transform( 4.37114e-08, -1, 8.74228e-08, -1, -4.37114e-08, 0, 3.82137e-15, -8.74228e-08, -1, -1502.4, 0, 1.055 )
+[connection signal="body_entered" from="Spatial/COINS/coin" to="Spatial/COINS/coin" method="_on_coin_body_entered"]
