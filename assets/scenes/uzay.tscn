@@ -52,7 +52,7 @@ tracks/1/keys = {
 "values": [ Vector3( 53.6517, 0, -123.079 ), Vector3( -37.9475, 0, 87.0531 ) ]
 }
 
-[node name="Spatial" type="Spatial"]
+[node name="uzay" type="Spatial"]
 
 [node name="Spatial" type="Spatial" parent="."]
 transform = Transform( 0.916691, 0, 0.399597, 0, 1, 0, -0.399597, 0, 0.916691, 0, 0, 0 )
@@ -230,7 +230,6 @@ autoplay = "anim"
 anims/anim = SubResource( 3 )
 
 [node name="sag" type="Spatial" parent="Spatial/gök taşları"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 
 [node name="gok9" parent="Spatial/gök taşları/sag" instance=ExtResource( 5 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -809.004, 0, -338.326 )

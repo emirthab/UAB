@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scripts/uiController.gd" type="Script" id=1]
+[ext_resource path="res://assets/gui/textures/continue.png" type="Texture" id=2]
+[ext_resource path="res://assets/gui/textures/victory.png" type="Texture" id=3]
 
 [node name="victory" type="Control"]
 anchor_right = 1.0
@@ -9,3 +11,39 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.483
+anchor_top = 0.456
+anchor_right = 0.483
+anchor_bottom = 0.456
+margin_left = -211.428
+margin_top = -193.486
+margin_right = 211.572
+margin_bottom = 193.514
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+margin_left = 142.33
+margin_top = 285.045
+margin_right = 285.33
+margin_bottom = 336.045
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Button" type="Button" parent="TextureRect/TextureRect"]
+anchor_left = 0.5
+anchor_top = 0.461
+anchor_right = 0.5
+anchor_bottom = 0.461
+margin_left = -71.5
+margin_top = -23.511
+margin_right = 72.5
+margin_bottom = 23.489
+flat = true
+
+[connection signal="pressed" from="TextureRect/TextureRect/Button" to="." method="butonasd"]
