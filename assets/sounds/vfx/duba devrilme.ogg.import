@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/duba devrilme.ogg-34bce44f299c5fe66684a403c33a2fe2.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/vfx/duba devrilme.ogg"
+dest_files=[ "res://.import/duba devrilme.ogg-34bce44f299c5fe66684a403c33a2fe2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
