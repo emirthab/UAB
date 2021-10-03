@@ -51,6 +51,7 @@ func _on_press_resume_inGame():
 
 func _on_press_replay_inGame():
 	InGame.visible = true
+	InGame.get_node("pause").visible = true
 	get_tree().paused = false
 	$AudioStreamPlayer.playing = true
 	$container.visible = false
@@ -62,5 +63,5 @@ func _on_Button_pause_pressed():
 	$stop/AudioStreamPlayer.play()
 	$pause.visible = false
 	Globals.gameStatus = true
+	InGame.get_node("stop").visible = true
 	get_tree().paused = true
-	get_node("stop").visible = true
