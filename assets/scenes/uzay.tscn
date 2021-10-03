@@ -11,7 +11,6 @@
 [ext_resource path="res://assets/geometry/environment/saturn.fbx" type="PackedScene" id=9]
 [ext_resource path="res://assets/geometry/environment/mars.fbx" type="PackedScene" id=10]
 [ext_resource path="res://assets/sprite/vehicles/rocket.tscn" type="PackedScene" id=11]
-[ext_resource path="res://scripts/coin.gd" type="Script" id=12]
 [ext_resource path="res://assets/sprite/coin.tscn" type="PackedScene" id=13]
 
 [sub_resource type="PanoramaSky" id=1]
@@ -24,7 +23,36 @@ background_sky = SubResource( 1 )
 background_sky_custom_fov = 112.5
 background_energy = 0.14
 
-[node name="Spatial" type="Spatial"]
+[sub_resource type="Animation" id=3]
+resource_name = "anim"
+length = 6.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("sag:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 97.0245, 0, -222.578 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("sol:translation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 53.6517, 0, -123.079 ), Vector3( -37.9475, 0, 87.0531 ) ]
+}
+
+[node name="uzay" type="Spatial"]
 
 [node name="Spatial" type="Spatial" parent="."]
 transform = Transform( 0.916691, 0, 0.399597, 0, 1, 0, -0.399597, 0, 0.916691, 0, 0, 0 )
@@ -198,53 +226,60 @@ transform = Transform( 6.30238, 0, 0, 0, 6.30238, 0, 0, 0, 6.30238, -819.728, 17
 transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Spatial/gök taşları"]
+autoplay = "anim"
+anims/anim = SubResource( 3 )
 
-[node name="gok1" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1285.5, 0, -546.036 )
+[node name="sag" type="Spatial" parent="Spatial/gök taşları"]
 
-[node name="gok4" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1173.42, 0, -497.178 )
-
-[node name="gok2" parent="Spatial/gök taşları" instance=ExtResource( 3 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1219.96, 0, -543.635 )
-
-[node name="gok3" parent="Spatial/gök taşları" instance=ExtResource( 4 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1339.5, 0, -598.651 )
-
-[node name="gok5" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1045.19, 0, -441.284 )
-
-[node name="gok6" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -933.11, 0, -392.426 )
-
-[node name="gok7" parent="Spatial/gök taşları" instance=ExtResource( 3 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -979.656, 0, -438.883 )
-
-[node name="gok8" parent="Spatial/gök taşları" instance=ExtResource( 4 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1099.19, 0, -493.898 )
-
-[node name="gok9" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+[node name="gok9" parent="Spatial/gök taşları/sag" instance=ExtResource( 5 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -809.004, 0, -338.326 )
 
-[node name="gok10" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+[node name="gok1" parent="Spatial/gök taşları/sag" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1285.5, 0, -546.036 )
+
+[node name="gok4" parent="Spatial/gök taşları/sag" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1173.42, 0, -497.178 )
+
+[node name="gok5" parent="Spatial/gök taşları/sag" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1045.19, 0, -441.284 )
+
+[node name="gok6" parent="Spatial/gök taşları/sag" instance=ExtResource( 5 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -933.11, 0, -392.426 )
+
+[node name="gok10" parent="Spatial/gök taşları/sag" instance=ExtResource( 5 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -696.922, 0, -289.468 )
 
-[node name="gok11" parent="Spatial/gök taşları" instance=ExtResource( 3 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -743.467, 0, -335.925 )
-
-[node name="gok12" parent="Spatial/gök taşları" instance=ExtResource( 4 )]
-transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -863.002, 0, -390.941 )
-
-[node name="gok13" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+[node name="gok13" parent="Spatial/gök taşları/sag" instance=ExtResource( 5 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -563.177, 0, -231.167 )
 
-[node name="gok14" parent="Spatial/gök taşları" instance=ExtResource( 5 )]
+[node name="gok14" parent="Spatial/gök taşları/sag" instance=ExtResource( 5 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -451.095, 0, -182.309 )
 
-[node name="gok15" parent="Spatial/gök taşları" instance=ExtResource( 3 )]
+[node name="sol" type="Spatial" parent="Spatial/gök taşları"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53.6517, 0, -123.079 )
+
+[node name="gok2" parent="Spatial/gök taşları/sol" instance=ExtResource( 3 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1219.96, 0, -543.635 )
+
+[node name="gok3" parent="Spatial/gök taşları/sol" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1339.5, 0, -598.651 )
+
+[node name="gok7" parent="Spatial/gök taşları/sol" instance=ExtResource( 3 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -979.656, 0, -438.883 )
+
+[node name="gok8" parent="Spatial/gök taşları/sol" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1099.19, 0, -493.898 )
+
+[node name="gok11" parent="Spatial/gök taşları/sol" instance=ExtResource( 3 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -743.467, 0, -335.925 )
+
+[node name="gok12" parent="Spatial/gök taşları/sol" instance=ExtResource( 4 )]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -863.002, 0, -390.941 )
+
+[node name="gok15" parent="Spatial/gök taşları/sol" instance=ExtResource( 3 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -497.641, 0, -228.766 )
 
-[node name="gok16" parent="Spatial/gök taşları" instance=ExtResource( 4 )]
+[node name="gok16" parent="Spatial/gök taşları/sol" instance=ExtResource( 4 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -617.175, 0, -283.782 )
 
 [node name="gezegenler" type="Spatial" parent="Spatial"]
@@ -263,9 +298,8 @@ transform = Transform( 65, 0, 0, 0, 65, 0, 0, 0, 65, 248.554, 108.367, -277.478 
 
 [node name="COINS" type="Spatial" parent="Spatial"]
 
-[node name="coin" type="Area" parent="Spatial/COINS" instance=ExtResource( 13 )]
+[node name="coin" parent="Spatial/COINS" instance=ExtResource( 13 )]
 transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1285.47, 0, -560.352 )
-script = ExtResource( 12 )
 
 [node name="coin2" parent="Spatial/COINS" instance=ExtResource( 13 )]
 transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.58985e-16, 4.04059e-08, 0.92438, 0.381474, -1282.45, 0, -559.036 )
@@ -386,4 +420,3 @@ transform = Transform( -1.66747e-08, -0.381474, 0.92438, 1, -4.37114e-08, -4.589
 
 [node name="rocket" parent="." instance=ExtResource( 11 )]
 transform = Transform( 4.37114e-08, -1, 8.74228e-08, -1, -4.37114e-08, 0, 3.82137e-15, -8.74228e-08, -1, -1502.4, 0, 1.055 )
-[connection signal="body_entered" from="Spatial/COINS/coin" to="Spatial/COINS/coin" method="_on_coin_body_entered"]

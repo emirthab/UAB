@@ -66,3 +66,12 @@ func _on_Button_pause_pressed():
 	Globals.gameStatus = true
 	InGame.get_node("stop").visible = true
 	get_tree().paused = true
+
+
+func butonasd():
+	if get_tree().current_scene.name == "binbin":
+		get_tree().change_scene("res://assets/scenes/bus.tscn")
+	elif get_tree().current_scene.name == "bus":
+		get_tree().change_scene("res://assets/scenes/metrobus.tscn")
+	elif get_tree().current_scene.name == "metrobus":
+		get_tree().change_scene("res://assets/scenes/uzay.tscn")

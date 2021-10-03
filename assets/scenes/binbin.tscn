@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://assets/geometry/buildings/kzkule.fbx" type="PackedScene" id=23]
 [ext_resource path="res://assets/geometry/buildings/iskele.fbx" type="PackedScene" id=24]
 [ext_resource path="res://assets/geometry/environment/finish.fbx" type="PackedScene" id=25]
+[ext_resource path="res://scripts/binbin_finish.gd" type="Script" id=26]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -336,6 +337,9 @@ tracks/1/keys = {
 "update": 0,
 "values": [ Vector3( 0, 90, 0 ), Vector3( 0, 90, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 360, 0 ), Vector3( 0, 360, 0 ) ]
 }
+
+[sub_resource type="BoxShape" id=22]
+extents = Vector3( 8.10139, 7.42286, 7.92136 )
 
 [node name="binbin" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.129248, 0 )
@@ -1447,7 +1451,7 @@ shape = SubResource( 7 )
 transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -1, 0, -4.37114e-08, 0, 0, 463.96 )
 
 [node name="yol" type="MeshInstance" parent="road2"]
-transform = Transform( 232.309, 0, 4.54747e-13, 0, 34.1111, 0, -1.81899e-12, 0, -8.7219, 0, 0.641588, 0 )
+transform = Transform( 232.309, 0, 4.83169e-13, 0, 34.1111, 0, -1.81899e-12, 0, -8.7219, 0, 0.641588, 0 )
 use_in_baked_light = true
 mesh = SubResource( 1 )
 material/0 = SubResource( 2 )
@@ -2345,3 +2349,11 @@ transform = Transform( -3.16568e-08, 0, 0.724224, 0, 0.724224, 0, -0.724224, 0, 
 autoplay = "anim"
 playback_speed = 2.0
 anims/anim = SubResource( 21 )
+
+[node name="Area" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -190.854 )
+script = ExtResource( 26 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.27008 )
+shape = SubResource( 22 )
