@@ -21,3 +21,5 @@ func _physics_process(delta):
 			if status == 0:
 				status = 1
 				$astronaut/AnimationPlayer.play("metarigAction")
+	else:
+		set_engine_force(0)

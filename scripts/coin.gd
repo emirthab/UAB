@@ -8,6 +8,7 @@ func _ready():
 func _on_coin_body_entered(body):
 	Globals.coin += 1
 	$AnimationPlayer.play("collect")
+	$AudioStreamPlayer.play()
 
 func animEnd(anim):
 	if anim == "collect":

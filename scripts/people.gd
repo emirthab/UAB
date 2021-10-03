@@ -6,4 +6,9 @@ func _ready():
 	$model/AnimationPlayer.get_animation(animName).loop = true
 	$model/AnimationPlayer.play(animName)
 
-
+func _on_Body_entered(body):
+	if body.name == "player":
+		Globals.gameStatus = false
+		var uiLose = preload("res://assets/gui/lose.tscn").instance()
+		get_node("AnimationPlayer").stop()
+		get_tree().current_scene.add_child(uiLose)
