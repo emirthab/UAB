@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://assets/geometry/buildings/kayk.fbx" type="PackedScene" id=22]
 [ext_resource path="res://assets/geometry/buildings/kzkule.fbx" type="PackedScene" id=23]
 [ext_resource path="res://assets/geometry/buildings/iskele.fbx" type="PackedScene" id=24]
+[ext_resource path="res://assets/geometry/environment/finish.fbx" type="PackedScene" id=25]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -634,19 +635,19 @@ transform = Transform( -1, 0, -3.25841e-07, 0, 1.27565, 0, 3.25841e-07, 0, -1, -
 transform = Transform( -1, 0, -3.25841e-07, 0, 1.27565, 0, 3.25841e-07, 0, -1, -137.658, 2.33303, 13.6956 )
 
 [node name="duba2" parent="environment" instance=ExtResource( 5 )]
-transform = Transform( 54.2319, 1.13884e-06, 8.93445e-13, 0, -1.93949e-05, 118.966, -1.13884e-06, -80.2856, -6.29854e-05, -687.221, 2.3265, 5.79376 )
+transform = Transform( 54.2319, 1.13884e-06, 8.93446e-13, 0, -1.93949e-05, 118.966, -1.13884e-06, -80.2856, -6.29854e-05, -692.895, 2.3265, 5.79376 )
 
 [node name="duba3" parent="environment" instance=ExtResource( 5 )]
-transform = Transform( 54.2319, 1.13884e-06, 8.93446e-13, 0, -1.93949e-05, 118.966, -1.13884e-06, -80.2856, -6.29854e-05, -687.221, 2.3265, 1.55521 )
+transform = Transform( 54.2319, 1.13884e-06, 8.93447e-13, 0, -1.93949e-05, 118.966, -1.13884e-06, -80.2856, -6.29854e-05, -692.895, 2.3265, 1.55521 )
 
 [node name="duba4" parent="environment" instance=ExtResource( 5 )]
-transform = Transform( 54.2319, 1.13884e-06, 8.93446e-13, 0, -1.93949e-05, 118.966, -1.13884e-06, -80.2856, -6.29854e-05, -687.22, 2.3265, -2.60506 )
+transform = Transform( 54.2319, 1.13884e-06, 8.93447e-13, 0, -1.93949e-05, 118.966, -1.13884e-06, -80.2856, -6.29854e-05, -692.894, 2.3265, -2.60506 )
 
 [node name="duba5" parent="environment" instance=ExtResource( 5 )]
-transform = Transform( 54.2319, 1.13884e-06, 8.93447e-13, 0, -1.93949e-05, 118.966, -1.13884e-06, -80.2856, -6.29854e-05, -687.22, 2.3265, -6.94978 )
+transform = Transform( 54.2319, 1.13884e-06, 8.93447e-13, 0, -1.93949e-05, 118.966, -1.13884e-06, -80.2856, -6.29854e-05, -692.894, 2.3265, -6.94978 )
 
 [node name="interactive_duba" type="Spatial" parent="environment"]
-transform = Transform( 1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 153.386, 0, 6.70474e-06 )
+transform = Transform( 1, 0, -1.42109e-14, 0, 1.3161, 0, 7.10543e-15, 0, 0.999999, 153.386, -0.338678, 6.70473e-06 )
 
 [node name="duba" type="RigidBody" parent="environment/interactive_duba"]
 transform = Transform( 1, 0, -1.77636e-14, 0, 1, 0, 0, 0, 1, -15.3579, 1.47786, 0.316614 )
@@ -839,6 +840,39 @@ transform = Transform( 294.304, -265.927, -3.74876e-05, -2.36467e-05, -4.72933e-
 
 [node name="Mudrock28" parent="environment/rocks" instance=ExtResource( 15 )]
 transform = Transform( -247.135, 210.187, 2.88907e-05, -1.9339e-05, -3.86779e-05, 496.096, 207.281, 249.665, 5.98194e-05, 34.3836, 1.14778, 31.3561 )
+
+[node name="Mudrock128" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 603.371, 56.292, 4.18312e-05, -4.48996e-05, -8.9799e-05, 1151.79, 400.623, -903.063, -0.000157795, -33.6098, -7.21802, 245.766 )
+
+[node name="Mudrock137" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 420.389, 326.636, 8.58589e-05, -4.48996e-05, -8.9799e-05, 1151.79, 736.752, -777.337, -0.000115871, -25.5995, -7.21802, 245.766 )
+
+[node name="Mudrock138" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 644.77, -61.3714, 2.07216e-05, -4.48996e-05, -8.9799e-05, 1151.79, 234.618, -902.387, -0.000166115, -33.9093, -7.21801, 222.632 )
+
+[node name="Mudrock134" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 119.67, 891.408, 0.000181989, -7.04226e-05, -0.000140845, 1806.52, 1480.99, -632.814, -4.94572e-05, -39.8166, -6.39762, 269.993 )
+
+[node name="Mudrock135" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 34.4321, 924.667, 0.000184212, -7.04226e-05, -0.000140845, 1806.52, 1490.01, -526.481, -2.80157e-05, -55.8045, -6.39761, 297.995 )
+
+[node name="Mudrock136" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 154.805, 875.849, 0.000180708, -7.04226e-05, -0.000140845, 1806.52, 1474.33, -675.691, -5.8257e-05, -70.2759, -6.3976, 322.831 )
+
+[node name="Mudrock129" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 575.315, -486.126, -6.66288e-05, -4.48996e-05, -8.9799e-05, 1151.79, -477.478, -582.844, -0.000139322, -42.8885, -7.21801, 228.873 )
+
+[node name="Mudrock131" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 777.605, -392.771, -3.79071e-05, -5.3536e-05, -0.000107072, 1373.34, -224.572, -924.002, -0.000193762, -73.2662, -7.218, 198.797 )
+
+[node name="Mudrock132" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 632.251, -634.63, -9.3033e-05, -5.3536e-05, -0.000107072, 1373.34, -684.582, -588.779, -0.000151038, -89.4714, -7.21799, 183.406 )
+
+[node name="Mudrock133" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( -29.5674, -701.736, -0.000139974, -5.3536e-05, -0.000107072, 1373.33, -1132.55, 404.525, 2.21529e-05, -100.425, -7.21797, 196.915 )
+
+[node name="Mudrock130" parent="environment/rocks" instance=ExtResource( 15 )]
+transform = Transform( 418.414, 328.713, 8.61681e-05, -4.48996e-05, -8.9799e-05, 1151.79, 739.041, -775.547, -0.000115401, -49.0242, -7.218, 216.444 )
 
 [node name="Mudrock29" parent="environment/rocks" instance=ExtResource( 15 )]
 transform = Transform( -255.207, -34.363, -1.97756e-05, -1.9339e-05, -3.86779e-05, 496.095, -186.254, 387.406, 6.69601e-05, 29.6789, 1.14778, 31.3561 )
@@ -2136,3 +2170,6 @@ transform = Transform( -3.11189e-08, 0, 0.711917, 0, 0.711917, 0, -0.711917, 0, 
 autoplay = "anim"
 playback_speed = 2.0
 anims/anim = SubResource( 17 )
+
+[node name="finish" parent="." instance=ExtResource( 25 )]
+transform = Transform( 0.556303, 0, 0, 0, 1.05155, 0, 0, 0, 0.556303, -0.165027, 9.37412, 688.762 )
