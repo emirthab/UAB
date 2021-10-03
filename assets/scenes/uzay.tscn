@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/geometry/environment/uydu.fbx" type="PackedScene" id=1]
 [ext_resource path="res://assets/textures/maxresdefault.jpg" type="Texture" id=2]
@@ -7,6 +7,9 @@
 [ext_resource path="res://assets/geometry/environment/gok1.fbx" type="PackedScene" id=5]
 [ext_resource path="res://assets/geometry/environment/yldz.fbx" type="PackedScene" id=6]
 [ext_resource path="res://assets/geometry/environment/ay.fbx" type="PackedScene" id=7]
+[ext_resource path="res://assets/geometry/environment/dunya.fbx" type="PackedScene" id=8]
+[ext_resource path="res://assets/geometry/environment/saturn.fbx" type="PackedScene" id=9]
+[ext_resource path="res://assets/geometry/environment/mars.fbx" type="PackedScene" id=10]
 
 [sub_resource type="PanoramaSky" id=1]
 radiance_size = 0
@@ -20,18 +23,6 @@ background_energy = 0.14
 
 [node name="Spatial" type="Spatial"]
 
-[node name="gök taşları" type="Spatial" parent="."]
-
-[node name="ay" parent="gök taşları" instance=ExtResource( 7 )]
-transform = Transform( 82.9672, 0, 0, 0, 82.9672, 0, 0, 0, 82.9672, 248.554, 108.367, -277.478 )
-
-[node name="Spatial2" type="Spatial" parent="."]
-
-[node name="Spatial3" type="Spatial" parent="."]
-
-[node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 597.329, 0, 0, 0, 48.082, 0, 0, 0, 609.926, 0, 6.15143, 0 )
-
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( -0.476611, -0.165708, -0.863356, 0.533765, -0.834881, -0.13442, -0.698525, -0.524895, 0.486363, 74.6899, 223.391, -443.508 )
 
@@ -42,6 +33,7 @@ transform = Transform( 1.47753, -2.0997, 0.2586, 0.364353, -0.0581538, -2.55393,
 environment = SubResource( 2 )
 
 [node name="yıldızlar" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -216.17 )
 
 [node name="yldz" parent="yıldızlar" instance=ExtResource( 6 )]
 transform = Transform( 4.66506, 0, 4.23759, 0, 6.30238, 0, -4.23759, 0, 4.66506, -37.8896, 173.773, -309.147 )
@@ -197,3 +189,17 @@ transform = Transform( 13.0539, 0, 0, 0, 13.0539, 0, 0, 0, 13.0539, -367.623, 35
 
 [node name="gok3" parent="gök taşları2" instance=ExtResource( 4 )]
 transform = Transform( 13.0539, 0, 0, 0, 13.0539, 0, 0, 0, 13.0539, -389.896, 12.0114, -191.228 )
+
+[node name="gezegenler" type="Spatial" parent="."]
+
+[node name="mars" parent="gezegenler" instance=ExtResource( 10 )]
+transform = Transform( -41.9409, -29.3026, -85.9204, -5.07612, 95.2561, -30.0086, 90.6377, -8.22445, -41.4387, 2135.93, 861.963, -1007.37 )
+
+[node name="dunya" parent="gezegenler" instance=ExtResource( 8 )]
+transform = Transform( 147.957, 0, -134.569, 0, 200, 0, 134.569, 0, 147.957, 1367.28, -1010.51, -2314.62 )
+
+[node name="saturn" parent="gezegenler" instance=ExtResource( 9 )]
+transform = Transform( 147.957, 0, -134.569, 0, 200, 0, 134.569, 0, 147.957, 2321.33, -153.784, 219.764 )
+
+[node name="ay" parent="gezegenler" instance=ExtResource( 7 )]
+transform = Transform( 65, 0, 0, 0, 65, 0, 0, 0, 65, 248.554, 108.367, -277.478 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=2]
@@ -197,6 +197,90 @@ tracks/6/keys = {
 }
 
 [sub_resource type="Animation" id=17]
+length = 10.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4, 4.6, 5.2, 9.2, 9.6, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 40.3781, 0, 0 ), Vector3( 43.3209, 0, -2.1188 ), Vector3( 37.9947, 0, -4.90396 ), Vector3( 0.819204, 0, -4.90396 ), Vector3( -0.736418, 0, -2.48781 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 4, 4.6, 5.2, 9.2, 9.6, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 90, 0 ), Vector3( 0, 90, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 360, 0 ), Vector3( 0, 450, 0 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+length = 10.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4, 4.6, 5.2, 9.2, 9.6, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 40.3781, 0, 0 ), Vector3( 43.3209, 0, -2.1188 ), Vector3( 37.9947, 0, -4.90396 ), Vector3( 0.819204, 0, -4.90396 ), Vector3( -0.736418, 0, -2.48781 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 4, 4.6, 5.2, 9.2, 9.6, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 90, 0 ), Vector3( 0, 90, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 360, 0 ), Vector3( 0, 450, 0 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 10.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4, 4.6, 5.2, 9.2, 9.6, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 40.3781, 0, 0 ), Vector3( 43.3209, 0, -2.1188 ), Vector3( 37.9947, 0, -4.90396 ), Vector3( 0.819204, 0, -4.90396 ), Vector3( -0.736418, 0, -2.48781 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 4, 4.6, 5.2, 9.2, 9.6, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 90, 0 ), Vector3( 0, 90, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 270, 0 ), Vector3( 0, 360, 0 ), Vector3( 0, 450, 0 ) ]
+}
+
+[sub_resource type="Animation" id=20]
 length = 10.0
 loop = true
 tracks/0/type = "value"
@@ -1862,7 +1946,7 @@ data = SubResource( 13 )
 [node name="PEOPLE" type="Spatial" parent="."]
 
 [node name="woman_3" parent="PEOPLE" instance=ExtResource( 9 )]
-transform = Transform( -3.16569e-08, 0, 0.724224, 0, 0.724224, 0, -0.724224, 0, -3.16569e-08, -8.46466, 0.844816, -168.303 )
+transform = Transform( 8.63628e-09, 0, -0.724224, 0, 0.724224, 0, 0.724224, 0, 8.63628e-09, -5.5171, 1.19426, -172.305 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/woman_3"]
 autoplay = "anim"
@@ -2161,15 +2245,48 @@ transform = Transform( -2.48491, -0.235513, 4.28387, 0.106603, 4.94561, 0.333729
 transform = Transform( 13.2722, 0, 16.4455, 0, 21.133, 0, -16.4455, 0, 13.2722, 105.357, -8.77217, 168.307 )
 
 [node name="Spatial" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.83285, 1.29365, 9.51784 )
+transform = Transform( 0.999977, 0.00680673, 0, -0.00680673, 0.999977, 0, 0, 0, 1, -18.6073, 1.29365, 70.4144 )
 
 [node name="woman_4" parent="Spatial" instance=ExtResource( 9 )]
-transform = Transform( -3.11189e-08, 0, 0.711917, 0, 0.711917, 0, -0.711917, 0, -3.11189e-08, 1.58719, -0.453613, 61.1017 )
+transform = Transform( -3.11189e-08, 0, 0.711917, 0, 0.711917, 0, -0.711917, 0, -3.11189e-08, 12.3196, 0, 0 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Spatial/woman_4"]
 autoplay = "anim"
 playback_speed = 2.0
 anims/anim = SubResource( 17 )
+
+[node name="Spatial2" type="Spatial" parent="."]
+transform = Transform( 0.999977, 0.00680673, 0, -0.00680673, 0.999977, 0, 0, 0, 1, -18.6073, 1.29365, 294.746 )
+
+[node name="woman_4" parent="Spatial2" instance=ExtResource( 9 )]
+transform = Transform( -0.67684, 0, -0.220712, 0, 0.711917, 0, 0.220712, 0, -0.67684, 42.2521, 0, -2.67771 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Spatial2/woman_4"]
+autoplay = "anim"
+playback_speed = 2.0
+anims/anim = SubResource( 18 )
+
+[node name="Spatial3" type="Spatial" parent="."]
+transform = Transform( 0.999977, 0.00680673, 0, -0.00680673, 0.999977, 0, 0, 0, 1, -18.6073, 1.29365, 356.658 )
+
+[node name="woman_4" parent="Spatial3" instance=ExtResource( 9 )]
+transform = Transform( -3.11189e-08, 0, 0.711917, 0, 0.711917, 0, -0.711917, 0, -3.11189e-08, 12.2813, 0, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Spatial3/woman_4"]
+autoplay = "anim"
+playback_speed = 2.0
+anims/anim = SubResource( 19 )
+
+[node name="Spatial4" type="Spatial" parent="."]
+transform = Transform( 0.999977, 0.00680673, 0, -0.00680673, 0.999977, 0, 0, 0, 1, -18.6073, 1.29365, 532.494 )
+
+[node name="woman_4" parent="Spatial4" instance=ExtResource( 9 )]
+transform = Transform( -3.11189e-08, 0, 0.711917, 0, 0.711917, 0, -0.711917, 0, -3.11189e-08, 12.2813, 0, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Spatial4/woman_4"]
+autoplay = "anim"
+playback_speed = 2.0
+anims/anim = SubResource( 20 )
 
 [node name="finish" parent="." instance=ExtResource( 25 )]
 transform = Transform( 0.556303, 0, 0, 0, 1.05155, 0, 0, 0, 0.556303, -0.165027, 9.37412, 688.762 )
