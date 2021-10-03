@@ -12,6 +12,7 @@ var sfx = preload("res://assets/sounds/vfx/lose.ogg")
 var sfx2 = preload("res://assets/sounds/vfx/win.ogg")
 
 func _ready():
+	InGame.get_node("bar/Label").text = str(Globals.coin)
 	InGame.visible = false
 	if name == "lose":
 		sfx.set_loop(false)
