@@ -10,5 +10,5 @@ func _on_Body_entered(body):
 	if body.name == "player":
 		Globals.gameStatus = false
 		var uiLose = preload("res://assets/gui/lose.tscn").instance()
-		get_tree().current_scene.get_node("AnimationPlayer").stop()
+		get_node("AnimationPlayer").stop()
 		get_tree().current_scene.add_child(uiLose)
