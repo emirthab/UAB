@@ -557,7 +557,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/Spatial2/woman_4"]
 autoplay = "anim"
-playback_speed = 2.0
+playback_speed = 1.25
 anims/anim = SubResource( 6 )
 
 [node name="Spatial3" type="Spatial" parent="PEOPLE"]
@@ -568,7 +568,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/Spatial3/woman_4"]
 autoplay = "anim"
-playback_speed = 2.0
+playback_speed = 1.25
 anims/anim = SubResource( 7 )
 
 [node name="Spatial4" type="Spatial" parent="PEOPLE"]
@@ -579,7 +579,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/Spatial4/woman_4"]
 autoplay = "anim"
-playback_speed = 2.0
+playback_speed = 1.25
 anims/anim = SubResource( 8 )
 
 [node name="Spatial5" type="Spatial" parent="PEOPLE"]
@@ -590,7 +590,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/Spatial5/woman_4"]
 autoplay = "anim"
-playback_speed = 2.0
+playback_speed = 1.25
 anims/anim = SubResource( 9 )
 
 [node name="Spatial6" type="Spatial" parent="PEOPLE"]
@@ -601,7 +601,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/Spatial6/woman_4"]
 autoplay = "anim"
-playback_speed = 2.0
+playback_speed = 1.25
 anims/anim = SubResource( 10 )
 
 [node name="Spatial7" type="Spatial" parent="PEOPLE"]
@@ -612,7 +612,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/Spatial7/woman_4"]
 autoplay = "anim"
-playback_speed = 2.0
+playback_speed = 1.25
 anims/anim = SubResource( 11 )
 
 [node name="Spatial8" type="Spatial" parent="PEOPLE"]
@@ -623,7 +623,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/Spatial8/woman_4"]
 autoplay = "anim"
-playback_speed = 2.0
+playback_speed = 1.25
 anims/anim = SubResource( 12 )
 
 [node name="Spatial9" type="Spatial" parent="PEOPLE"]
@@ -634,7 +634,7 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PEOPLE/Spatial9/woman_4"]
 autoplay = "anim"
-playback_speed = 2.0
+playback_speed = 1.25
 anims/anim = SubResource( 13 )
 
 [node name="SCENES" type="Spatial" parent="."]
