@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=2]
@@ -15,11 +15,9 @@
 [ext_resource path="res://assets/sprite/people/woman.tscn" type="PackedScene" id=13]
 [ext_resource path="res://assets/geometry/environment/cal2.fbx" type="PackedScene" id=14]
 [ext_resource path="res://assets/geometry/environment/Mudrock2.tscn" type="PackedScene" id=15]
-[ext_resource path="res://assets/geometry/clouds/bulut4.fbx" type="PackedScene" id=16]
-[ext_resource path="res://assets/geometry/clouds/bulut.fbx" type="PackedScene" id=18]
-[ext_resource path="res://assets/geometry/clouds/bulut6.fbx" type="PackedScene" id=19]
-[ext_resource path="res://assets/geometry/clouds/bulut3.fbx" type="PackedScene" id=20]
-[ext_resource path="res://assets/geometry/clouds/bulut5.fbx" type="PackedScene" id=21]
+[ext_resource path="res://assets/geometry/clouds/cloud-1.tscn" type="PackedScene" id=16]
+[ext_resource path="res://assets/geometry/clouds/cloud-2.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/textures/sky-1.png" type="Texture" id=18]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -39,13 +37,13 @@ albedo_color = Color( 0.572549, 0.941176, 0.486275, 1 )
 [sub_resource type="BoxShape" id=7]
 extents = Vector3( 243.763, 1, 34.9834 )
 
-[sub_resource type="PanoramaSky" id=8]
-radiance_size = 3
+[sub_resource type="PanoramaSky" id=15]
+panorama = ExtResource( 18 )
 
 [sub_resource type="Environment" id=9]
-background_mode = 1
-background_sky = SubResource( 8 )
-background_sky_custom_fov = 136.0
+background_mode = 2
+background_sky = SubResource( 15 )
+background_sky_custom_fov = 25.4
 background_color = Color( 0.764706, 0.937255, 0.905882, 1 )
 
 [sub_resource type="SpatialMaterial" id=10]
@@ -1219,29 +1217,6 @@ transform = Transform( 0.298749, 0, -0.360136, 0, 0.594932, 0, 0.734971, 0, 0.29
 [node name="cal30" parent="environment/rocks" instance=ExtResource( 14 )]
 transform = Transform( 0.413284, 0, -0.498206, 0, 0.823019, 0, 1.01675, 0, 0.413286, -648.568, 1.70809, 20.4837 )
 
-[node name="clouds" type="Spatial" parent="environment"]
-
-[node name="bulut3" parent="environment/clouds" instance=ExtResource( 20 )]
-transform = Transform( 16, 0, -3.41061e-13, 0, 16, 0, 5.68434e-14, 0, 16, 187.102, 79.1811, 438.557 )
-
-[node name="bulut7" parent="environment/clouds" instance=ExtResource( 20 )]
-transform = Transform( 16, 0, -7.95808e-13, 0, 16, 0, -5.68434e-14, 0, 16, -111.575, 128.152, 475.801 )
-
-[node name="bulut4" parent="environment/clouds" instance=ExtResource( 16 )]
-transform = Transform( 16, -8.47485e-08, 5.15342e-09, 8.47486e-08, 15.8821, -1.93882, 5.15394e-09, 1.93882, 15.8821, 54.7925, 148.346, 475.686 )
-
-[node name="bulut5" parent="environment/clouds" instance=ExtResource( 21 )]
-transform = Transform( 2.5586, -15.5111, -2.97641, -1.28662, 2.8005, -15.7004, 15.7416, 2.75003, -0.799467, -481.396, 106.464, 268.001 )
-
-[node name="bulut8" parent="environment/clouds" instance=ExtResource( 21 )]
-transform = Transform( 2.5586, -15.5111, -2.97641, -1.28662, 2.8005, -15.7004, 15.7416, 2.75003, -0.799467, -340.581, 127.819, 388.531 )
-
-[node name="bulut6" parent="environment/clouds" instance=ExtResource( 19 )]
-transform = Transform( 6.27705, -0.566454, -11.37, 0.449396, 12.9861, -0.39887, 11.3753, -0.200456, 6.28992, -183.672, 135.248, 332.413 )
-
-[node name="bulut" parent="environment/clouds" instance=ExtResource( 18 )]
-transform = Transform( 8.64945, 0, -13.4605, 0, 16, 0, 13.4606, 0, 8.64945, -614.973, 71.5415, 211.194 )
-
 [node name="floor" type="StaticBody" parent="."]
 transform = Transform( -3.0598e-08, 0, 0.7, 0, 0.7, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
 
@@ -2002,3 +1977,14 @@ anims/anim = SubResource( 13 )
 autoplay = "anim"
 playback_speed = 0.1
 anims/anim = SubResource( 14 )
+
+[node name="clouds" type="Spatial" parent="."]
+
+[node name="Cube042" parent="clouds" instance=ExtResource( 16 )]
+transform = Transform( -613.491, 2661.35, 0.000951773, 0, -0.000976733, 2731.14, 2661.35, 613.491, 0.000219402, 329.946, 129.987, 204.166 )
+
+[node name="Cube043" parent="clouds" instance=ExtResource( 16 )]
+transform = Transform( -613.491, 2661.35, 0.000951773, 0, -0.000976733, 2731.14, 2661.35, 613.491, 0.000219402, 301.348, 90.2006, 443.869 )
+
+[node name="Cube044" parent="clouds" instance=ExtResource( 17 )]
+transform = Transform( -520.057, 1834.49, 0.000656064, 0, -0.000675351, 1888.42, 2129.16, 448.082, 0.000160247, 298.254, 83.0904, -45.7049 )
