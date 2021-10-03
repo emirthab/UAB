@@ -2325,7 +2325,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.44899, -0.153076, 357.912 )
 transform = Transform( 0.999977, 0.00680673, 0, -0.00680673, 0.999977, 0, 0, 0, 1, 7.55441, -0.144158, 168.434 )
 
 [node name="woman_3" parent="women_6/Spatial" instance=ExtResource( 9 )]
-transform = Transform( 8.63628e-09, 0, -0.724224, 0, 0.724224, 0, 0.724224, 0, 8.63628e-09, 3.52862, 1.19426, -172.305 )
+transform = Transform( -3.16568e-08, 0, 0.724224, 0, 0.724224, 0, -0.724224, 0, -3.16568e-08, -8.46466, 1.19426, -168.303 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="women_6/Spatial/woman_3"]
 autoplay = "anim"
