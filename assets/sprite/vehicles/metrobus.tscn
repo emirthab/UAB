@@ -2,10 +2,10 @@
 
 [ext_resource path="res://assets/materials/otobus/Glass_001.material" type="Material" id=1]
 [ext_resource path="res://assets/materials/otobus/otobus.material" type="Material" id=2]
+[ext_resource path="res://scripts/metroBusMovement.gd" type="Script" id=3]
 [ext_resource path="res://assets/materials/otobus/Material_003.material" type="Material" id=4]
 [ext_resource path="res://assets/materials/otobus/Glass_002.material" type="Material" id=5]
 [ext_resource path="res://assets/materials/otobus/Material_002.material" type="Material" id=6]
-[ext_resource path="res://scripts/busMovement.gd" type="Script" id=7]
 
 [sub_resource type="ArrayMesh" id=1]
 blend_shape_mode = 0
@@ -24,7 +24,7 @@ surfaces/0 = {
 }
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.827845, 0.502702, 5.79059 )
+extents = Vector3( 0.827845, 0.581565, 5.79059 )
 
 [sub_resource type="ArrayMesh" id=3]
 blend_shape_mode = 0
@@ -89,7 +89,7 @@ mass = 4.95
 axis_lock_linear_x = true
 axis_lock_angular_y = true
 axis_lock_angular_z = true
-script = ExtResource( 7 )
+script = ExtResource( 3 )
 
 [node name="backLeft2" type="MeshInstance" parent="player"]
 transform = Transform( 0, 1.05535e-05, -69.8927, -69.8927, 0, 0, 0, 69.8927, 1.05535e-05, 4.26633, -1.56249, -7.91262 )
@@ -112,7 +112,7 @@ mesh = SubResource( 1 )
 material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="player"]
-transform = Transform( -5.58289, 0, 4.88071e-07, 0, 5.58289, 0, -4.88071e-07, 0, -5.58289, -0.468103, 2.09809, -0.0515768 )
+transform = Transform( -5.58289, 0, 4.88071e-07, 0, 5.58289, 0, -4.88071e-07, 0, -5.58289, -0.468103, 1.30297, 0.86199 )
 shape = SubResource( 2 )
 
 [node name="backLeft" type="VehicleWheel" parent="player"]
