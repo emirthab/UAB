@@ -9,6 +9,8 @@ func _on_coin_body_entered(body):
 	Globals.coin += 1
 	$AnimationPlayer.play("collect")
 	$AudioStreamPlayer.play()
+	InGame.get_node("bar/coin/AnimationPlayer").play("anim")
+	InGame.get_node("bar/Label").text = str(Globals.coin)
 
 func animEnd(anim):
 	if anim == "collect":
