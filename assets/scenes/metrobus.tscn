@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://assets/DirectionalLight.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/WorldEnvironment.tscn" type="PackedScene" id=2]
@@ -13,7 +13,7 @@
 [ext_resource path="res://assets/geometry/buildings/house2.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=12]
 [ext_resource path="res://assets/textures/demo.jpg" type="Texture" id=13]
-[ext_resource path="res://assets/geometry/cars/metrobus.fbx" type="PackedScene" id=14]
+[ext_resource path="res://assets/sprite/vehicles/metrobus.tscn" type="PackedScene" id=14]
 [ext_resource path="res://assets/geometry/environment/cal2.fbx" type="PackedScene" id=15]
 [ext_resource path="res://assets/geometry/environment/cop.fbx" type="PackedScene" id=16]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=17]
@@ -94,8 +94,14 @@ tracks/0/keys = {
 "values": [ Vector3( -398.793, 11.0506, -58.8738 ), Vector3( -398.793, 11.0506, 58.8056 ) ]
 }
 
+[sub_resource type="BoxShape" id=18]
+extents = Vector3( 648.91, 2.18913, 25.7606 )
+
 [node name="Spatial" type="Spatial"]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, 0, 0 )
+
+[node name="player" parent="." instance=ExtResource( 14 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1091.75, 10.0601, 30.5774 )
 
 [node name="taşlar" type="Spatial" parent="."]
 
@@ -781,9 +787,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1034.75, 9.17722, 30.1904 )
 [node name="kopruzemin16" parent="zeminler/köprü zemin" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1102.08, 9.17722, 30.1904 )
 
-[node name="metrobus" parent="." instance=ExtResource( 14 )]
-transform = Transform( -1.64434e-07, 0, 3.7618, 0, 3.7618, 0, -3.7618, 0, -1.64434e-07, -1127.42, 9.49325, 30.0979 )
-
 [node name="WorldEnvironment" parent="." instance=ExtResource( 2 )]
 
 [node name="DirectionalLight" parent="." instance=ExtResource( 1 )]
@@ -1038,3 +1041,11 @@ transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.
 
 [node name="duba4" parent="finish" instance=ExtResource( 30 )]
 transform = Transform( 99.0521, -4.3369e-06, -3.40237e-12, 0, -2.24131e-05, 137.48, 4.3369e-06, -62.6716, -4.9167e-05, -6.1552, -7.33338, -6.53049 )
+
+[node name="bodies" type="Spatial" parent="."]
+
+[node name="StaticBody" type="StaticBody" parent="bodies"]
+
+[node name="CollisionShape" type="CollisionShape" parent="bodies/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -527.24, 6.90325, 30.1687 )
+shape = SubResource( 18 )
