@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/trafiklamb.fbx" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/DirectionalLight.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/geometry/environment/Mudrock2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/geometry/cars/kasalcar.fbx" type="PackedScene" id=7]
+[ext_resource path="res://assets/geometry/cars/polis2.tscn" type="PackedScene" id=8]
 [ext_resource path="res://assets/geometry/environment/lamba.fbx" type="PackedScene" id=9]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=10]
 [ext_resource path="res://assets/sprite/vehicles/bus.tscn" type="PackedScene" id=11]
@@ -15,6 +16,11 @@
 [ext_resource path="res://assets/geometry/environment/cop.fbx" type="PackedScene" id=14]
 [ext_resource path="res://assets/geometry/buildings/mosque.fbx" type="PackedScene" id=15]
 [ext_resource path="res://assets/geometry/environment/cal.fbx" type="PackedScene" id=16]
+[ext_resource path="res://assets/geometry/cars/trcar.fbx" type="PackedScene" id=17]
+[ext_resource path="res://assets/geometry/cars/limucar.fbx" type="PackedScene" id=18]
+[ext_resource path="res://assets/geometry/cars/yesilcar.fbx" type="PackedScene" id=19]
+[ext_resource path="res://assets/geometry/cars/pembecar.fbx" type="PackedScene" id=20]
+[ext_resource path="res://assets/geometry/cars/sporcar.fbx" type="PackedScene" id=21]
 
 [sub_resource type="CubeMesh" id=1]
 
@@ -1009,12 +1015,6 @@ transform = Transform( 4, 1.50996e-07, 0, -6.03983e-07, 1, 0, 0, 0, -1, 32.7961,
 mesh = SubResource( 7 )
 material/0 = SubResource( 8 )
 
-[node name="buildings4" type="Spatial" parent="."]
-transform = Transform( 2.07901, 0, 0, 0, 1, 0, 0, 0, 1, 3374.97, 0, 0 )
-
-[node name="mosque" parent="buildings4" instance=ExtResource( 15 )]
-transform = Transform( 17.134, 0, -0.214225, 0, 26.6717, 0, 0.925944, 0, 17.134, -34.5546, 19.628, -186.994 )
-
 [node name="environment4" type="Spatial" parent="."]
 transform = Transform( 2.07901, 0, 0, 0, 1, 0, 0, 0, 1, 2893.73, 0, 0 )
 
@@ -1804,12 +1804,6 @@ material/0 = SubResource( 8 )
 transform = Transform( 4, 1.50996e-07, 0, -6.03983e-07, 1, 0, 0, 0, -1, 32.7961, 1.03296, 54.85 )
 mesh = SubResource( 7 )
 material/0 = SubResource( 8 )
-
-[node name="buildings" type="Spatial" parent="."]
-transform = Transform( 2.07901, 0, 0, 0, 1, 0, 0, 0, 1, 1446.34, 0, 0 )
-
-[node name="mosque" parent="buildings" instance=ExtResource( 15 )]
-transform = Transform( 17.134, 0, -0.214225, 0, 26.6717, 0, 0.925944, 0, 17.134, -34.5546, 19.628, -186.994 )
 
 [node name="environment" type="Spatial" parent="."]
 transform = Transform( 2.07901, 0, 0, 0, 1, 0, 0, 0, 1, 965.101, 0, 0 )
@@ -3236,6 +3230,140 @@ material/0 = SubResource( 12 )
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 21.1178, 0.972795, 47.1764 )
 
 [node name="cars" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1959.69, 0, 0 )
 
-[node name="kasalcar" parent="cars" instance=ExtResource( 7 )]
-transform = Transform( -7.73265e-07, 0, -4.74627, 0, 4.74627, 0, 4.74627, 0, -7.73265e-07, 3818.3, 4.55484, -22.1113 )
+[node name="limucar" parent="cars" instance=ExtResource( 18 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 3040.7, 1.514, -29.56 )
+
+[node name="kasalcar3" parent="cars" instance=ExtResource( 7 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 4323.13, 1.51427, -29.5605 )
+
+[node name="pembecar" parent="cars" instance=ExtResource( 20 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 3343.39, 1.514, -29.56 )
+
+[node name="sporcar" parent="cars" instance=ExtResource( 21 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 3853.23, 1.514, -29.56 )
+
+[node name="yesilcar2" parent="cars" instance=ExtResource( 19 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 4077.79, 1.514, -29.56 )
+
+[node name="trcar3" parent="cars" instance=ExtResource( 17 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 3611.25, 1.30407, -29.7439 )
+
+[node name="Cube028" parent="cars" instance=ExtResource( 8 )]
+transform = Transform( -0.000146629, 900, 0.000146629, 0, -0.000146629, 900, 900, 0.000146629, 2.38888e-11, 2730.34, 1.514, -29.56 )
+
+[node name="limucar2" parent="cars" instance=ExtResource( 18 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 4837.53, 1.514, -29.56 )
+
+[node name="kasalcar4" parent="cars" instance=ExtResource( 7 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 6174.65, 1.51427, -29.5605 )
+
+[node name="pembecar2" parent="cars" instance=ExtResource( 20 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 5129.64, 1.514, -29.56 )
+
+[node name="sporcar2" parent="cars" instance=ExtResource( 21 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 5703.95, 1.514, -29.56 )
+
+[node name="yesilcar3" parent="cars" instance=ExtResource( 19 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 5943.28, 1.514, -29.56 )
+
+[node name="trcar4" parent="cars" instance=ExtResource( 17 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 5416.52, 1.30407, -29.7439 )
+
+[node name="Cube029" parent="cars" instance=ExtResource( 8 )]
+transform = Transform( -0.000146629, 900, 0.000146629, 0, -0.000146629, 900, 900, 0.000146629, 2.38888e-11, 4566.64, 1.514, -29.56 )
+
+[node name="limucar4" parent="cars" instance=ExtResource( 18 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 10990.8, 1.514, -29.56 )
+
+[node name="kasalcar6" parent="cars" instance=ExtResource( 7 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 12328, 1.51427, -29.5605 )
+
+[node name="pembecar4" parent="cars" instance=ExtResource( 20 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 11282.9, 1.514, -29.56 )
+
+[node name="sporcar4" parent="cars" instance=ExtResource( 21 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 11857.3, 1.514, -29.56 )
+
+[node name="yesilcar5" parent="cars" instance=ExtResource( 19 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 12096.6, 1.514, -29.56 )
+
+[node name="trcar6" parent="cars" instance=ExtResource( 17 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 11569.8, 1.30407, -29.7439 )
+
+[node name="Cube031" parent="cars" instance=ExtResource( 8 )]
+transform = Transform( -0.000146629, 900, 0.000146629, 0, -0.000146629, 900, 900, 0.000146629, 2.38888e-11, 10719.9, 1.514, -29.56 )
+
+[node name="limucar6" parent="cars" instance=ExtResource( 18 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 12901.2, 1.514, -29.56 )
+
+[node name="kasalcar8" parent="cars" instance=ExtResource( 7 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 14238.4, 1.51427, -29.5605 )
+
+[node name="pembecar6" parent="cars" instance=ExtResource( 20 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 13193.3, 1.514, -29.56 )
+
+[node name="sporcar6" parent="cars" instance=ExtResource( 21 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 13767.7, 1.514, -29.56 )
+
+[node name="yesilcar7" parent="cars" instance=ExtResource( 19 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 14007, 1.514, -29.56 )
+
+[node name="trcar8" parent="cars" instance=ExtResource( 17 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 13480.2, 1.30407, -29.7439 )
+
+[node name="Cube033" parent="cars" instance=ExtResource( 8 )]
+transform = Transform( -0.000146629, 900, 0.000146629, 0, -0.000146629, 900, 900, 0.000146629, 2.38888e-11, 12630.3, 1.514, -29.56 )
+
+[node name="limucar5" parent="cars" instance=ExtResource( 18 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 9067.6, 1.514, -29.56 )
+
+[node name="kasalcar7" parent="cars" instance=ExtResource( 7 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 10404.7, 1.51427, -29.5605 )
+
+[node name="pembecar5" parent="cars" instance=ExtResource( 20 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 9359.7, 1.514, -29.56 )
+
+[node name="sporcar5" parent="cars" instance=ExtResource( 21 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 9934.01, 1.514, -29.56 )
+
+[node name="yesilcar6" parent="cars" instance=ExtResource( 19 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 10173.3, 1.514, -29.56 )
+
+[node name="trcar7" parent="cars" instance=ExtResource( 17 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 9646.58, 1.30407, -29.7439 )
+
+[node name="Cube032" parent="cars" instance=ExtResource( 8 )]
+transform = Transform( -0.000146629, 900, 0.000146629, 0, -0.000146629, 900, 900, 0.000146629, 2.38888e-11, 8796.7, 1.514, -29.56 )
+
+[node name="limucar3" parent="cars" instance=ExtResource( 18 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 6690.75, 1.514, -29.56 )
+
+[node name="kasalcar5" parent="cars" instance=ExtResource( 7 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 8448.2, 1.51427, -29.5605 )
+
+[node name="pembecar3" parent="cars" instance=ExtResource( 20 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 6972, 1.514, -29.56 )
+
+[node name="sporcar3" parent="cars" instance=ExtResource( 21 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 7584.03, 1.514, -29.56 )
+
+[node name="yesilcar4" parent="cars" instance=ExtResource( 19 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 7971.28, 1.514, -29.56 )
+
+[node name="trcar5" parent="cars" instance=ExtResource( 17 )]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 7245.8, 1.30407, -29.7439 )
+
+[node name="Cube030" parent="cars" instance=ExtResource( 8 )]
+transform = Transform( -0.000146629, 900, 0.000146629, 0, -0.000146629, 900, 900, 0.000146629, 2.38888e-11, 6402.56, 1.514, -29.56 )
+
+[node name="engeller" type="Spatial" parent="."]
+
+[node name="CSGCylinder" type="CSGCylinder" parent="engeller"]
+transform = Transform( 1, 0, 0, 0, -3.49598e-08, -0.799788, 0, 1, -4.37114e-08, 89.5056, -0.774616, 43.6698 )
+use_collision = true
+radius = 3.76385
+height = 30.8805
+sides = 16
+smooth_faces = false
