@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/bank.fbx" type="PackedScene" id=2]
@@ -21,6 +21,9 @@
 [ext_resource path="res://scripts/duba.gd" type="Script" id=19]
 [ext_resource path="res://assets/textures/kadikoy-teneke-tabela-3ad3.jpg" type="Texture" id=20]
 [ext_resource path="res://assets/geometry/environment/pano.fbx" type="PackedScene" id=21]
+[ext_resource path="res://assets/geometry/buildings/kayk.fbx" type="PackedScene" id=22]
+[ext_resource path="res://assets/geometry/buildings/kzkule.fbx" type="PackedScene" id=23]
+[ext_resource path="res://assets/geometry/buildings/iskele.fbx" type="PackedScene" id=24]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -438,7 +441,7 @@ transform = Transform( 20.7557, -18.0268, -5.62657e-06, 0, -4.58902e-06, 100.792
 transform = Transform( 9.27844, -25.8781, -8.07714e-06, 0, -3.2772e-06, 71.9795, -25.8781, -9.27844, -2.89601e-06, -11.4727, 0, -0.427985 )
 
 [node name="Cube005" parent="trees_left" instance=ExtResource( 1 )]
-transform = Transform( -0.80693, -27.4793, -8.57692e-06, 0, -3.2772e-06, 71.9795, -27.4793, 0.80693, 2.5186e-07, -18.5932, 0, 1.31455 )
+transform = Transform( -0.80693, -27.4793, -8.57692e-06, 0, -3.2772e-06, 71.9795, -27.4793, 0.80693, 2.5186e-07, -17.9294, 0, 3.6665 )
 
 [node name="Cube006" parent="trees_left" instance=ExtResource( 1 )]
 transform = Transform( -17.6497, -21.0773, -6.57871e-06, 0, -3.2772e-06, 71.9795, -21.0773, 17.6497, 5.50886e-06, -26.2083, 0, -0.287342 )
@@ -1831,10 +1834,9 @@ playback_speed = 2.0
 anims/anim = SubResource( 14 )
 
 [node name="man" parent="PEOPLE" instance=ExtResource( 6 )]
-transform = Transform( 1.43432, 0, 0, 0, 1.43432, 0, 0, 0, 1.43432, -5.27421, 1.69431, -225.407 )
+transform = Transform( 1.43432, 0, 0, 0, 1.43432, 0, 0, 0, 1.43432, -5.27421, 1.69431, -227.87 )
 
 [node name="group_1" type="Spatial" parent="PEOPLE"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.16442 )
 
 [node name="police" parent="PEOPLE/group_1" instance=ExtResource( 11 )]
 transform = Transform( -1.41182, 0, 0.123518, 0, 1.41721, 0, -0.123518, 0, -1.41182, 4.17591, 1.7579, 224.201 )
@@ -2089,13 +2091,43 @@ cast_shadow = 0
 transform = Transform( -520.057, 1834.49, 0.000656064, 0, -0.000675351, 1888.42, 2129.16, 448.082, 0.000160247, 298.254, 83.0904, -45.7049 )
 cast_shadow = 0
 
-[node name="Spatial" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 61.1017 )
+[node name="woman_4" parent="." instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 61.1017 )
 
-[node name="woman_4" parent="Spatial" instance=ExtResource( 9 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.46466, 1.19426, -168.303 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Spatial/woman_4"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="woman_4"]
 autoplay = "anim"
 playback_speed = 2.0
 anims/anim = SubResource( 17 )
+
+[node name="kayıklar" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 61.1017 )
+
+[node name="iskele" parent="kayıklar" instance=ExtResource( 24 )]
+transform = Transform( 2.99347, 0, 0, 0, 2.99347, 0, 0, 0, 2.99347, 29.2079, 2.03979, -229.122 )
+
+[node name="iskele2" parent="kayıklar" instance=ExtResource( 24 )]
+transform = Transform( 2.99347, 0, 0, 0, 2.99347, 0, 0, 0, 2.99347, 28.298, 2.03979, 40.9171 )
+
+[node name="iskele3" parent="kayıklar" instance=ExtResource( 24 )]
+transform = Transform( 2.99347, 0, 0, 0, 2.99347, 0, 0, 0, 2.99347, 28.298, 2.03979, 346.119 )
+
+[node name="kayk" parent="kayıklar" instance=ExtResource( 22 )]
+transform = Transform( 1.50486, -0.350342, 4.7111, 0.106603, 4.94561, 0.333729, -4.72291, 0, 1.50863, 77.9677, -4.69763, -169.849 )
+
+[node name="kayk2" parent="kayıklar" instance=ExtResource( 22 )]
+transform = Transform( -2.48491, -0.235513, 4.28387, 0.106603, 4.94561, 0.333729, -4.28902, 0.25937, -2.47363, 112.013, -4.69763, -192.862 )
+
+[node name="kayk3" parent="kayıklar" instance=ExtResource( 22 )]
+transform = Transform( 1.50486, -0.350342, 4.7111, 0.106603, 4.94561, 0.333729, -4.72291, 0, 1.50863, 56.8176, -4.69763, 44.9787 )
+
+[node name="kayk4" parent="kayıklar" instance=ExtResource( 22 )]
+transform = Transform( -2.48491, -0.235513, 4.28387, 0.106603, 4.94561, 0.333729, -4.28902, 0.25937, -2.47363, 90.8627, -4.69763, 21.9654 )
+
+[node name="kayk5" parent="kayıklar" instance=ExtResource( 22 )]
+transform = Transform( 1.50486, -0.350342, 4.7111, 0.106603, 4.94561, 0.333729, -4.72291, 0, 1.50863, 109.266, -4.69763, 367.476 )
+
+[node name="kayk6" parent="kayıklar" instance=ExtResource( 22 )]
+transform = Transform( -2.48491, -0.235513, 4.28387, 0.106603, 4.94561, 0.333729, -4.28902, 0.25937, -2.47363, 143.311, -4.69763, 344.463 )
+
+[node name="kzkule" parent="." instance=ExtResource( 23 )]
+transform = Transform( 13.2722, 0, 16.4455, 0, 21.133, 0, -16.4455, 0, 13.2722, 105.357, -8.77217, 168.307 )
