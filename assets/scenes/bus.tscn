@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/trafiklamb.fbx" type="PackedScene" id=2]
@@ -32,9 +32,10 @@
 [ext_resource path="res://assets/geometry/environment/durakyazs.fbx" type="PackedScene" id=30]
 [ext_resource path="res://assets/textures/durak-levhası-anlamı-b-22-otobüs-durak-işareti-levhası-durak-trafik-levhası-tabelası-bilgi-levhası-nedir-trafik-bilgi-tabelası-bilgi-işareti-ankara-fiyatı.jpg" type="Texture" id=31]
 [ext_resource path="res://assets/geometry/environment/finish.fbx" type="PackedScene" id=32]
+[ext_resource path="res://scripts/binbin_finish.gd" type="Script" id=33]
 
-[sub_resource type="BoxShape" id=1]
-extents = Vector3( 1, 0.911914, 2.08822 )
+[sub_resource type="BoxShape" id=24]
+extents = Vector3( 5.77409, 3.07978, 2.08822 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "anim"
@@ -64,6 +65,9 @@ tracks/1/keys = {
 "update": 0,
 "values": [ Vector3( 0, -90, 0 ), Vector3( 0, -90, 0 ), Vector3( 0, 0, 0 ), Vector3( 0, 90, 0 ), Vector3( 0, 90, 0 ), Vector3( 0, 180, 0 ), Vector3( 0, 270, 0 ) ]
 }
+
+[sub_resource type="BoxShape" id=37]
+extents = Vector3( 8.10139, 7.42286, 7.92136 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "anim"
@@ -378,7 +382,7 @@ albedo_color = Color( 0.878431, 0.866667, 0.0313726, 1 )
 [sub_resource type="SpatialMaterial" id=23]
 albedo_color = Color( 0.572549, 0.941176, 0.486275, 1 )
 
-[sub_resource type="PlaneMesh" id=24]
+[sub_resource type="PlaneMesh" id=38]
 
 [sub_resource type="SpatialMaterial" id=25]
 albedo_color = Color( 0.905882, 0.341176, 0.341176, 1 )
@@ -441,6 +445,14 @@ material = SubResource( 35 )
 
 [node name="bus" type="Spatial"]
 
+[node name="Area" type="Area" parent="."]
+transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 3818.32, 1.514, 7.265 )
+script = ExtResource( 33 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.858564, 0 )
+shape = SubResource( 24 )
+
 [node name="WorldEnvironment" parent="." instance=ExtResource( 4 )]
 
 [node name="DirectionalLight" parent="." instance=ExtResource( 5 )]
@@ -479,16 +491,17 @@ transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 4837.53
 [node name="car-active-1" parent="cars" instance=ExtResource( 21 )]
 transform = Transform( -1.46629e-06, 0, -9, 0, 9, 0, 9, 0, -1.46629e-06, 5788.01, 1.514, -29.56 )
 
-[node name="Area" type="Area" parent="cars/car-active-1"]
-script = ExtResource( 22 )
-
-[node name="CollisionShape" type="CollisionShape" parent="cars/car-active-1/Area"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.858564, 0 )
-shape = SubResource( 1 )
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="cars/car-active-1"]
 autoplay = "anim"
 anims/anim = SubResource( 2 )
+
+[node name="Area2" type="Area" parent="cars/car-active-1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 685.276 )
+script = ExtResource( 33 )
+
+[node name="CollisionShape" type="CollisionShape" parent="cars/car-active-1/Area2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.27008 )
+shape = SubResource( 37 )
 
 [node name="Cube029" parent="cars" instance=ExtResource( 8 )]
 transform = Transform( -0.000146629, 900, 0.000146629, 0, -0.000146629, 900, 900, 0.000146629, 2.38888e-11, 4566.64, 1.514, -29.56 )
@@ -507,7 +520,7 @@ script = ExtResource( 22 )
 
 [node name="CollisionShape" type="CollisionShape" parent="cars/car-active-2/container/pembecar2/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.858564, 0 )
-shape = SubResource( 1 )
+shape = SubResource( 24 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="cars/car-active-2/container/pembecar2"]
 autoplay = "anim"
@@ -528,7 +541,7 @@ script = ExtResource( 22 )
 
 [node name="CollisionShape" type="CollisionShape" parent="cars/car-active-3/container/Cube028/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.858564, 0 )
-shape = SubResource( 1 )
+shape = SubResource( 24 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="cars/car-active-3/container/Cube028"]
 autoplay = "anim"
@@ -1460,7 +1473,7 @@ material/0 = SubResource( 23 )
 
 [node name="MeshInstance3" type="MeshInstance" parent="SCENES/SCENE-3"]
 transform = Transform( 482.973, 0, 0, 0, 1, 0, 0, 0, 55.1968, 479.093, 0.982277, 5.96842 )
-mesh = SubResource( 24 )
+mesh = SubResource( 38 )
 material/0 = SubResource( 25 )
 __meta__ = {
 "_edit_lock_": true
@@ -2249,7 +2262,7 @@ material/0 = SubResource( 23 )
 
 [node name="MeshInstance2" type="MeshInstance" parent="SCENES/SCENE-2"]
 transform = Transform( 482.973, 0, 0, 0, 1, 0, 0, 0, 55.1968, 2408.19, 0.982277, 5.96842 )
-mesh = SubResource( 24 )
+mesh = SubResource( 38 )
 material/0 = SubResource( 25 )
 
 [node name="SCENE-4" type="Spatial" parent="SCENES"]
@@ -3029,7 +3042,7 @@ material/0 = SubResource( 23 )
 
 [node name="MeshInstance4" type="MeshInstance" parent="SCENES/SCENE-4"]
 transform = Transform( 482.973, 0, 0, 0, 1, 0, 0, 0, 55.1968, 3372.83, 0.982277, 5.96842 )
-mesh = SubResource( 24 )
+mesh = SubResource( 38 )
 material/0 = SubResource( 25 )
 __meta__ = {
 "_edit_lock_": true
@@ -3812,7 +3825,7 @@ material/0 = SubResource( 23 )
 
 [node name="MeshInstance" type="MeshInstance" parent="SCENES/SCENE"]
 transform = Transform( 482.973, 0, 0, 0, 1, 0, 0, 0, 55.1968, 1444.19, 0.982277, 5.96842 )
-mesh = SubResource( 24 )
+mesh = SubResource( 38 )
 material/0 = SubResource( 25 )
 
 [node name="Bodies" type="Spatial" parent="."]
