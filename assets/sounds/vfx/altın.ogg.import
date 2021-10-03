@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/altın.ogg-b8896fb7444c856b02547d15c7d12b9c.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/vfx/altın.ogg"
+dest_files=[ "res://.import/altın.ogg-b8896fb7444c856b02547d15c7d12b9c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

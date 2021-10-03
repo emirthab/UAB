@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sonraki bölüm.ogg-ce08e1d4ae6ff74c6625c8037f8d0f71.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/vfx/sonraki bölüm.ogg"
+dest_files=[ "res://.import/sonraki bölüm.ogg-ce08e1d4ae6ff74c6625c8037f8d0f71.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
