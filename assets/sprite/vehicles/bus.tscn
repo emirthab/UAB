@@ -85,11 +85,11 @@ surfaces/3 = {
 
 [node name="player" type="VehicleBody" parent="."]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 4.32204, 0 )
-mass = 16.78
+mass = 33.71
 gravity_scale = 2.0
 axis_lock_linear_z = true
+axis_lock_angular_x = true
 axis_lock_angular_y = true
-axis_lock_angular_z = true
 linear_damp = -0.5
 script = ExtResource( 1 )
 
