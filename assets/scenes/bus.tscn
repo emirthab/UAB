@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://assets/geometry/trees/trees1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/geometry/environment/trafiklamb.fbx" type="PackedScene" id=2]
@@ -32,7 +32,6 @@
 [ext_resource path="res://assets/geometry/environment/durakyazs.fbx" type="PackedScene" id=30]
 [ext_resource path="res://assets/textures/durak-levhası-anlamı-b-22-otobüs-durak-işareti-levhası-durak-trafik-levhası-tabelası-bilgi-levhası-nedir-trafik-bilgi-tabelası-bilgi-işareti-ankara-fiyatı.jpg" type="Texture" id=31]
 [ext_resource path="res://assets/geometry/environment/finish.fbx" type="PackedScene" id=32]
-[ext_resource path="res://scripts/duba.gd" type="Script" id=33]
 
 [sub_resource type="BoxShape" id=18]
 extents = Vector3( 1, 0.911914, 2.08822 )
@@ -4028,7 +4027,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 35.8905 )
 [node name="duba" type="RigidBody" parent="collider dubalar"]
 transform = Transform( -3.66034, 0, -2.22476e-07, 0, 2.94001, 0, 3.19997e-07, 0, -2.54483, 457.323, 2.98637, 1.52588e-05 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4041,7 +4039,6 @@ shape = SubResource( 46 )
 [node name="duba14" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1412.45, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba14" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4053,7 +4050,6 @@ shape = SubResource( 46 )
 [node name="duba15" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1419.22, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba15" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4065,7 +4061,6 @@ shape = SubResource( 46 )
 [node name="duba23" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1427.22, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba23" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4077,7 +4072,6 @@ shape = SubResource( 46 )
 [node name="duba24" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1427.22, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba24" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4089,7 +4083,6 @@ shape = SubResource( 46 )
 [node name="duba16" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1412.45, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba16" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4101,7 +4094,6 @@ shape = SubResource( 46 )
 [node name="duba2" type="RigidBody" parent="collider dubalar"]
 transform = Transform( -3.66034, 0, -2.22476e-07, 0, 2.94001, 0, 3.19997e-07, 0, -2.54483, 446.843, 2.98637, 1.52588e-05 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba2" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4113,7 +4105,6 @@ shape = SubResource( 46 )
 [node name="duba3" type="RigidBody" parent="collider dubalar"]
 transform = Transform( -3.66034, 0, -2.22476e-07, 0, 2.94001, 0, 3.19997e-07, 0, -2.54483, 437.549, 2.98637, 1.52588e-05 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba3" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4125,7 +4116,6 @@ shape = SubResource( 46 )
 [node name="duba4" type="RigidBody" parent="collider dubalar"]
 transform = Transform( -3.66034, 0, -2.22476e-07, 0, 2.94001, 0, 3.19997e-07, 0, -2.54483, 427.509, 2.98637, 1.52588e-05 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba4" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4137,7 +4127,6 @@ shape = SubResource( 46 )
 [node name="duba5" type="RigidBody" parent="collider dubalar"]
 transform = Transform( -3.66034, 0, -2.22476e-07, 0, 2.94001, 0, 3.19997e-07, 0, -2.54483, 416.075, 2.98637, 1.52588e-05 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba5" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4149,7 +4138,6 @@ shape = SubResource( 46 )
 [node name="duba6" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1024.9, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba6" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4161,7 +4149,6 @@ shape = SubResource( 46 )
 [node name="duba7" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1036.17, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba7" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4173,7 +4160,6 @@ shape = SubResource( 46 )
 [node name="duba8" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1048.17, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba8" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4185,7 +4171,6 @@ shape = SubResource( 46 )
 [node name="duba9" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1059.07, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba9" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4197,7 +4182,6 @@ shape = SubResource( 46 )
 [node name="duba10" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1760.57, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba10" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4209,7 +4193,6 @@ shape = SubResource( 46 )
 [node name="duba11" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1772.56, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba11" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4221,7 +4204,6 @@ shape = SubResource( 46 )
 [node name="duba12" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1784.91, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba12" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4233,7 +4215,6 @@ shape = SubResource( 46 )
 [node name="duba13" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 1797.33, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba13" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4245,7 +4226,6 @@ shape = SubResource( 46 )
 [node name="duba17" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 2331.79, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba17" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4257,7 +4237,6 @@ shape = SubResource( 46 )
 [node name="duba18" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 2347.12, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba18" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4269,7 +4248,6 @@ shape = SubResource( 46 )
 [node name="duba19" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 2363.12, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba19" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4281,7 +4259,6 @@ shape = SubResource( 46 )
 [node name="duba20" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 3196.28, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba20" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4294,7 +4271,6 @@ shape = SubResource( 46 )
 [node name="duba21" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 3211.61, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba21" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
@@ -4307,7 +4283,6 @@ shape = SubResource( 46 )
 [node name="duba22" type="RigidBody" parent="collider dubalar"]
 transform = Transform( 3.66034, 0, 0, 0, 2.94001, 0, 0, 0, 2.54483, 3227.61, 2.98637, 0 )
 mass = 0.09
-script = ExtResource( 33 )
 
 [node name="duba" parent="collider dubalar/duba22" instance=ExtResource( 26 )]
 transform = Transform( 54.2321, 1.13883e-06, 8.93433e-13, 0, -1.93949e-05, 118.967, -1.13884e-06, -80.2856, -6.29854e-05, -0.00108337, 0.848641, -0.344315 )
