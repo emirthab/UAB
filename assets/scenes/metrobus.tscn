@@ -63,13 +63,13 @@ albedo_color = Color( 0.392157, 0.34902, 0.278431, 1 )
 
 [sub_resource type="PlaneMesh" id=13]
 
-[sub_resource type="SpatialMaterial" id=14]
-albedo_color = Color( 0.309804, 0.384314, 0.215686, 1 )
+[sub_resource type="SpatialMaterial" id=16]
+albedo_color = Color( 0.905882, 0.341176, 0.341176, 1 )
 
 [sub_resource type="PlaneMesh" id=15]
 
-[sub_resource type="SpatialMaterial" id=16]
-albedo_color = Color( 0.560784, 0.717647, 0.309804, 1 )
+[sub_resource type="SpatialMaterial" id=17]
+albedo_color = Color( 0.572549, 0.941176, 0.486275, 1 )
 
 [node name="Spatial" type="Spatial"]
 
@@ -679,12 +679,12 @@ material/0 = SubResource( 12 )
 [node name="arka zemin" type="MeshInstance" parent="zeminler"]
 transform = Transform( 451.194, 0, 0, 0, 67.7467, 0, 0, 0, 68.3013, -718.347, 3.99365, -84.4856 )
 mesh = SubResource( 13 )
-material/0 = SubResource( 14 )
+material/0 = SubResource( 16 )
 
 [node name="çimen" type="MeshInstance" parent="zeminler"]
 transform = Transform( 451.194, 0, 0, 0, 67.7467, 0, 0, 0, -37.9824, -718.347, 4.93895, 18.1989 )
 mesh = SubResource( 15 )
-material/0 = SubResource( 16 )
+material/0 = SubResource( 17 )
 
 [node name="köprü zemin" type="Spatial" parent="zeminler"]
 
