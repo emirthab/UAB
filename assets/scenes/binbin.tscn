@@ -17,7 +17,7 @@
 [ext_resource path="res://assets/geometry/environment/Mudrock2.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/geometry/clouds/cloud-1.tscn" type="PackedScene" id=16]
 [ext_resource path="res://assets/geometry/clouds/cloud-2.tscn" type="PackedScene" id=17]
-[ext_resource path="res://assets/textures/sky-3.png" type="Texture" id=18]
+[ext_resource path="res://assets/textures/sky-2.png" type="Texture" id=18]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -1981,9 +1981,20 @@ anims/anim = SubResource( 14 )
 
 [node name="Cube042" parent="clouds" instance=ExtResource( 16 )]
 transform = Transform( -613.491, 2661.35, 0.000951773, 0, -0.000976733, 2731.14, 2661.35, 613.491, 0.000219402, 329.946, 129.987, 204.166 )
+cast_shadow = 0
+generate_lightmap = false
+
+[node name="Cube045" parent="clouds" instance=ExtResource( 16 )]
+transform = Transform( -613.491, 2661.35, 0.000951773, 0, -0.000976733, 2731.14, 2661.35, 613.491, 0.000219402, 174.903, 219.105, 19.9579 )
+cast_shadow = 0
+generate_lightmap = false
 
 [node name="Cube043" parent="clouds" instance=ExtResource( 16 )]
 transform = Transform( -613.491, 2661.35, 0.000951773, 0, -0.000976733, 2731.14, 2661.35, 613.491, 0.000219402, 301.348, 90.2006, 443.869 )
+cast_shadow = 0
+generate_lightmap = false
 
 [node name="Cube044" parent="clouds" instance=ExtResource( 17 )]
 transform = Transform( -520.057, 1834.49, 0.000656064, 0, -0.000675351, 1888.42, 2129.16, 448.082, 0.000160247, 298.254, 83.0904, -45.7049 )
+cast_shadow = 0
+generate_lightmap = false
