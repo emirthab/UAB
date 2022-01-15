@@ -3,6 +3,6 @@
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=k5Ysk3X8a60">
-    <img src="https://user-images.githubusercontent.com/52050284/135945923-dcbbc5d4-c8b0-4d5e-a7bb-96cc96374b77.png" alt="Space Way" width="450">
+    <img src="https://user-images.githubusercontent.com/52050284/149633983-1bd6ffb9-3afa-4b06-b55c-7530d1bff6d9.png" alt="Space Way" width="450">
   </a>
 </p>
